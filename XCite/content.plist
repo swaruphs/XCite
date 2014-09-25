@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>videoURL</key>
+		<string>Watson_Video_What Will You Do With Watson_</string>
+		<key>videoTitle</key>
+		<string>IBM Introduces Powerful Analytics for Everyone</string>
+		<key>videoSubTitle</key>
+		<string></string>
+		<key>pdfURL</key>
+		<string>Welcome_Doc_2013_ibm_strategy(2)</string>
+		<key>pdfTitle</key>
+		<string></string>
+		<key>pdfSubTitle</key>
+		<string></string>
+		<key>img_off</key>
+		<string>ic_Watson-off</string>
+		<key>img_on</key>
+		<string>ic_Watson</string>
+	</dict>
+	<dict>
+		<key>videoURL</key>
+		<string>Watson_Video_What Will You Do With Watson_</string>
+		<key>videoTitle</key>
+		<string>IBM Introduces Powerful Analytics for Everyone</string>
+		<key>videoSubTitle</key>
+		<string></string>
+		<key>pdfURL</key>
+		<string></string>
+		<key>pdfTitle</key>
+		<string>Watson_Doc_An_Inside_Look_at_IBM_Watson_and_How_it_Works</string>
+		<key>pdfSubTitle</key>
+		<string></string>
+		<key>img_off</key>
+		<string>ic_C-suite-off</string>
+		<key>img_on</key>
+		<string>ic_C-suite</string>
+	</dict>
+	<dict>
+		<key>videoURL</key>
+		<string>Watson_Video_What Will You Do With Watson_</string>
+		<key>videoTitle</key>
+		<string>IBM Introduces Powerful Analytics for Everyone</string>
+		<key>videoSubTitle</key>
+		<string></string>
+		<key>pdfURL</key>
+		<string>Watson_Doc_An_Inside_Look_at_IBM_Watson_and_How_it_Works</string>
+		<key>pdfTitle</key>
+		<string></string>
+		<key>pdfSubTitle</key>
+		<string></string>
+		<key>img_off</key>
+		<string>ic_Watson-off</string>
+		<key>img_on</key>
+		<string>ic_Watson</string>
+	</dict>
+	<dict>
+		<key>videoURL</key>
+		<string>Cloud_Video_Why deploy private cloud in the hybrid cloud era</string>
+		<key>videoTitle</key>
+		<string>IBM Introduces Powerful Analytics for Everyone</string>
+		<key>videoSubTitle</key>
+		<string></string>
+		<key>pdfURL</key>
+		<string>Cloud_Doc_Private Cloud in the Hybrid Cloud Era</string>
+		<key>pdfTitle</key>
+		<string></string>
+		<key>pdfSubTitle</key>
+		<string></string>
+		<key>img_off</key>
+		<string>ic_Cloud-off</string>
+		<key>img_on</key>
+		<string>ic_Cloud</string>
+	</dict>
+	<dict>
+		<key>videoURL</key>
+		<string>Analytics_Video_IBM Introduces Powerful Analytics for Everyone</string>
+		<key>videoTitle</key>
+		<string>IBM Introduces Powerful Analytics for Everyone</string>
+		<key>videoSubTitle</key>
+		<string></string>
+		<key>pdfURL</key>
+		<string>Analytics_Doc_WatsonAnalyticsSalesDeck_16092014</string>
+		<key>pdfTitle</key>
+		<string></string>
+		<key>pdfSubTitle</key>
+		<string></string>
+		<key>img_off</key>
+		<string>ic_Analytics_off</string>
+		<key>img_on</key>
+		<string>ic_Analytics</string>
+	</dict>
+	<dict>
+		<key>videoURL</key>
+		<string>Mobile_Video_IBM MobileFirst Intro Video</string>
+		<key>videoTitle</key>
+		<string>IBM Introduces Powerful Analytics for Everyone</string>
+		<key>videoSubTitle</key>
+		<string></string>
+		<key>pdfURL</key>
+		<string>Mobile_Doc_The Individual Enterprise - How mobility redefines business [GBE03614USEN]</string>
+		<key>pdfTitle</key>
+		<string></string>
+		<key>pdfSubTitle</key>
+		<string></string>
+		<key>img_off</key>
+		<string>ic_Mobile-off</string>
+		<key>img_on</key>
+		<string>ic_Mobile</string>
+	</dict>
+	<dict>
+		<key>videoURL</key>
+		<string>Social_Video_IBM Connections Mobile_ the power of your business in the palm of your hand</string>
+		<key>videoTitle</key>
+		<string>IBM Introduces Powerful Analytics for Everyone</string>
+		<key>videoSubTitle</key>
+		<string></string>
+		<key>pdfURL</key>
+		<string>Social_Doc_Applying Social Business-Repeatable Patterns provide return (2014-Jan)</string>
+		<key>pdfTitle</key>
+		<string></string>
+		<key>pdfSubTitle</key>
+		<string></string>
+		<key>img_off</key>
+		<string>ic_Social-off</string>
+		<key>img_on</key>
+		<string>ic_Social</string>
+	</dict>
+	<dict>
+		<key>videoURL</key>
+		<string>Security_Video_IBM Security. Intelligence. Integration. Expertise.</string>
+		<key>videoTitle</key>
+		<string>IBM Introduces Powerful Analytics for Everyone</string>
+		<key>videoSubTitle</key>
+		<string></string>
+		<key>pdfURL</key>
+		<string>Security_Doc_WGL03057USEN</string>
+		<key>pdfTitle</key>
+		<string></string>
+		<key>pdfSubTitle</key>
+		<string></string>
+		<key>img_off</key>
+		<string>ic_security-off</string>
+		<key>img_on</key>
+		<string>ic_security</string>
+	</dict>
+	<dict>
+		<key>videoURL</key>
+		<string>Infra_Video_IBM - IT infrastructure choices matter because business outcomes matter</string>
+		<key>videoTitle</key>
+		<string>IBM Introduces Powerful Analytics for Everyone</string>
+		<key>videoSubTitle</key>
+		<string></string>
+		<key>pdfURL</key>
+		<string>Infra_Doc_The IT Infrastructure Conversation - Exec Summary</string>
+		<key>pdfTitle</key>
+		<string></string>
+		<key>pdfSubTitle</key>
+		<string></string>
+		<key>img_off</key>
+		<string>ic_Infrastructure-off</string>
+		<key>img_on</key>
+		<string>ic_Infrastructure</string>
+	</dict>
+</array>
+</plist>

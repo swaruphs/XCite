@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		073F856419D3D28200F0E939 /* XCitePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 073F856319D3D28200F0E939 /* XCitePlayerView.m */; };
+		073F856819D3D8F000F0E939 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073F856719D3D8F000F0E939 /* AVFoundation.framework */; };
+		073F856B19D3D8F700F0E939 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073F856919D3D8F700F0E939 /* CoreMedia.framework */; };
+		073F856C19D3D8F700F0E939 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073F856A19D3D8F700F0E939 /* MediaPlayer.framework */; };
+		073F856E19D3DAD800F0E939 /* XCitePlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 073F856D19D3DAD800F0E939 /* XCitePlayerView.xib */; };
+		073F857219D3DF3500F0E939 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 073F857119D3DF3500F0E939 /* UIView+Additions.m */; };
+		073F857619D3E01700F0E939 /* NSArray+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 073F857519D3E01700F0E939 /* NSArray+Additions.m */; };
+		073F857919D3E10E00F0E939 /* NSObject+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 073F857819D3E10E00F0E939 /* NSObject+Additions.m */; };
+		073F858119D3E9EF00F0E939 /* Analytics_Video_IBM Introduces Powerful Analytics for Everyone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 073F857A19D3E9EF00F0E939 /* Analytics_Video_IBM Introduces Powerful Analytics for Everyone.mp4 */; };
+		073F858219D3E9EF00F0E939 /* Cloud_Video_Why deploy private cloud in the hybrid cloud era.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 073F857B19D3E9EF00F0E939 /* Cloud_Video_Why deploy private cloud in the hybrid cloud era.mp4 */; };
+		073F858319D3E9EF00F0E939 /* Infra_Video_IBM - IT infrastructure choices matter because business outcomes matter.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 073F857C19D3E9EF00F0E939 /* Infra_Video_IBM - IT infrastructure choices matter because business outcomes matter.mp4 */; };
+		073F858419D3E9EF00F0E939 /* Mobile_Video_IBM MobileFirst Intro Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 073F857D19D3E9EF00F0E939 /* Mobile_Video_IBM MobileFirst Intro Video.mp4 */; };
+		073F858519D3E9EF00F0E939 /* Security_Video_IBM Security. Intelligence. Integration. Expertise..mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 073F857E19D3E9EF00F0E939 /* Security_Video_IBM Security. Intelligence. Integration. Expertise..mp4 */; };
+		073F858619D3E9EF00F0E939 /* Social_Video_IBM Connections Mobile_ the power of your business in the palm of your hand.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 073F857F19D3E9EF00F0E939 /* Social_Video_IBM Connections Mobile_ the power of your business in the palm of your hand.mp4 */; };
+		073F858719D3E9EF00F0E939 /* Watson_Video_What Will You Do With Watson_.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 073F858019D3E9EF00F0E939 /* Watson_Video_What Will You Do With Watson_.mp4 */; };
+		073F858919D3EA2700F0E939 /* content.plist in Resources */ = {isa = PBXBuildFile; fileRef = 073F858819D3EA2700F0E939 /* content.plist */; };
+		073F859219D3F8D700F0E939 /* Analytics_Doc_WatsonAnalyticsSalesDeck_16092014.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 073F858A19D3F8D700F0E939 /* Analytics_Doc_WatsonAnalyticsSalesDeck_16092014.pdf */; };
+		073F859319D3F8D700F0E939 /* Cloud_Doc_Private Cloud in the Hybrid Cloud Era.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 073F858B19D3F8D700F0E939 /* Cloud_Doc_Private Cloud in the Hybrid Cloud Era.pdf */; };
+		073F859419D3F8D700F0E939 /* Infra_Doc_The IT Infrastructure Conversation - Exec Summary.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 073F858C19D3F8D700F0E939 /* Infra_Doc_The IT Infrastructure Conversation - Exec Summary.pdf */; };
+		073F859519D3F8D700F0E939 /* Mobile_Doc_The Individual Enterprise - How mobility redefines business [GBE03614USEN].pdf in Resources */ = {isa = PBXBuildFile; fileRef = 073F858D19D3F8D700F0E939 /* Mobile_Doc_The Individual Enterprise - How mobility redefines business [GBE03614USEN].pdf */; };
+		073F859619D3F8D700F0E939 /* Security_Doc_WGL03057USEN.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 073F858E19D3F8D700F0E939 /* Security_Doc_WGL03057USEN.pdf */; };
+		073F859719D3F8D700F0E939 /* Social_Doc_Applying Social Business-Repeatable Patterns provide return (2014-Jan).pdf in Resources */ = {isa = PBXBuildFile; fileRef = 073F858F19D3F8D700F0E939 /* Social_Doc_Applying Social Business-Repeatable Patterns provide return (2014-Jan).pdf */; };
+		073F859819D3F8D700F0E939 /* Watson_Doc_An_Inside_Look_at_IBM_Watson_and_How_it_Works.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 073F859019D3F8D700F0E939 /* Watson_Doc_An_Inside_Look_at_IBM_Watson_and_How_it_Works.pdf */; };
+		073F859919D3F8D700F0E939 /* Welcome_Doc_2013_ibm_strategy(2).pdf in Resources */ = {isa = PBXBuildFile; fileRef = 073F859119D3F8D700F0E939 /* Welcome_Doc_2013_ibm_strategy(2).pdf */; };
+		073F859D19D3FCBA00F0E939 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 073F859C19D3FCBA00F0E939 /* DataManager.m */; };
+		073F85A119D3FD5900F0E939 /* XCiteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 073F85A019D3FD5900F0E939 /* XCiteModel.m */; };
+		073F85A419D3FF9500F0E939 /* NSDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 073F85A319D3FF9500F0E939 /* NSDictionary+Additions.m */; };
+		0768235719D2ADB700BC0CCA /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768235619D2ADB700BC0CCA /* background.png */; };
+		0768235919D2ADC000BC0CCA /* BG-popup.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768235819D2ADC000BC0CCA /* BG-popup.png */; };
+		0768235C19D2ADC700BC0CCA /* bt_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768235A19D2ADC700BC0CCA /* bt_play.png */; };
+		0768235D19D2ADC700BC0CCA /* bt_search.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768235B19D2ADC700BC0CCA /* bt_search.png */; };
+		0768237019D2ADD100BC0CCA /* ic_Analytics.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768235F19D2ADD100BC0CCA /* ic_Analytics.png */; };
+		0768237119D2ADD100BC0CCA /* ic_Analytics_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768236019D2ADD100BC0CCA /* ic_Analytics_off.png */; };
+		0768237219D2ADD100BC0CCA /* ic_C-suite-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768236119D2ADD100BC0CCA /* ic_C-suite-off.png */; };
+		0768237319D2ADD100BC0CCA /* ic_C-suite.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768236219D2ADD100BC0CCA /* ic_C-suite.png */; };
+		0768237419D2ADD100BC0CCA /* ic_Cloud-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768236319D2ADD100BC0CCA /* ic_Cloud-off.png */; };
+		0768237519D2ADD100BC0CCA /* ic_Cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768236419D2ADD100BC0CCA /* ic_Cloud.png */; };
+		0768237619D2ADD100BC0CCA /* ic_Infrastructure-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768236519D2ADD100BC0CCA /* ic_Infrastructure-off.png */; };
+		0768237719D2ADD100BC0CCA /* ic_Infrastructure.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768236619D2ADD100BC0CCA /* ic_Infrastructure.png */; };
+		0768237819D2ADD100BC0CCA /* ic_Mobile-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768236719D2ADD100BC0CCA /* ic_Mobile-off.png */; };
+		0768237919D2ADD100BC0CCA /* ic_Mobile.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768236819D2ADD100BC0CCA /* ic_Mobile.png */; };
+		0768237A19D2ADD100BC0CCA /* ic_security-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768236919D2ADD100BC0CCA /* ic_security-off.png */; };
+		0768237B19D2ADD100BC0CCA /* ic_security.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768236A19D2ADD100BC0CCA /* ic_security.png */; };
+		0768237C19D2ADD100BC0CCA /* ic_Social-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768236B19D2ADD100BC0CCA /* ic_Social-off.png */; };
+		0768237D19D2ADD100BC0CCA /* ic_Social.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768236C19D2ADD100BC0CCA /* ic_Social.png */; };
+		0768237E19D2ADD100BC0CCA /* ic_Watson-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768236D19D2ADD100BC0CCA /* ic_Watson-off.png */; };
+		0768237F19D2ADD100BC0CCA /* ic_Watson.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768236E19D2ADD100BC0CCA /* ic_Watson.png */; };
+		0768238219D2B22900BC0CCA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0768238119D2B22900BC0CCA /* ViewController.xib */; };
+		0768238719D2B3BD00BC0CCA /* XCiteSideBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0768238519D2B3BD00BC0CCA /* XCiteSideBarCell.m */; };
+		0768238819D2B3BD00BC0CCA /* XCiteSideBarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0768238619D2B3BD00BC0CCA /* XCiteSideBarCell.xib */; };
+		0768238C19D2B9B100BC0CCA /* XCiteMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0768238A19D2B9B100BC0CCA /* XCiteMainCell.m */; };
+		0768238D19D2B9B100BC0CCA /* XCiteMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0768238B19D2B9B100BC0CCA /* XCiteMainCell.xib */; };
+		0768238F19D2BA2000BC0CCA /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768238E19D2BA2000BC0CCA /* logo.png */; };
+		0768239219D2BD4D00BC0CCA /* XCiteSideBarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0768239119D2BD4D00BC0CCA /* XCiteSideBarCollectionViewLayout.m */; };
+		077818EE19D29DEA005D43A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 077818ED19D29DEA005D43A6 /* main.m */; };
+		077818F119D29DEA005D43A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 077818F019D29DEA005D43A6 /* AppDelegate.m */; };
+		077818F419D29DEA005D43A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 077818F319D29DEA005D43A6 /* ViewController.m */; };
+		077818F919D29DEA005D43A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 077818F819D29DEA005D43A6 /* Images.xcassets */; };
+		077818FC19D29DEA005D43A6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 077818FA19D29DEA005D43A6 /* LaunchScreen.xib */; };
+		0778190819D29DEA005D43A6 /* XCiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0778190719D29DEA005D43A6 /* XCiteTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0778190219D29DEA005D43A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 077818E019D29DEA005D43A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 077818E719D29DEA005D43A6;
+			remoteInfo = XCite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		073F856219D3D28200F0E939 /* XCitePlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCitePlayerView.h; sourceTree = "<group>"; };
+		073F856319D3D28200F0E939 /* XCitePlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCitePlayerView.m; sourceTree = "<group>"; };
+		073F856719D3D8F000F0E939 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		073F856919D3D8F700F0E939 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		073F856A19D3D8F700F0E939 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		073F856D19D3DAD800F0E939 /* XCitePlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCitePlayerView.xib; sourceTree = "<group>"; };
+		073F857019D3DF3500F0E939 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		073F857119D3DF3500F0E939 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		073F857319D3DF8D00F0E939 /* XCite.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCite.pch; sourceTree = "<group>"; };
+		073F857419D3E01700F0E939 /* NSArray+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Additions.h"; sourceTree = "<group>"; };
+		073F857519D3E01700F0E939 /* NSArray+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Additions.m"; sourceTree = "<group>"; };
+		073F857719D3E10E00F0E939 /* NSObject+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Additions.h"; sourceTree = "<group>"; };
+		073F857819D3E10E00F0E939 /* NSObject+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Additions.m"; sourceTree = "<group>"; };
+		073F857A19D3E9EF00F0E939 /* Analytics_Video_IBM Introduces Powerful Analytics for Everyone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Analytics_Video_IBM Introduces Powerful Analytics for Everyone.mp4"; sourceTree = "<group>"; };
+		073F857B19D3E9EF00F0E939 /* Cloud_Video_Why deploy private cloud in the hybrid cloud era.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cloud_Video_Why deploy private cloud in the hybrid cloud era.mp4"; sourceTree = "<group>"; };
+		073F857C19D3E9EF00F0E939 /* Infra_Video_IBM - IT infrastructure choices matter because business outcomes matter.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Infra_Video_IBM - IT infrastructure choices matter because business outcomes matter.mp4"; sourceTree = "<group>"; };
+		073F857D19D3E9EF00F0E939 /* Mobile_Video_IBM MobileFirst Intro Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mobile_Video_IBM MobileFirst Intro Video.mp4"; sourceTree = "<group>"; };
+		073F857E19D3E9EF00F0E939 /* Security_Video_IBM Security. Intelligence. Integration. Expertise..mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Security_Video_IBM Security. Intelligence. Integration. Expertise..mp4"; sourceTree = "<group>"; };
+		073F857F19D3E9EF00F0E939 /* Social_Video_IBM Connections Mobile_ the power of your business in the palm of your hand.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Social_Video_IBM Connections Mobile_ the power of your business in the palm of your hand.mp4"; sourceTree = "<group>"; };
+		073F858019D3E9EF00F0E939 /* Watson_Video_What Will You Do With Watson_.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Watson_Video_What Will You Do With Watson_.mp4"; sourceTree = "<group>"; };
+		073F858819D3EA2700F0E939 /* content.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = content.plist; sourceTree = "<group>"; };
+		073F858A19D3F8D700F0E939 /* Analytics_Doc_WatsonAnalyticsSalesDeck_16092014.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Analytics_Doc_WatsonAnalyticsSalesDeck_16092014.pdf; sourceTree = "<group>"; };
+		073F858B19D3F8D700F0E939 /* Cloud_Doc_Private Cloud in the Hybrid Cloud Era.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Cloud_Doc_Private Cloud in the Hybrid Cloud Era.pdf"; sourceTree = "<group>"; };
+		073F858C19D3F8D700F0E939 /* Infra_Doc_The IT Infrastructure Conversation - Exec Summary.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Infra_Doc_The IT Infrastructure Conversation - Exec Summary.pdf"; sourceTree = "<group>"; };
+		073F858D19D3F8D700F0E939 /* Mobile_Doc_The Individual Enterprise - How mobility redefines business [GBE03614USEN].pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Mobile_Doc_The Individual Enterprise - How mobility redefines business [GBE03614USEN].pdf"; sourceTree = "<group>"; };
+		073F858E19D3F8D700F0E939 /* Security_Doc_WGL03057USEN.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Security_Doc_WGL03057USEN.pdf; sourceTree = "<group>"; };
+		073F858F19D3F8D700F0E939 /* Social_Doc_Applying Social Business-Repeatable Patterns provide return (2014-Jan).pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Social_Doc_Applying Social Business-Repeatable Patterns provide return (2014-Jan).pdf"; sourceTree = "<group>"; };
+		073F859019D3F8D700F0E939 /* Watson_Doc_An_Inside_Look_at_IBM_Watson_and_How_it_Works.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Watson_Doc_An_Inside_Look_at_IBM_Watson_and_How_it_Works.pdf; sourceTree = "<group>"; };
+		073F859119D3F8D700F0E939 /* Welcome_Doc_2013_ibm_strategy(2).pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Welcome_Doc_2013_ibm_strategy(2).pdf"; sourceTree = "<group>"; };
+		073F859B19D3FCBA00F0E939 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		073F859C19D3FCBA00F0E939 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		073F859F19D3FD5900F0E939 /* XCiteModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCiteModel.h; sourceTree = "<group>"; };
+		073F85A019D3FD5900F0E939 /* XCiteModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCiteModel.m; sourceTree = "<group>"; };
+		073F85A219D3FF9500F0E939 /* NSDictionary+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Additions.h"; sourceTree = "<group>"; };
+		073F85A319D3FF9500F0E939 /* NSDictionary+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Additions.m"; sourceTree = "<group>"; };
+		0768235619D2ADB700BC0CCA /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		0768235819D2ADC000BC0CCA /* BG-popup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BG-popup.png"; sourceTree = "<group>"; };
+		0768235A19D2ADC700BC0CCA /* bt_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_play.png; sourceTree = "<group>"; };
+		0768235B19D2ADC700BC0CCA /* bt_search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_search.png; sourceTree = "<group>"; };
+		0768235F19D2ADD100BC0CCA /* ic_Analytics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_Analytics.png; sourceTree = "<group>"; };
+		0768236019D2ADD100BC0CCA /* ic_Analytics_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_Analytics_off.png; sourceTree = "<group>"; };
+		0768236119D2ADD100BC0CCA /* ic_C-suite-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_C-suite-off.png"; sourceTree = "<group>"; };
+		0768236219D2ADD100BC0CCA /* ic_C-suite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_C-suite.png"; sourceTree = "<group>"; };
+		0768236319D2ADD100BC0CCA /* ic_Cloud-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_Cloud-off.png"; sourceTree = "<group>"; };
+		0768236419D2ADD100BC0CCA /* ic_Cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_Cloud.png; sourceTree = "<group>"; };
+		0768236519D2ADD100BC0CCA /* ic_Infrastructure-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_Infrastructure-off.png"; sourceTree = "<group>"; };
+		0768236619D2ADD100BC0CCA /* ic_Infrastructure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_Infrastructure.png; sourceTree = "<group>"; };
+		0768236719D2ADD100BC0CCA /* ic_Mobile-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_Mobile-off.png"; sourceTree = "<group>"; };
+		0768236819D2ADD100BC0CCA /* ic_Mobile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_Mobile.png; sourceTree = "<group>"; };
+		0768236919D2ADD100BC0CCA /* ic_security-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_security-off.png"; sourceTree = "<group>"; };
+		0768236A19D2ADD100BC0CCA /* ic_security.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_security.png; sourceTree = "<group>"; };
+		0768236B19D2ADD100BC0CCA /* ic_Social-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_Social-off.png"; sourceTree = "<group>"; };
+		0768236C19D2ADD100BC0CCA /* ic_Social.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_Social.png; sourceTree = "<group>"; };
+		0768236D19D2ADD100BC0CCA /* ic_Watson-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_Watson-off.png"; sourceTree = "<group>"; };
+		0768236E19D2ADD100BC0CCA /* ic_Watson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_Watson.png; sourceTree = "<group>"; };
+		0768238119D2B22900BC0CCA /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		0768238419D2B3BD00BC0CCA /* XCiteSideBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCiteSideBarCell.h; sourceTree = "<group>"; };
+		0768238519D2B3BD00BC0CCA /* XCiteSideBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCiteSideBarCell.m; sourceTree = "<group>"; };
+		0768238619D2B3BD00BC0CCA /* XCiteSideBarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCiteSideBarCell.xib; sourceTree = "<group>"; };
+		0768238919D2B9B100BC0CCA /* XCiteMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCiteMainCell.h; sourceTree = "<group>"; };
+		0768238A19D2B9B100BC0CCA /* XCiteMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCiteMainCell.m; sourceTree = "<group>"; };
+		0768238B19D2B9B100BC0CCA /* XCiteMainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCiteMainCell.xib; sourceTree = "<group>"; };
+		0768238E19D2BA2000BC0CCA /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		0768239019D2BD4D00BC0CCA /* XCiteSideBarCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCiteSideBarCollectionViewLayout.h; sourceTree = "<group>"; };
+		0768239119D2BD4D00BC0CCA /* XCiteSideBarCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCiteSideBarCollectionViewLayout.m; sourceTree = "<group>"; };
+		077818E819D29DEA005D43A6 /* XCite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		077818EC19D29DEA005D43A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		077818ED19D29DEA005D43A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		077818EF19D29DEA005D43A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		077818F019D29DEA005D43A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		077818F219D29DEA005D43A6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		077818F319D29DEA005D43A6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		077818F819D29DEA005D43A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		077818FB19D29DEA005D43A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0778190119D29DEA005D43A6 /* XCiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0778190619D29DEA005D43A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0778190719D29DEA005D43A6 /* XCiteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCiteTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		077818E519D29DEA005D43A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073F856B19D3D8F700F0E939 /* CoreMedia.framework in Frameworks */,
+				073F856C19D3D8F700F0E939 /* MediaPlayer.framework in Frameworks */,
+				073F856819D3D8F000F0E939 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		077818FE19D29DEA005D43A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		073F856F19D3DF3500F0E939 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				073F857719D3E10E00F0E939 /* NSObject+Additions.h */,
+				073F857819D3E10E00F0E939 /* NSObject+Additions.m */,
+				073F85A219D3FF9500F0E939 /* NSDictionary+Additions.h */,
+				073F85A319D3FF9500F0E939 /* NSDictionary+Additions.m */,
+				073F857019D3DF3500F0E939 /* UIView+Additions.h */,
+				073F857119D3DF3500F0E939 /* UIView+Additions.m */,
+				073F857419D3E01700F0E939 /* NSArray+Additions.h */,
+				073F857519D3E01700F0E939 /* NSArray+Additions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		073F859A19D3FCA800F0E939 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				073F859B19D3FCBA00F0E939 /* DataManager.h */,
+				073F859C19D3FCBA00F0E939 /* DataManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		073F859E19D3FD4800F0E939 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				073F859F19D3FD5900F0E939 /* XCiteModel.h */,
+				073F85A019D3FD5900F0E939 /* XCiteModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0768234A19D2A91600BC0CCA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0768234B19D2A91600BC0CCA /* Images */,
+				0768234C19D2A91600BC0CCA /* Pdfs */,
+				0768234D19D2A91600BC0CCA /* Videos */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0768234B19D2A91600BC0CCA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0768235619D2ADB700BC0CCA /* background.png */,
+				0768235819D2ADC000BC0CCA /* BG-popup.png */,
+				0768235A19D2ADC700BC0CCA /* bt_play.png */,
+				0768235B19D2ADC700BC0CCA /* bt_search.png */,
+				0768238E19D2BA2000BC0CCA /* logo.png */,
+				0768235E19D2ADD100BC0CCA /* Icons */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		0768234C19D2A91600BC0CCA /* Pdfs */ = {
+			isa = PBXGroup;
+			children = (
+				073F858A19D3F8D700F0E939 /* Analytics_Doc_WatsonAnalyticsSalesDeck_16092014.pdf */,
+				073F858B19D3F8D700F0E939 /* Cloud_Doc_Private Cloud in the Hybrid Cloud Era.pdf */,
+				073F858C19D3F8D700F0E939 /* Infra_Doc_The IT Infrastructure Conversation - Exec Summary.pdf */,
+				073F858D19D3F8D700F0E939 /* Mobile_Doc_The Individual Enterprise - How mobility redefines business [GBE03614USEN].pdf */,
+				073F858E19D3F8D700F0E939 /* Security_Doc_WGL03057USEN.pdf */,
+				073F858F19D3F8D700F0E939 /* Social_Doc_Applying Social Business-Repeatable Patterns provide return (2014-Jan).pdf */,
+				073F859019D3F8D700F0E939 /* Watson_Doc_An_Inside_Look_at_IBM_Watson_and_How_it_Works.pdf */,
+				073F859119D3F8D700F0E939 /* Welcome_Doc_2013_ibm_strategy(2).pdf */,
+			);
+			path = Pdfs;
+			sourceTree = "<group>";
+		};
+		0768234D19D2A91600BC0CCA /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				073F857A19D3E9EF00F0E939 /* Analytics_Video_IBM Introduces Powerful Analytics for Everyone.mp4 */,
+				073F857B19D3E9EF00F0E939 /* Cloud_Video_Why deploy private cloud in the hybrid cloud era.mp4 */,
+				073F857C19D3E9EF00F0E939 /* Infra_Video_IBM - IT infrastructure choices matter because business outcomes matter.mp4 */,
+				073F857D19D3E9EF00F0E939 /* Mobile_Video_IBM MobileFirst Intro Video.mp4 */,
+				073F857E19D3E9EF00F0E939 /* Security_Video_IBM Security. Intelligence. Integration. Expertise..mp4 */,
+				073F857F19D3E9EF00F0E939 /* Social_Video_IBM Connections Mobile_ the power of your business in the palm of your hand.mp4 */,
+				073F858019D3E9EF00F0E939 /* Watson_Video_What Will You Do With Watson_.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		0768235E19D2ADD100BC0CCA /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				0768235F19D2ADD100BC0CCA /* ic_Analytics.png */,
+				0768236019D2ADD100BC0CCA /* ic_Analytics_off.png */,
+				0768236119D2ADD100BC0CCA /* ic_C-suite-off.png */,
+				0768236219D2ADD100BC0CCA /* ic_C-suite.png */,
+				0768236319D2ADD100BC0CCA /* ic_Cloud-off.png */,
+				0768236419D2ADD100BC0CCA /* ic_Cloud.png */,
+				0768236519D2ADD100BC0CCA /* ic_Infrastructure-off.png */,
+				0768236619D2ADD100BC0CCA /* ic_Infrastructure.png */,
+				0768236719D2ADD100BC0CCA /* ic_Mobile-off.png */,
+				0768236819D2ADD100BC0CCA /* ic_Mobile.png */,
+				0768236919D2ADD100BC0CCA /* ic_security-off.png */,
+				0768236A19D2ADD100BC0CCA /* ic_security.png */,
+				0768236B19D2ADD100BC0CCA /* ic_Social-off.png */,
+				0768236C19D2ADD100BC0CCA /* ic_Social.png */,
+				0768236D19D2ADD100BC0CCA /* ic_Watson-off.png */,
+				0768236E19D2ADD100BC0CCA /* ic_Watson.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		0768238319D2B35C00BC0CCA /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0768238419D2B3BD00BC0CCA /* XCiteSideBarCell.h */,
+				0768238519D2B3BD00BC0CCA /* XCiteSideBarCell.m */,
+				0768238619D2B3BD00BC0CCA /* XCiteSideBarCell.xib */,
+				0768238919D2B9B100BC0CCA /* XCiteMainCell.h */,
+				0768238A19D2B9B100BC0CCA /* XCiteMainCell.m */,
+				0768238B19D2B9B100BC0CCA /* XCiteMainCell.xib */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		077818DF19D29DEA005D43A6 = {
+			isa = PBXGroup;
+			children = (
+				073F856919D3D8F700F0E939 /* CoreMedia.framework */,
+				073F856A19D3D8F700F0E939 /* MediaPlayer.framework */,
+				073F856719D3D8F000F0E939 /* AVFoundation.framework */,
+				077818EA19D29DEA005D43A6 /* XCite */,
+				0778190419D29DEA005D43A6 /* XCiteTests */,
+				077818E919D29DEA005D43A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		077818E919D29DEA005D43A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				077818E819D29DEA005D43A6 /* XCite.app */,
+				0778190119D29DEA005D43A6 /* XCiteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		077818EA19D29DEA005D43A6 /* XCite */ = {
+			isa = PBXGroup;
+			children = (
+				073F856F19D3DF3500F0E939 /* Categories */,
+				077818EF19D29DEA005D43A6 /* AppDelegate.h */,
+				077818F019D29DEA005D43A6 /* AppDelegate.m */,
+				077818F219D29DEA005D43A6 /* ViewController.h */,
+				077818F319D29DEA005D43A6 /* ViewController.m */,
+				0768238119D2B22900BC0CCA /* ViewController.xib */,
+				0768239019D2BD4D00BC0CCA /* XCiteSideBarCollectionViewLayout.h */,
+				0768239119D2BD4D00BC0CCA /* XCiteSideBarCollectionViewLayout.m */,
+				073F856219D3D28200F0E939 /* XCitePlayerView.h */,
+				073F856319D3D28200F0E939 /* XCitePlayerView.m */,
+				073F856D19D3DAD800F0E939 /* XCitePlayerView.xib */,
+				073F859E19D3FD4800F0E939 /* Model */,
+				073F859A19D3FCA800F0E939 /* Manager */,
+				0768238319D2B35C00BC0CCA /* Custom Cells */,
+				077818F819D29DEA005D43A6 /* Images.xcassets */,
+				077818FA19D29DEA005D43A6 /* LaunchScreen.xib */,
+				077818EB19D29DEA005D43A6 /* Supporting Files */,
+				0768234A19D2A91600BC0CCA /* Resources */,
+			);
+			path = XCite;
+			sourceTree = "<group>";
+		};
+		077818EB19D29DEA005D43A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				077818EC19D29DEA005D43A6 /* Info.plist */,
+				077818ED19D29DEA005D43A6 /* main.m */,
+				073F857319D3DF8D00F0E939 /* XCite.pch */,
+				073F858819D3EA2700F0E939 /* content.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0778190419D29DEA005D43A6 /* XCiteTests */ = {
+			isa = PBXGroup;
+			children = (
+				0778190719D29DEA005D43A6 /* XCiteTests.m */,
+				0778190519D29DEA005D43A6 /* Supporting Files */,
+			);
+			path = XCiteTests;
+			sourceTree = "<group>";
+		};
+		0778190519D29DEA005D43A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0778190619D29DEA005D43A6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		077818E719D29DEA005D43A6 /* XCite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0778190B19D29DEA005D43A6 /* Build configuration list for PBXNativeTarget "XCite" */;
+			buildPhases = (
+				077818E419D29DEA005D43A6 /* Sources */,
+				077818E519D29DEA005D43A6 /* Frameworks */,
+				077818E619D29DEA005D43A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCite;
+			productName = XCite;
+			productReference = 077818E819D29DEA005D43A6 /* XCite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0778190019D29DEA005D43A6 /* XCiteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0778190E19D29DEA005D43A6 /* Build configuration list for PBXNativeTarget "XCiteTests" */;
+			buildPhases = (
+				077818FD19D29DEA005D43A6 /* Sources */,
+				077818FE19D29DEA005D43A6 /* Frameworks */,
+				077818FF19D29DEA005D43A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0778190319D29DEA005D43A6 /* PBXTargetDependency */,
+			);
+			name = XCiteTests;
+			productName = XCiteTests;
+			productReference = 0778190119D29DEA005D43A6 /* XCiteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		077818E019D29DEA005D43A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "2359 Media";
+				TargetAttributes = {
+					077818E719D29DEA005D43A6 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					0778190019D29DEA005D43A6 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 077818E719D29DEA005D43A6;
+					};
+				};
+			};
+			buildConfigurationList = 077818E319D29DEA005D43A6 /* Build configuration list for PBXProject "XCite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 077818DF19D29DEA005D43A6;
+			productRefGroup = 077818E919D29DEA005D43A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				077818E719D29DEA005D43A6 /* XCite */,
+				0778190019D29DEA005D43A6 /* XCiteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		077818E619D29DEA005D43A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0768237619D2ADD100BC0CCA /* ic_Infrastructure-off.png in Resources */,
+				0768235919D2ADC000BC0CCA /* BG-popup.png in Resources */,
+				073F859519D3F8D700F0E939 /* Mobile_Doc_The Individual Enterprise - How mobility redefines business [GBE03614USEN].pdf in Resources */,
+				073F859919D3F8D700F0E939 /* Welcome_Doc_2013_ibm_strategy(2).pdf in Resources */,
+				073F859719D3F8D700F0E939 /* Social_Doc_Applying Social Business-Repeatable Patterns provide return (2014-Jan).pdf in Resources */,
+				073F859319D3F8D700F0E939 /* Cloud_Doc_Private Cloud in the Hybrid Cloud Era.pdf in Resources */,
+				0768237B19D2ADD100BC0CCA /* ic_security.png in Resources */,
+				0768235D19D2ADC700BC0CCA /* bt_search.png in Resources */,
+				073F856E19D3DAD800F0E939 /* XCitePlayerView.xib in Resources */,
+				0768238819D2B3BD00BC0CCA /* XCiteSideBarCell.xib in Resources */,
+				0768237219D2ADD100BC0CCA /* ic_C-suite-off.png in Resources */,
+				0768237F19D2ADD100BC0CCA /* ic_Watson.png in Resources */,
+				073F858919D3EA2700F0E939 /* content.plist in Resources */,
+				0768238D19D2B9B100BC0CCA /* XCiteMainCell.xib in Resources */,
+				0768237A19D2ADD100BC0CCA /* ic_security-off.png in Resources */,
+				073F859619D3F8D700F0E939 /* Security_Doc_WGL03057USEN.pdf in Resources */,
+				073F858519D3E9EF00F0E939 /* Security_Video_IBM Security. Intelligence. Integration. Expertise..mp4 in Resources */,
+				073F858219D3E9EF00F0E939 /* Cloud_Video_Why deploy private cloud in the hybrid cloud era.mp4 in Resources */,
+				0768235719D2ADB700BC0CCA /* background.png in Resources */,
+				073F859419D3F8D700F0E939 /* Infra_Doc_The IT Infrastructure Conversation - Exec Summary.pdf in Resources */,
+				0768235C19D2ADC700BC0CCA /* bt_play.png in Resources */,
+				0768237919D2ADD100BC0CCA /* ic_Mobile.png in Resources */,
+				0768237819D2ADD100BC0CCA /* ic_Mobile-off.png in Resources */,
+				0768237D19D2ADD100BC0CCA /* ic_Social.png in Resources */,
+				0768237719D2ADD100BC0CCA /* ic_Infrastructure.png in Resources */,
+				073F858619D3E9EF00F0E939 /* Social_Video_IBM Connections Mobile_ the power of your business in the palm of your hand.mp4 in Resources */,
+				073F858319D3E9EF00F0E939 /* Infra_Video_IBM - IT infrastructure choices matter because business outcomes matter.mp4 in Resources */,
+				077818FC19D29DEA005D43A6 /* LaunchScreen.xib in Resources */,
+				0768237519D2ADD100BC0CCA /* ic_Cloud.png in Resources */,
+				0768237E19D2ADD100BC0CCA /* ic_Watson-off.png in Resources */,
+				073F858419D3E9EF00F0E939 /* Mobile_Video_IBM MobileFirst Intro Video.mp4 in Resources */,
+				0768238F19D2BA2000BC0CCA /* logo.png in Resources */,
+				0768237C19D2ADD100BC0CCA /* ic_Social-off.png in Resources */,
+				0768237319D2ADD100BC0CCA /* ic_C-suite.png in Resources */,
+				073F859219D3F8D700F0E939 /* Analytics_Doc_WatsonAnalyticsSalesDeck_16092014.pdf in Resources */,
+				073F859819D3F8D700F0E939 /* Watson_Doc_An_Inside_Look_at_IBM_Watson_and_How_it_Works.pdf in Resources */,
+				073F858719D3E9EF00F0E939 /* Watson_Video_What Will You Do With Watson_.mp4 in Resources */,
+				0768237119D2ADD100BC0CCA /* ic_Analytics_off.png in Resources */,
+				0768237419D2ADD100BC0CCA /* ic_Cloud-off.png in Resources */,
+				0768237019D2ADD100BC0CCA /* ic_Analytics.png in Resources */,
+				077818F919D29DEA005D43A6 /* Images.xcassets in Resources */,
+				073F858119D3E9EF00F0E939 /* Analytics_Video_IBM Introduces Powerful Analytics for Everyone.mp4 in Resources */,
+				0768238219D2B22900BC0CCA /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		077818FF19D29DEA005D43A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		077818E419D29DEA005D43A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073F857219D3DF3500F0E939 /* UIView+Additions.m in Sources */,
+				073F857619D3E01700F0E939 /* NSArray+Additions.m in Sources */,
+				0768238719D2B3BD00BC0CCA /* XCiteSideBarCell.m in Sources */,
+				0768238C19D2B9B100BC0CCA /* XCiteMainCell.m in Sources */,
+				077818F419D29DEA005D43A6 /* ViewController.m in Sources */,
+				073F857919D3E10E00F0E939 /* NSObject+Additions.m in Sources */,
+				073F856419D3D28200F0E939 /* XCitePlayerView.m in Sources */,
+				073F85A419D3FF9500F0E939 /* NSDictionary+Additions.m in Sources */,
+				077818F119D29DEA005D43A6 /* AppDelegate.m in Sources */,
+				077818EE19D29DEA005D43A6 /* main.m in Sources */,
+				073F85A119D3FD5900F0E939 /* XCiteModel.m in Sources */,
+				073F859D19D3FCBA00F0E939 /* DataManager.m in Sources */,
+				0768239219D2BD4D00BC0CCA /* XCiteSideBarCollectionViewLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		077818FD19D29DEA005D43A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0778190819D29DEA005D43A6 /* XCiteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0778190319D29DEA005D43A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 077818E719D29DEA005D43A6 /* XCite */;
+			targetProxy = 0778190219D29DEA005D43A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		077818FA19D29DEA005D43A6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				077818FB19D29DEA005D43A6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0778190919D29DEA005D43A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		0778190A19D29DEA005D43A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0778190C19D29DEA005D43A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = XCite/XCite.pch;
+				INFOPLIST_FILE = XCite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0778190D19D29DEA005D43A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = XCite/XCite.pch;
+				INFOPLIST_FILE = XCite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0778190F19D29DEA005D43A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = XCiteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XCite.app/XCite";
+			};
+			name = Debug;
+		};
+		0778191019D29DEA005D43A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = XCiteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XCite.app/XCite";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		077818E319D29DEA005D43A6 /* Build configuration list for PBXProject "XCite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0778190919D29DEA005D43A6 /* Debug */,
+				0778190A19D29DEA005D43A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0778190B19D29DEA005D43A6 /* Build configuration list for PBXNativeTarget "XCite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0778190C19D29DEA005D43A6 /* Debug */,
+				0778190D19D29DEA005D43A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0778190E19D29DEA005D43A6 /* Build configuration list for PBXNativeTarget "XCiteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0778190F19D29DEA005D43A6 /* Debug */,
+				0778191019D29DEA005D43A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 077818E019D29DEA005D43A6 /* Project object */;
+}
