@@ -25,6 +25,14 @@
 }
 */
 
++ (instancetype)xCitePlayerViewWithModel:(XCiteModel *)model withYOffet:(NSUInteger)yOffset
+{
+    XCitePlayerView *view = [[XCitePlayerView alloc] initWithNibName:NSStringFromClass([XCitePlayerView class])];
+    view.top = yOffset;
+    [view setUpViews:model];
+    return view;
+}
+
 - (id)initWithNibName:(NSString *)nibName
 {
     self = [super init];
@@ -40,19 +48,21 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self setUpViews];
+        
     }
     return self;
 }
 
 - (void)awakeFromNib
 {
-    [self setUpViews];
+    
 }
 
-- (void)setUpViews
+- (void)setUpViews:(XCiteModel *)model
 {
-    
+    self.webView.userInteractionEnabled = NO;
+//    [self setUpVideoPlayerWithURL:model.videoURL];
+    [self setUpWebView:model.pdfURL];
 }
 
 - (void)setUpVideoPlayerWithURL:(NSString *)fileURL
@@ -64,6 +74,24 @@
     layer.frame = self.videoHolderView.bounds;
     [self.videoHolderView.layer addSublayer:layer];
     [self.avPlayer seekToTime:kCMTimeZero];
+}
+
+- (void)setUpWebView:(NSString *)urlString
+{
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:urlString]]];
+}
+
+
+#pragma mark - Actions
+
+- (IBAction)onBtnPlayVideo:(id)sender
+{
+    [self.delegate XCitePlayerView:self playVideoAtIndex:self.tag];
+}
+
+- (IBAction)onBtnOpenPDF:(id)sender
+{
+    [self.delegate XCitePlayerView:self openPDFAtIndex:self.tag];
 }
 
 @end

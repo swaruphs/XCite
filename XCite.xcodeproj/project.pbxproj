@@ -34,6 +34,16 @@
 		073F859D19D3FCBA00F0E939 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 073F859C19D3FCBA00F0E939 /* DataManager.m */; };
 		073F85A119D3FD5900F0E939 /* XCiteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 073F85A019D3FD5900F0E939 /* XCiteModel.m */; };
 		073F85A419D3FF9500F0E939 /* NSDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 073F85A319D3FF9500F0E939 /* NSDictionary+Additions.m */; };
+		073F85B219D41DF100F0E939 /* XCiteVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 073F85B019D41DF100F0E939 /* XCiteVideoPlayerViewController.m */; };
+		073F85B319D41DF100F0E939 /* XCiteVideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 073F85B119D41DF100F0E939 /* XCiteVideoPlayerViewController.xib */; };
+		0746A36719D5145100835396 /* XCitePDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0746A36519D5145100835396 /* XCitePDFViewController.m */; };
+		0746A36819D5145100835396 /* XCitePDFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0746A36619D5145100835396 /* XCitePDFViewController.xib */; };
+		0746A36C19D5167F00835396 /* XCiteSharePopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 0746A36B19D5167F00835396 /* XCiteSharePopup.m */; };
+		0746A36E19D5169000835396 /* XCiteSharePopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0746A36D19D5169000835396 /* XCiteSharePopup.xib */; };
+		0746A37419D521E100835396 /* AGWindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0746A37219D521E100835396 /* AGWindowView.m */; };
+		0746A38019D5456E00835396 /* MTMatrixInterpolation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0746A37B19D5456E00835396 /* MTMatrixInterpolation.m */; };
+		0746A38119D5456E00835396 /* MTTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0746A37D19D5456E00835396 /* MTTimingFunctions.m */; };
+		0746A38219D5456E00835396 /* UIView+MTAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0746A37F19D5456E00835396 /* UIView+MTAnimation.m */; };
 		0768235719D2ADB700BC0CCA /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768235619D2ADB700BC0CCA /* background.png */; };
 		0768235919D2ADC000BC0CCA /* BG-popup.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768235819D2ADC000BC0CCA /* BG-popup.png */; };
 		0768235C19D2ADC700BC0CCA /* bt_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768235A19D2ADC700BC0CCA /* bt_play.png */; };
@@ -67,6 +77,7 @@
 		077818F919D29DEA005D43A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 077818F819D29DEA005D43A6 /* Images.xcassets */; };
 		077818FC19D29DEA005D43A6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 077818FA19D29DEA005D43A6 /* LaunchScreen.xib */; };
 		0778190819D29DEA005D43A6 /* XCiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0778190719D29DEA005D43A6 /* XCiteTests.m */; };
+		C31B4E5D155D48AA8DC732F0 /* libPods-XCite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2CCCC279DE41298CDD8A83 /* libPods-XCite.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +126,25 @@
 		073F85A019D3FD5900F0E939 /* XCiteModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCiteModel.m; sourceTree = "<group>"; };
 		073F85A219D3FF9500F0E939 /* NSDictionary+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Additions.h"; sourceTree = "<group>"; };
 		073F85A319D3FF9500F0E939 /* NSDictionary+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Additions.m"; sourceTree = "<group>"; };
+		073F85AF19D41DF100F0E939 /* XCiteVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCiteVideoPlayerViewController.h; sourceTree = "<group>"; };
+		073F85B019D41DF100F0E939 /* XCiteVideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCiteVideoPlayerViewController.m; sourceTree = "<group>"; };
+		073F85B119D41DF100F0E939 /* XCiteVideoPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCiteVideoPlayerViewController.xib; sourceTree = "<group>"; };
+		0746A36419D5145100835396 /* XCitePDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCitePDFViewController.h; sourceTree = "<group>"; };
+		0746A36519D5145100835396 /* XCitePDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCitePDFViewController.m; sourceTree = "<group>"; };
+		0746A36619D5145100835396 /* XCitePDFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCitePDFViewController.xib; sourceTree = "<group>"; };
+		0746A36A19D5167F00835396 /* XCiteSharePopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCiteSharePopup.h; sourceTree = "<group>"; };
+		0746A36B19D5167F00835396 /* XCiteSharePopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCiteSharePopup.m; sourceTree = "<group>"; };
+		0746A36D19D5169000835396 /* XCiteSharePopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCiteSharePopup.xib; sourceTree = "<group>"; };
+		0746A37119D521E100835396 /* AGWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGWindowView.h; sourceTree = "<group>"; };
+		0746A37219D521E100835396 /* AGWindowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGWindowView.m; sourceTree = "<group>"; };
+		0746A37319D521E100835396 /* AGWindowViewDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGWindowViewDefines.h; sourceTree = "<group>"; };
+		0746A37919D5456E00835396 /* MTAnimationTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAnimationTypes.h; sourceTree = "<group>"; };
+		0746A37A19D5456E00835396 /* MTMatrixInterpolation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMatrixInterpolation.h; sourceTree = "<group>"; };
+		0746A37B19D5456E00835396 /* MTMatrixInterpolation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTMatrixInterpolation.m; sourceTree = "<group>"; };
+		0746A37C19D5456E00835396 /* MTTimingFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTimingFunctions.h; sourceTree = "<group>"; };
+		0746A37D19D5456E00835396 /* MTTimingFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTimingFunctions.m; sourceTree = "<group>"; };
+		0746A37E19D5456E00835396 /* UIView+MTAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MTAnimation.h"; sourceTree = "<group>"; };
+		0746A37F19D5456E00835396 /* UIView+MTAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MTAnimation.m"; sourceTree = "<group>"; };
 		0768235619D2ADB700BC0CCA /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		0768235819D2ADC000BC0CCA /* BG-popup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BG-popup.png"; sourceTree = "<group>"; };
 		0768235A19D2ADC700BC0CCA /* bt_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_play.png; sourceTree = "<group>"; };
@@ -157,6 +187,8 @@
 		0778190119D29DEA005D43A6 /* XCiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0778190619D29DEA005D43A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0778190719D29DEA005D43A6 /* XCiteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCiteTests.m; sourceTree = "<group>"; };
+		8D2CCCC279DE41298CDD8A83 /* libPods-XCite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XCite.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F092551011C24B1FAC2B6686 /* Pods-XCite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCite.xcconfig"; path = "Pods/Pods-XCite.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +199,7 @@
 				073F856B19D3D8F700F0E939 /* CoreMedia.framework in Frameworks */,
 				073F856C19D3D8F700F0E939 /* MediaPlayer.framework in Frameworks */,
 				073F856819D3D8F000F0E939 /* AVFoundation.framework in Frameworks */,
+				C31B4E5D155D48AA8DC732F0 /* libPods-XCite.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +244,49 @@
 				073F85A019D3FD5900F0E939 /* XCiteModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0746A36919D5166300835396 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0746A36A19D5167F00835396 /* XCiteSharePopup.h */,
+				0746A36B19D5167F00835396 /* XCiteSharePopup.m */,
+				0746A36D19D5169000835396 /* XCiteSharePopup.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0746A36F19D521E100835396 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				0746A37819D5456E00835396 /* MTAnimation */,
+				0746A37019D521E100835396 /* AGWindowView */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		0746A37019D521E100835396 /* AGWindowView */ = {
+			isa = PBXGroup;
+			children = (
+				0746A37119D521E100835396 /* AGWindowView.h */,
+				0746A37219D521E100835396 /* AGWindowView.m */,
+				0746A37319D521E100835396 /* AGWindowViewDefines.h */,
+			);
+			path = AGWindowView;
+			sourceTree = "<group>";
+		};
+		0746A37819D5456E00835396 /* MTAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				0746A37919D5456E00835396 /* MTAnimationTypes.h */,
+				0746A37A19D5456E00835396 /* MTMatrixInterpolation.h */,
+				0746A37B19D5456E00835396 /* MTMatrixInterpolation.m */,
+				0746A37C19D5456E00835396 /* MTTimingFunctions.h */,
+				0746A37D19D5456E00835396 /* MTTimingFunctions.m */,
+				0746A37E19D5456E00835396 /* UIView+MTAnimation.h */,
+				0746A37F19D5456E00835396 /* UIView+MTAnimation.m */,
+			);
+			path = MTAnimation;
 			sourceTree = "<group>";
 		};
 		0768234A19D2A91600BC0CCA /* Resources */ = {
@@ -310,6 +386,8 @@
 				077818EA19D29DEA005D43A6 /* XCite */,
 				0778190419D29DEA005D43A6 /* XCiteTests */,
 				077818E919D29DEA005D43A6 /* Products */,
+				F092551011C24B1FAC2B6686 /* Pods-XCite.xcconfig */,
+				B617445567AC460093661605 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -336,9 +414,17 @@
 				073F856219D3D28200F0E939 /* XCitePlayerView.h */,
 				073F856319D3D28200F0E939 /* XCitePlayerView.m */,
 				073F856D19D3DAD800F0E939 /* XCitePlayerView.xib */,
+				073F85AF19D41DF100F0E939 /* XCiteVideoPlayerViewController.h */,
+				073F85B019D41DF100F0E939 /* XCiteVideoPlayerViewController.m */,
+				073F85B119D41DF100F0E939 /* XCiteVideoPlayerViewController.xib */,
+				0746A36419D5145100835396 /* XCitePDFViewController.h */,
+				0746A36519D5145100835396 /* XCitePDFViewController.m */,
+				0746A36619D5145100835396 /* XCitePDFViewController.xib */,
+				0746A36919D5166300835396 /* Views */,
 				073F859E19D3FD4800F0E939 /* Model */,
 				073F859A19D3FCA800F0E939 /* Manager */,
 				0768238319D2B35C00BC0CCA /* Custom Cells */,
+				0746A36F19D521E100835396 /* Vendor */,
 				077818F819D29DEA005D43A6 /* Images.xcassets */,
 				077818FA19D29DEA005D43A6 /* LaunchScreen.xib */,
 				077818EB19D29DEA005D43A6 /* Supporting Files */,
@@ -375,6 +461,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B617445567AC460093661605 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D2CCCC279DE41298CDD8A83 /* libPods-XCite.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -382,9 +476,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0778190B19D29DEA005D43A6 /* Build configuration list for PBXNativeTarget "XCite" */;
 			buildPhases = (
+				04A018B8AB054693B06C430E /* Check Pods Manifest.lock */,
 				077818E419D29DEA005D43A6 /* Sources */,
 				077818E519D29DEA005D43A6 /* Frameworks */,
 				077818E619D29DEA005D43A6 /* Resources */,
+				1D9B9697CA9A42308DFFD5D9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -469,6 +565,7 @@
 				0768237F19D2ADD100BC0CCA /* ic_Watson.png in Resources */,
 				073F858919D3EA2700F0E939 /* content.plist in Resources */,
 				0768238D19D2B9B100BC0CCA /* XCiteMainCell.xib in Resources */,
+				0746A36E19D5169000835396 /* XCiteSharePopup.xib in Resources */,
 				0768237A19D2ADD100BC0CCA /* ic_security-off.png in Resources */,
 				073F859619D3F8D700F0E939 /* Security_Doc_WGL03057USEN.pdf in Resources */,
 				073F858519D3E9EF00F0E939 /* Security_Video_IBM Security. Intelligence. Integration. Expertise..mp4 in Resources */,
@@ -482,6 +579,7 @@
 				0768237719D2ADD100BC0CCA /* ic_Infrastructure.png in Resources */,
 				073F858619D3E9EF00F0E939 /* Social_Video_IBM Connections Mobile_ the power of your business in the palm of your hand.mp4 in Resources */,
 				073F858319D3E9EF00F0E939 /* Infra_Video_IBM - IT infrastructure choices matter because business outcomes matter.mp4 in Resources */,
+				073F85B319D41DF100F0E939 /* XCiteVideoPlayerViewController.xib in Resources */,
 				077818FC19D29DEA005D43A6 /* LaunchScreen.xib in Resources */,
 				0768237519D2ADD100BC0CCA /* ic_Cloud.png in Resources */,
 				0768237E19D2ADD100BC0CCA /* ic_Watson-off.png in Resources */,
@@ -498,6 +596,7 @@
 				077818F919D29DEA005D43A6 /* Images.xcassets in Resources */,
 				073F858119D3E9EF00F0E939 /* Analytics_Video_IBM Introduces Powerful Analytics for Everyone.mp4 in Resources */,
 				0768238219D2B22900BC0CCA /* ViewController.xib in Resources */,
+				0746A36819D5145100835396 /* XCitePDFViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,22 +609,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04A018B8AB054693B06C430E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1D9B9697CA9A42308DFFD5D9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-XCite-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		077818E419D29DEA005D43A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0746A38219D5456E00835396 /* UIView+MTAnimation.m in Sources */,
+				0746A36C19D5167F00835396 /* XCiteSharePopup.m in Sources */,
 				073F857219D3DF3500F0E939 /* UIView+Additions.m in Sources */,
 				073F857619D3E01700F0E939 /* NSArray+Additions.m in Sources */,
+				073F85B219D41DF100F0E939 /* XCiteVideoPlayerViewController.m in Sources */,
 				0768238719D2B3BD00BC0CCA /* XCiteSideBarCell.m in Sources */,
+				0746A36719D5145100835396 /* XCitePDFViewController.m in Sources */,
 				0768238C19D2B9B100BC0CCA /* XCiteMainCell.m in Sources */,
 				077818F419D29DEA005D43A6 /* ViewController.m in Sources */,
 				073F857919D3E10E00F0E939 /* NSObject+Additions.m in Sources */,
 				073F856419D3D28200F0E939 /* XCitePlayerView.m in Sources */,
 				073F85A419D3FF9500F0E939 /* NSDictionary+Additions.m in Sources */,
+				0746A38119D5456E00835396 /* MTTimingFunctions.m in Sources */,
 				077818F119D29DEA005D43A6 /* AppDelegate.m in Sources */,
+				0746A37419D521E100835396 /* AGWindowView.m in Sources */,
 				077818EE19D29DEA005D43A6 /* main.m in Sources */,
 				073F85A119D3FD5900F0E939 /* XCiteModel.m in Sources */,
+				0746A38019D5456E00835396 /* MTMatrixInterpolation.m in Sources */,
 				073F859D19D3FCBA00F0E939 /* DataManager.m in Sources */,
 				0768239219D2BD4D00BC0CCA /* XCiteSideBarCollectionViewLayout.m in Sources */,
 			);
@@ -641,6 +780,7 @@
 		};
 		0778190C19D29DEA005D43A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F092551011C24B1FAC2B6686 /* Pods-XCite.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = XCite/XCite.pch;
@@ -652,6 +792,7 @@
 		};
 		0778190D19D29DEA005D43A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F092551011C24B1FAC2B6686 /* Pods-XCite.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = XCite/XCite.pch;

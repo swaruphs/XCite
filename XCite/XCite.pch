@@ -21,6 +21,7 @@
 #import "NSDictionary+Additions.h"
 #import "NSArray+Additions.h"
 #import "UIView+Additions.h"
+#import "UIView+MTAnimation.h"
 #import "DataManager.h"
 #import "XCiteModel.h"
 

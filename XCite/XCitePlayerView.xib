@@ -15,12 +15,12 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <string key="text">IBM Security. Intelligence.
-Integration. Expertise.</string>
+Integration. Expertise. skdhfoshdf</string>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <color key="textColor" red="0.0" green="0.73725490196078436" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In a changing world with escalating security needs, IBM has the expertise to secure a winning position." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0UY-Zp-NDn">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In a changing world with escalating security needs, IBM has the expertise to secure a winn." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0UY-Zp-NDn">
                     <rect key="frame" x="30" y="385" width="439" height="53"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -59,22 +59,47 @@ latest attack activity to migitation stratagies.</string>
                     <state key="normal" image="bt_search.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="onBtnOpenPDF:" destination="iN0-l3-epB" eventType="touchUpInside" id="Vzg-IP-Pe9"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" id="URH-1x-7Pg">
                     <rect key="frame" x="0.0" y="0.0" width="500" height="295"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="jZy-Rz-KPR">
+                            <rect key="frame" x="0.0" y="0.0" width="500" height="295"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="u22-sa-9Dy">
+                            <rect key="frame" x="200" y="98" width="100" height="100"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="bt_play.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onBtnPlayVideo:" destination="iN0-l3-epB" eventType="touchUpInside" id="kec-ht-9CZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="lblVideoSubTitle" destination="0UY-Zp-NDn" id="sZ7-7g-IBe"/>
+                <outlet property="lblbVideoTitle" destination="Mxr-t0-JSl" id="uMm-nh-zUd"/>
+                <outlet property="pdfSubTitle" destination="IqB-lw-7ok" id="Hd6-wq-kFc"/>
+                <outlet property="pdfTitle" destination="19x-dr-pX5" id="lyK-Aw-d8X"/>
                 <outlet property="videoHolderView" destination="URH-1x-7Pg" id="4Cz-Nw-Xt3"/>
+                <outlet property="webView" destination="HdS-ML-RBi" id="Qyl-MK-4IT"/>
             </connections>
             <point key="canvasLocation" x="138.5" y="153.5"/>
         </view>
     </objects>
     <resources>
+        <image name="bt_play.png" width="200" height="200"/>
         <image name="bt_search.png" width="200" height="200"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
