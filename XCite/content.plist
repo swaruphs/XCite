@@ -9,6 +9,8 @@
 		<string>IBM Introduces Powerful Analytics for Everyone</string>
 		<key>videoSubTitle</key>
 		<string></string>
+		<key>videoTile</key>
+		<string>watson</string>
 		<key>pdfURL</key>
 		<string>Welcome_Doc_2013_ibm_strategy(2)</string>
 		<key>pdfTitle</key>
@@ -19,6 +21,13 @@
 		<string>ic_Watson-off</string>
 		<key>img_on</key>
 		<string>ic_Watson</string>
+		<key>identifier</key>
+		<string>com.2359media.welcome</string>
+		<key>notificationTitle</key>
+		<string>Welcome</string>
+		<key>notificationSubtitle</key>
+		<string>The Future is NOW, Leap Forward with IBM. 
+</string>
 	</dict>
 	<dict>
 		<key>videoURL</key>
@@ -27,6 +36,8 @@
 		<string>IBM Introduces Powerful Analytics for Everyone</string>
 		<key>videoSubTitle</key>
 		<string></string>
+		<key>videoTile</key>
+		<string>watson</string>
 		<key>pdfURL</key>
 		<string></string>
 		<key>pdfTitle</key>
@@ -37,6 +48,12 @@
 		<string>ic_C-suite-off</string>
 		<key>img_on</key>
 		<string>ic_C-suite</string>
+		<key>identifier</key>
+		<string>com.2359media.csuite</string>
+		<key>notificationTitle</key>
+		<string>C-Suite</string>
+		<key>notificationSubtitle</key>
+		<string>The C-Suite ideas exchange that drives business transformation. </string>
 	</dict>
 	<dict>
 		<key>videoURL</key>
@@ -45,6 +62,8 @@
 		<string>IBM Introduces Powerful Analytics for Everyone</string>
 		<key>videoSubTitle</key>
 		<string></string>
+		<key>videoTile</key>
+		<string>watson</string>
 		<key>pdfURL</key>
 		<string>Watson_Doc_An_Inside_Look_at_IBM_Watson_and_How_it_Works</string>
 		<key>pdfTitle</key>
@@ -55,6 +74,12 @@
 		<string>ic_Watson-off</string>
 		<key>img_on</key>
 		<string>ic_Watson</string>
+		<key>identifier</key>
+		<string>com.2359media.watson</string>
+		<key>notificationTitle</key>
+		<string>Watson</string>
+		<key>notificationSubtitle</key>
+		<string>Watson is built with your business in mind. Say Hello to Watson.</string>
 	</dict>
 	<dict>
 		<key>videoURL</key>
@@ -63,6 +88,8 @@
 		<string>IBM Introduces Powerful Analytics for Everyone</string>
 		<key>videoSubTitle</key>
 		<string></string>
+		<key>videoTile</key>
+		<string>cloud</string>
 		<key>pdfURL</key>
 		<string>Cloud_Doc_Private Cloud in the Hybrid Cloud Era</string>
 		<key>pdfTitle</key>
@@ -73,6 +100,12 @@
 		<string>ic_Cloud-off</string>
 		<key>img_on</key>
 		<string>ic_Cloud</string>
+		<key>identifier</key>
+		<string>com.2359media.cloud</string>
+		<key>notificationTitle</key>
+		<string>Cloud</string>
+		<key>notificationSubtitle</key>
+		<string>Searching for competitive advantage? It’s in the cloud.</string>
 	</dict>
 	<dict>
 		<key>videoURL</key>
@@ -81,6 +114,8 @@
 		<string>IBM Introduces Powerful Analytics for Everyone</string>
 		<key>videoSubTitle</key>
 		<string></string>
+		<key>videoTile</key>
+		<string>analytics</string>
 		<key>pdfURL</key>
 		<string>Analytics_Doc_WatsonAnalyticsSalesDeck_16092014</string>
 		<key>pdfTitle</key>
@@ -91,6 +126,12 @@
 		<string>ic_Analytics_off</string>
 		<key>img_on</key>
 		<string>ic_Analytics</string>
+		<key>identifier</key>
+		<string>com.2359media.analytics</string>
+		<key>notificationTitle</key>
+		<string>Analytics</string>
+		<key>notificationSubtitle</key>
+		<string>Find what matters most to your business with IBM Watson Analytics.</string>
 	</dict>
 	<dict>
 		<key>videoURL</key>
@@ -99,6 +140,8 @@
 		<string>IBM Introduces Powerful Analytics for Everyone</string>
 		<key>videoSubTitle</key>
 		<string></string>
+		<key>videoTile</key>
+		<string>mobile</string>
 		<key>pdfURL</key>
 		<string>Mobile_Doc_The Individual Enterprise - How mobility redefines business [GBE03614USEN]</string>
 		<key>pdfTitle</key>
@@ -109,6 +152,12 @@
 		<string>ic_Mobile-off</string>
 		<key>img_on</key>
 		<string>ic_Mobile</string>
+		<key>identifier</key>
+		<string>com.2359media.mobile</string>
+		<key>notificationTitle</key>
+		<string>Mobile</string>
+		<key>notificationSubtitle</key>
+		<string>Put your business in motion. Become a mobile enterprise.</string>
 	</dict>
 	<dict>
 		<key>videoURL</key>
@@ -117,6 +166,8 @@
 		<string>IBM Introduces Powerful Analytics for Everyone</string>
 		<key>videoSubTitle</key>
 		<string></string>
+		<key>videoTile</key>
+		<string>social</string>
 		<key>pdfURL</key>
 		<string>Social_Doc_Applying Social Business-Repeatable Patterns provide return (2014-Jan)</string>
 		<key>pdfTitle</key>
@@ -127,6 +178,12 @@
 		<string>ic_Social-off</string>
 		<key>img_on</key>
 		<string>ic_Social</string>
+		<key>identifier</key>
+		<string>com.2359media.social</string>
+		<key>notificationTitle</key>
+		<string>Social</string>
+		<key>notificationSubtitle</key>
+		<string>Amplify the value of human connections. See what social can do for you. </string>
 	</dict>
 	<dict>
 		<key>videoURL</key>
@@ -135,6 +192,8 @@
 		<string>IBM Introduces Powerful Analytics for Everyone</string>
 		<key>videoSubTitle</key>
 		<string></string>
+		<key>videoTile</key>
+		<string>security</string>
 		<key>pdfURL</key>
 		<string>Security_Doc_WGL03057USEN</string>
 		<key>pdfTitle</key>
@@ -145,6 +204,12 @@
 		<string>ic_security-off</string>
 		<key>img_on</key>
 		<string>ic_security</string>
+		<key>identifier</key>
+		<string>com.2359media.security</string>
+		<key>notificationTitle</key>
+		<string>Security</string>
+		<key>notificationSubtitle</key>
+		<string>It’s a new IT world. How secure are you? See IBM Security in Action.</string>
 	</dict>
 	<dict>
 		<key>videoURL</key>
@@ -153,6 +218,8 @@
 		<string>IBM Introduces Powerful Analytics for Everyone</string>
 		<key>videoSubTitle</key>
 		<string></string>
+		<key>videoTile</key>
+		<string>infra</string>
 		<key>pdfURL</key>
 		<string>Infra_Doc_The IT Infrastructure Conversation - Exec Summary</string>
 		<key>pdfTitle</key>
@@ -163,6 +230,12 @@
 		<string>ic_Infrastructure-off</string>
 		<key>img_on</key>
 		<string>ic_Infrastructure</string>
+		<key>identifier</key>
+		<string>com.2359media.infra</string>
+		<key>notificationTitle</key>
+		<string>Infrastructure</string>
+		<key>notificationSubtitle</key>
+		<string>Choosing the right IT infrastructure matters because business outcomes matter. </string>
 	</dict>
 </array>
 </plist>

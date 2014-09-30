@@ -61,7 +61,11 @@
 - (void)setUpViews:(XCiteModel *)model
 {
     self.webView.userInteractionEnabled = NO;
-//    [self setUpVideoPlayerWithURL:model.videoURL];
+    self.imgVideoTile.image = [UIImage imageNamed:model.videoTile];
+    
+    UIFont *titleFont  = [UIFont fontWithName:@"RockwellStd" size:33];
+    self.lblbVideoTitle.font = titleFont;
+    self.pdfTitle.font = titleFont;
     [self setUpWebView:model.pdfURL];
 }
 

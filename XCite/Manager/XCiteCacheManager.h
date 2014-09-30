@@ -11,8 +11,8 @@
 @interface XCiteCacheManager : NSObject
 
 + (instancetype)sharedInstance;
-- (BOOL)isBeaconAlreadyVisitedAtIndex:(NSUInteger)index;
-- (void)saveVisitedBeaconAtIndex:(NSUInteger)index;
+-(BOOL)isBeaconVisited:(NSString *)identifier;
+- (void)saveVisitedBeacon:(NSString *)identifier;
 - (NSString *)savedEmail;
 - (void)saveEmail:(NSString *)email;
 

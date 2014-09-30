@@ -11,46 +11,46 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mxr-t0-JSl">
-                    <rect key="frame" x="30" y="300" width="439" height="77"/>
+                    <rect key="frame" x="30" y="305" width="470" height="79"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <string key="text">IBM Security. Intelligence.
 Integration. Expertise. skdhfoshdf</string>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                    <color key="textColor" red="0.0" green="0.73725490196078436" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                    <color key="textColor" red="0.12549019607843137" green="0.74509803921568629" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In a changing world with escalating security needs, IBM has the expertise to secure a winn." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0UY-Zp-NDn">
-                    <rect key="frame" x="30" y="385" width="439" height="53"/>
+                    <rect key="frame" x="30" y="397" width="470" height="60"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <color key="textColor" red="0.52549019607843139" green="0.52549019607843139" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                    <color key="textColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <webView contentMode="scaleToFill" id="HdS-ML-RBi">
-                    <rect key="frame" x="535" y="95" width="290" height="376"/>
+                    <rect key="frame" x="535" y="91" width="290" height="376"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </webView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="19x-dr-pX5">
-                    <rect key="frame" x="311" y="482" width="484" height="73"/>
+                    <rect key="frame" x="311" y="482" width="484" height="79"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <string key="text">IBM X-Force Threat 
 Intellegence Quaterly, 3Q 2014</string>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                    <color key="textColor" red="0.0" green="0.73333333333333328" blue="0.76470588235294112" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
+                    <color key="textColor" red="0.12549019607843137" green="0.74509803921568629" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IqB-lw-7ok">
-                    <rect key="frame" x="311" y="555" width="484" height="52"/>
+                    <rect key="frame" x="311" y="574" width="484" height="59"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <string key="text">Get a closer look at Heartbleed - from the 
 latest attack activity to migitation stratagies.</string>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <color key="textColor" red="0.52549019607843139" green="0.52549019607843139" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                    <color key="textColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dA4-EX-Np1">
@@ -68,7 +68,7 @@ latest attack activity to migitation stratagies.</string>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="jZy-Rz-KPR">
-                            <rect key="frame" x="0.0" y="0.0" width="500" height="295"/>
+                            <rect key="frame" x="0.0" y="0.0" width="500" height="281"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="u22-sa-9Dy">
@@ -88,6 +88,7 @@ latest attack activity to migitation stratagies.</string>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="imgVideoTile" destination="jZy-Rz-KPR" id="x5V-y7-VID"/>
                 <outlet property="lblVideoSubTitle" destination="0UY-Zp-NDn" id="sZ7-7g-IBe"/>
                 <outlet property="lblbVideoTitle" destination="Mxr-t0-JSl" id="uMm-nh-zUd"/>
                 <outlet property="pdfSubTitle" destination="IqB-lw-7ok" id="Hd6-wq-kFc"/>

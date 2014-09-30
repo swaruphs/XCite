@@ -54,6 +54,7 @@
 
 - (IBAction)dismissVideoPlayer:(id)sender
 {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     [self.player stop];
     [self.navigationController popToRootViewControllerAnimated:TRUE];
 }

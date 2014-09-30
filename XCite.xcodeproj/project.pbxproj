@@ -36,6 +36,15 @@
 		073F85A419D3FF9500F0E939 /* NSDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 073F85A319D3FF9500F0E939 /* NSDictionary+Additions.m */; };
 		073F85B219D41DF100F0E939 /* XCiteVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 073F85B019D41DF100F0E939 /* XCiteVideoPlayerViewController.m */; };
 		073F85B319D41DF100F0E939 /* XCiteVideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 073F85B119D41DF100F0E939 /* XCiteVideoPlayerViewController.xib */; };
+		074169C219DA887D00A1A8EF /* bt_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 074169C119DA887D00A1A8EF /* bt_close.png */; };
+		074169CB19DA998200A1A8EF /* analytics.png in Resources */ = {isa = PBXBuildFile; fileRef = 074169C419DA998200A1A8EF /* analytics.png */; };
+		074169CC19DA998200A1A8EF /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 074169C519DA998200A1A8EF /* cloud.png */; };
+		074169CD19DA998200A1A8EF /* infra.png in Resources */ = {isa = PBXBuildFile; fileRef = 074169C619DA998200A1A8EF /* infra.png */; };
+		074169CE19DA998200A1A8EF /* mobile.png in Resources */ = {isa = PBXBuildFile; fileRef = 074169C719DA998200A1A8EF /* mobile.png */; };
+		074169CF19DA998200A1A8EF /* security.png in Resources */ = {isa = PBXBuildFile; fileRef = 074169C819DA998200A1A8EF /* security.png */; };
+		074169D019DA998200A1A8EF /* social.png in Resources */ = {isa = PBXBuildFile; fileRef = 074169C919DA998200A1A8EF /* social.png */; };
+		074169D119DA998200A1A8EF /* watson.png in Resources */ = {isa = PBXBuildFile; fileRef = 074169CA19DA998200A1A8EF /* watson.png */; };
+		074169D419DA9EB700A1A8EF /* RockwellStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 074169D319DA9EB700A1A8EF /* RockwellStd.otf */; };
 		0746A36719D5145100835396 /* XCitePDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0746A36519D5145100835396 /* XCitePDFViewController.m */; };
 		0746A36819D5145100835396 /* XCitePDFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0746A36619D5145100835396 /* XCitePDFViewController.xib */; };
 		0746A36C19D5167F00835396 /* XCiteSharePopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 0746A36B19D5167F00835396 /* XCiteSharePopup.m */; };
@@ -133,6 +142,15 @@
 		073F85AF19D41DF100F0E939 /* XCiteVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCiteVideoPlayerViewController.h; sourceTree = "<group>"; };
 		073F85B019D41DF100F0E939 /* XCiteVideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCiteVideoPlayerViewController.m; sourceTree = "<group>"; };
 		073F85B119D41DF100F0E939 /* XCiteVideoPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCiteVideoPlayerViewController.xib; sourceTree = "<group>"; };
+		074169C119DA887D00A1A8EF /* bt_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_close.png; sourceTree = "<group>"; };
+		074169C419DA998200A1A8EF /* analytics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = analytics.png; sourceTree = "<group>"; };
+		074169C519DA998200A1A8EF /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
+		074169C619DA998200A1A8EF /* infra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = infra.png; sourceTree = "<group>"; };
+		074169C719DA998200A1A8EF /* mobile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mobile.png; sourceTree = "<group>"; };
+		074169C819DA998200A1A8EF /* security.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = security.png; sourceTree = "<group>"; };
+		074169C919DA998200A1A8EF /* social.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = social.png; sourceTree = "<group>"; };
+		074169CA19DA998200A1A8EF /* watson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = watson.png; sourceTree = "<group>"; };
+		074169D319DA9EB700A1A8EF /* RockwellStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RockwellStd.otf; sourceTree = "<group>"; };
 		0746A36419D5145100835396 /* XCitePDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCitePDFViewController.h; sourceTree = "<group>"; };
 		0746A36519D5145100835396 /* XCitePDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCitePDFViewController.m; sourceTree = "<group>"; };
 		0746A36619D5145100835396 /* XCitePDFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCitePDFViewController.xib; sourceTree = "<group>"; };
@@ -263,6 +281,28 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		074169C319DA996600A1A8EF /* Video Tiles */ = {
+			isa = PBXGroup;
+			children = (
+				074169C419DA998200A1A8EF /* analytics.png */,
+				074169C519DA998200A1A8EF /* cloud.png */,
+				074169C619DA998200A1A8EF /* infra.png */,
+				074169C719DA998200A1A8EF /* mobile.png */,
+				074169C819DA998200A1A8EF /* security.png */,
+				074169C919DA998200A1A8EF /* social.png */,
+				074169CA19DA998200A1A8EF /* watson.png */,
+			);
+			name = "Video Tiles";
+			sourceTree = "<group>";
+		};
+		074169D219DA9EA700A1A8EF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				074169D319DA9EB700A1A8EF /* RockwellStd.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		0746A36919D5166300835396 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +349,7 @@
 		0768234A19D2A91600BC0CCA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				074169D219DA9EA700A1A8EF /* Fonts */,
 				0768234B19D2A91600BC0CCA /* Images */,
 				0768234C19D2A91600BC0CCA /* Pdfs */,
 				0768234D19D2A91600BC0CCA /* Videos */,
@@ -319,11 +360,13 @@
 		0768234B19D2A91600BC0CCA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				074169C119DA887D00A1A8EF /* bt_close.png */,
 				0768235619D2ADB700BC0CCA /* background.png */,
 				0768235819D2ADC000BC0CCA /* BG-popup.png */,
 				0768235A19D2ADC700BC0CCA /* bt_play.png */,
 				0768235B19D2ADC700BC0CCA /* bt_search.png */,
 				0768238E19D2BA2000BC0CCA /* logo.png */,
+				074169C319DA996600A1A8EF /* Video Tiles */,
 				0768235E19D2ADD100BC0CCA /* Icons */,
 			);
 			path = Images;
@@ -577,15 +620,20 @@
 				073F859319D3F8D700F0E939 /* Cloud_Doc_Private Cloud in the Hybrid Cloud Era.pdf in Resources */,
 				0768237B19D2ADD100BC0CCA /* ic_security.png in Resources */,
 				0768235D19D2ADC700BC0CCA /* bt_search.png in Resources */,
+				074169D119DA998200A1A8EF /* watson.png in Resources */,
 				073F856E19D3DAD800F0E939 /* XCitePlayerView.xib in Resources */,
 				0768238819D2B3BD00BC0CCA /* XCiteSideBarCell.xib in Resources */,
 				0768237219D2ADD100BC0CCA /* ic_C-suite-off.png in Resources */,
 				0768237F19D2ADD100BC0CCA /* ic_Watson.png in Resources */,
 				073F858919D3EA2700F0E939 /* content.plist in Resources */,
+				074169CE19DA998200A1A8EF /* mobile.png in Resources */,
 				0768238D19D2B9B100BC0CCA /* XCiteMainCell.xib in Resources */,
+				074169CB19DA998200A1A8EF /* analytics.png in Resources */,
+				074169CF19DA998200A1A8EF /* security.png in Resources */,
 				0746A36E19D5169000835396 /* XCiteSharePopup.xib in Resources */,
 				0768237A19D2ADD100BC0CCA /* ic_security-off.png in Resources */,
 				073F859619D3F8D700F0E939 /* Security_Doc_WGL03057USEN.pdf in Resources */,
+				074169D019DA998200A1A8EF /* social.png in Resources */,
 				073F858519D3E9EF00F0E939 /* Security_Video_IBM Security. Intelligence. Integration. Expertise..mp4 in Resources */,
 				073F858219D3E9EF00F0E939 /* Cloud_Video_Why deploy private cloud in the hybrid cloud era.mp4 in Resources */,
 				0768235719D2ADB700BC0CCA /* background.png in Resources */,
@@ -600,9 +648,11 @@
 				073F85B319D41DF100F0E939 /* XCiteVideoPlayerViewController.xib in Resources */,
 				077818FC19D29DEA005D43A6 /* LaunchScreen.xib in Resources */,
 				0768237519D2ADD100BC0CCA /* ic_Cloud.png in Resources */,
+				074169D419DA9EB700A1A8EF /* RockwellStd.otf in Resources */,
 				0768237E19D2ADD100BC0CCA /* ic_Watson-off.png in Resources */,
 				073F858419D3E9EF00F0E939 /* Mobile_Video_IBM MobileFirst Intro Video.mp4 in Resources */,
 				0768238F19D2BA2000BC0CCA /* logo.png in Resources */,
+				074169CC19DA998200A1A8EF /* cloud.png in Resources */,
 				0768237C19D2ADD100BC0CCA /* ic_Social-off.png in Resources */,
 				0768237319D2ADD100BC0CCA /* ic_C-suite.png in Resources */,
 				073F859219D3F8D700F0E939 /* Analytics_Doc_WatsonAnalyticsSalesDeck_16092014.pdf in Resources */,
@@ -611,6 +661,8 @@
 				0768237119D2ADD100BC0CCA /* ic_Analytics_off.png in Resources */,
 				0768237419D2ADD100BC0CCA /* ic_Cloud-off.png in Resources */,
 				075BCD0519D8FEF3007260BB /* beacons.plist in Resources */,
+				074169CD19DA998200A1A8EF /* infra.png in Resources */,
+				074169C219DA887D00A1A8EF /* bt_close.png in Resources */,
 				0768237019D2ADD100BC0CCA /* ic_Analytics.png in Resources */,
 				077818F919D29DEA005D43A6 /* Images.xcassets in Resources */,
 				073F858119D3E9EF00F0E939 /* Analytics_Video_IBM Introduces Powerful Analytics for Everyone.mp4 in Resources */,

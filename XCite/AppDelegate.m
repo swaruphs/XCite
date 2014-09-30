@@ -43,12 +43,9 @@
 
 - (void)testLocalNotifications
 {
-    [[XCiteCacheManager sharedInstance] saveVisitedBeaconAtIndex:0];
-    [[XCiteCacheManager sharedInstance] saveVisitedBeaconAtIndex:0];
-    [[XCiteCacheManager sharedInstance] saveVisitedBeaconAtIndex:1];
-    [[XCiteCacheManager sharedInstance] saveVisitedBeaconAtIndex:1];
-    
-    BOOL isVisited = [[XCiteCacheManager sharedInstance] isBeaconAlreadyVisitedAtIndex:0];
+    [[XCiteCacheManager sharedInstance] saveVisitedBeacon:@"com.2359media.security"];
+    [[XCiteCacheManager sharedInstance] saveVisitedBeacon:@"com.2359media.security"];
+    BOOL isVisited = [[XCiteCacheManager sharedInstance] isBeaconVisited:@"com.2359media.security"];
     NSLog(@"%d",isVisited);
 }
 
@@ -79,9 +76,9 @@
 -(void) application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
     if ([[UIApplication sharedApplication] applicationState] != UIApplicationStateActive) {
-        NSUInteger index = [notification.userInfo[@"index"] integerValue];
-        [[XCiteCacheManager sharedInstance] saveVisitedBeaconAtIndex:index];
-        [self showHomeScreenAndPushVideoPlayerWithIndex:index];
+        NSString *identifier = [notification.userInfo stringForKey:@"identifier"];
+        [[XCiteCacheManager sharedInstance] saveVisitedBeacon:identifier];
+        [self showHomeScreenAndPushVideoPlayerWithIdentifier:identifier];
     }
 }
 
@@ -89,51 +86,62 @@
 
 - (void)beaconManager:(ESTBeaconManager *)manager didEnterRegion:(ESTBeaconRegion *)region
 {
-    NSLog(@"beacon entered the region");
+    NSLog(@"Entered region of beacon with identifier %@",region.identifier);
     NSArray *allBeacons = [[BeaconManager sharedInstance] getBeacons];
     BeaconModel *beaconModel =  [allBeacons firstObjectWithValue:region.identifier forKeyPath:@"name"];
-    NSUInteger objIndex = [allBeacons indexOfObject:beaconModel];
-    if (objIndex != NSNotFound) {
-        [self showLocalNotificationsForIndex:objIndex];
+    if ([beaconModel isValidObject]) {
+        NSArray *allModels = [[DataManager sharedInstance] getAllModels];
+        XCiteModel *model = [allModels firstObjectWithValue:beaconModel.name forKeyPath:@"identifier"];
+        if ([model isValidObject]) {
+            [self showLocalNotificationsForIndex:model];
+        }
     }
+    
+  
 }
 
 - (void)beaconManager:(ESTBeaconManager *)manager didExitRegion:(ESTBeaconRegion *)region
 {
-    NSLog(@"Beacon exited the region");
+    NSLog(@"Beacon exited the region %@",region.identifier);
 }
 
 #pragma mark Private APIs
 
-- (void)showLocalNotificationsForIndex:(NSUInteger)index
+- (void)showLocalNotificationsForIndex:(XCiteModel *)model
 {
-    BOOL alreadyVisited = [[XCiteCacheManager sharedInstance] isBeaconAlreadyVisitedAtIndex:index];
+    BOOL alreadyVisited = [[XCiteCacheManager sharedInstance] isBeaconVisited:model.identifier];
     if (alreadyVisited) {
+        NSLog(@"beacon already visited");
         return;
     }
     
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
     UILocalNotification *notification = [[UILocalNotification alloc] init];
-    notification.alertBody = [NSString stringWithFormat:@"%ld",index];
-    notification.soundName = @"Default";
-    notification.userInfo = @{@"index":@(index)};
+    notification.alertBody            = [NSString stringWithFormat:@"%@\n%@",model.notificationTitle,model.notificationSubTitle];
+    notification.soundName            = @"Default";
+    notification.userInfo             = @{@"identifier":model.identifier};
     [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
 }
 
-- (void)showHomeScreenAndPushVideoPlayerWithIndex:(NSUInteger)index
+- (void)showHomeScreenAndPushVideoPlayerWithIdentifier:(NSString *)identifier
 {
     ViewController *rootController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    rootController.selectedIndex = index;
+  
     UINavigationController *navController = [[UINavigationController alloc]
                                              initWithRootViewController:rootController];
     self.window.rootViewController        = navController;
     
     NSArray *allModels = [[DataManager sharedInstance] getAllModels];
-    XCiteModel *model  = allModels[index];
-    XCiteVideoPlayerViewController *controller = [[XCiteVideoPlayerViewController alloc] initWithNibName:@"XCiteVideoPlayerViewController" bundle:nil];
-    controller.model = model;
-    controller.moveToPDFOnCompletion = YES;
-    [navController pushViewController:controller animated:FALSE];
+    XCiteModel *model = [allModels firstObjectWithValue:identifier forKeyPath:@"identifier"];
+    if ([model isValidObject]) {
+     
+        NSUInteger index = [allModels indexOfObject:model];
+        rootController.selectedIndex = index;
+        XCiteVideoPlayerViewController *controller = [[XCiteVideoPlayerViewController alloc] initWithNibName:@"XCiteVideoPlayerViewController" bundle:nil];
+        controller.model = model;
+        controller.moveToPDFOnCompletion = YES;
+        [navController pushViewController:controller animated:FALSE];
+    }
 }
 
 @end

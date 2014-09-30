@@ -13,6 +13,8 @@
 @interface XCiteSharePopup()
 
 @property (nonatomic, weak) IBOutlet UITextField *txtField;
+@property (nonatomic, weak) IBOutlet UIButton *btnSend;
+@property (nonatomic, weak) IBOutlet UIButton *btnCancel;
 @property (nonatomic, strong) AGWindowView * agWindowView;
 
 @end
@@ -54,6 +56,13 @@
         return nil;
     self = [[[NSBundle mainBundle] loadNibNamed:nibName owner:nil options:nil] objectAtIndex:0];
     return self;
+}
+
+- (void)awakeFromNib
+{
+    UIFont *btnFont = [UIFont fontWithName:@"RockwellStd" size:24];
+    self.btnCancel.titleLabel.font = btnFont;
+    self.btnSend.titleLabel.font = btnFont;
 }
 
 #pragma mark - Public interfaces

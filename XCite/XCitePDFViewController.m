@@ -15,6 +15,8 @@ UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UIView *toolbarView;
+@property (weak, nonatomic) IBOutlet UIButton *btnClose;
+@property (weak, nonatomic) IBOutlet UIButton *btnSendMeACopy;
 
 @end
 
@@ -54,6 +56,10 @@ UIScrollViewDelegate>
     tapGesture.numberOfTapsRequired = 1.0f;
     [self.webView addGestureRecognizer:tapGesture];
     self.webView.scrollView.delegate = self;
+    
+    UIFont *btnFont  = [UIFont fontWithName:@"RockwellStd" size:24];
+    self.btnClose.titleLabel.font = btnFont;
+    self.btnSendMeACopy.titleLabel.font = btnFont;
     
 }
 

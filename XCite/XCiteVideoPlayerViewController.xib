@@ -27,7 +27,7 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="D6C-la-YG9">
                             <rect key="frame" x="936" y="27" width="60" height="60"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" backgroundImage="bt_play.png">
+                            <state key="normal" backgroundImage="bt_close.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -46,7 +46,7 @@
     </objects>
     <resources>
         <image name="background.png" width="2048" height="1536"/>
-        <image name="bt_play.png" width="200" height="200"/>
+        <image name="bt_close.png" width="120" height="120"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -23,6 +23,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblVideoSubTitle;
 @property (weak, nonatomic) IBOutlet UILabel *pdfTitle;
 @property (weak, nonatomic) IBOutlet UILabel *pdfSubTitle;
+@property (weak, nonatomic) IBOutlet UIImageView *imgVideoTile;
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (strong, nonatomic) AVPlayer *avPlayer;
 @property (weak, nonatomic) id<XCitePlayerViewDelegate> delegate;

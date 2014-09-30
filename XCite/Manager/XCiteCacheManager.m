@@ -23,7 +23,7 @@
     return __singleton;
 }
 
--(BOOL)isBeaconAlreadyVisitedAtIndex:(NSUInteger)index
+-(BOOL)isBeaconVisited:(NSString *)identifier
 {
     BOOL isValid = [self checkForValidity];
     if (isValid) {
@@ -38,11 +38,14 @@
     }
     
     NSSet *beaconSet = [NSMutableSet setWithArray:beaconArray];
-    return [beaconSet containsObject:@(index)];
+    return [beaconSet containsObject:identifier];
 }
 
-- (void)saveVisitedBeaconAtIndex:(NSUInteger)index
+- (void)saveVisitedBeacon:(NSString *)identifier
 {
+    if(![identifier isValidObject]) {
+        return;
+    }
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSMutableDictionary *userDic = [[userDefaults objectForKey:USER_DEFAULTS] mutableCopy];
     if (![userDic isValidObject]) {
@@ -55,7 +58,7 @@
         
     }
     NSMutableSet *beaconSet  = [NSMutableSet setWithArray:beaconArray];
-    [beaconSet addObject:@(index)];
+    [beaconSet addObject:identifier];
     [userDic setObject:[NSDate date] forKey:@"syncDate"];
     [userDic setObject:[beaconSet allObjects] forKey:@"visitedBeacons"];
     [userDefaults setObject:userDic forKey:USER_DEFAULTS];
@@ -89,6 +92,14 @@
     [userDefaults synchronize];
 }
 
+#pragma mark - Private Methods
+
+/**
+ *  Check if the user defaults value is valid. Values are considered invalid if the sync time is of the previous day.
+ *
+ *  @return BOOL - whether the values are valid or not.
+ */
+
 - (BOOL)checkForValidity
 {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
@@ -98,7 +109,7 @@
     }
     
     NSDate *date  = [userDic objectForKey:@"syncDate"];
-    NSDate *clockZeroDate = [self dateForPastDays:0 fromDate:date];
+    NSDate *clockZeroDate = [self dateForPastDays:0 fromDate:[NSDate date]];
     if ([date compare:clockZeroDate] == NSOrderedAscending) {
         [self resetUserDefaults];
         return YES;
@@ -107,12 +118,23 @@
     return NO;
 }
 
+/**
+ *  Reset the userDefaults.
+ */
 - (void)resetUserDefaults
 {
-    NSLog(@"Reset user defaults");
+    DLog(@"Reset user defaults");
     [NSUserDefaults resetStandardUserDefaults];
 }
 
+/**
+ *  Returns the date value of midnight 12 a.m
+ *
+ *  @param days     Number of days
+ *  @param fromDate From Date
+ *
+ *  @return Date value for midnight 12:00 a.m
+ */
 - (NSDate *)dateForPastDays:(NSUInteger)days fromDate:(NSDate *)fromDate
 {
     NSDate *date =  nil;
