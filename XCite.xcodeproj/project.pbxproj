@@ -80,6 +80,7 @@
 		077818F919D29DEA005D43A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 077818F819D29DEA005D43A6 /* Images.xcassets */; };
 		077818FC19D29DEA005D43A6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 077818FA19D29DEA005D43A6 /* LaunchScreen.xib */; };
 		0778190819D29DEA005D43A6 /* XCiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0778190719D29DEA005D43A6 /* XCiteTests.m */; };
+		07DD5DA319DA5689002F2E41 /* XCiteCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DD5DA219DA5689002F2E41 /* XCiteCacheManager.m */; };
 		C31B4E5D155D48AA8DC732F0 /* libPods-XCite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2CCCC279DE41298CDD8A83 /* libPods-XCite.a */; };
 /* End PBXBuildFile section */
 
@@ -195,6 +196,8 @@
 		0778190119D29DEA005D43A6 /* XCiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0778190619D29DEA005D43A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0778190719D29DEA005D43A6 /* XCiteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCiteTests.m; sourceTree = "<group>"; };
+		07DD5DA119DA5689002F2E41 /* XCiteCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCiteCacheManager.h; sourceTree = "<group>"; };
+		07DD5DA219DA5689002F2E41 /* XCiteCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCiteCacheManager.m; sourceTree = "<group>"; };
 		8D2CCCC279DE41298CDD8A83 /* libPods-XCite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XCite.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F092551011C24B1FAC2B6686 /* Pods-XCite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCite.xcconfig"; path = "Pods/Pods-XCite.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -243,6 +246,8 @@
 				075BCD0719D8FEFA007260BB /* BeaconManager.m */,
 				073F859B19D3FCBA00F0E939 /* DataManager.h */,
 				073F859C19D3FCBA00F0E939 /* DataManager.m */,
+				07DD5DA119DA5689002F2E41 /* XCiteCacheManager.h */,
+				07DD5DA219DA5689002F2E41 /* XCiteCacheManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -665,6 +670,7 @@
 				0746A36C19D5167F00835396 /* XCiteSharePopup.m in Sources */,
 				073F857219D3DF3500F0E939 /* UIView+Additions.m in Sources */,
 				075BCD0819D8FEFA007260BB /* BeaconManager.m in Sources */,
+				07DD5DA319DA5689002F2E41 /* XCiteCacheManager.m in Sources */,
 				073F857619D3E01700F0E939 /* NSArray+Additions.m in Sources */,
 				073F85B219D41DF100F0E939 /* XCiteVideoPlayerViewController.m in Sources */,
 				0768238719D2B3BD00BC0CCA /* XCiteSideBarCell.m in Sources */,

@@ -26,6 +26,7 @@
 #import "UIView+MTAnimation.h"
 #import "DataManager.h"
 #import "BeaconManager.h"
+#import "XCiteCacheManager.h"
 #import "BeaconModel.h"
 #import "XCiteModel.h"
 

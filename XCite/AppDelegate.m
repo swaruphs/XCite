@@ -36,11 +36,20 @@
     UINavigationController *navController = [[UINavigationController alloc]
                                              initWithRootViewController:rootController];
     self.window.rootViewController = navController;
-
-    
     [self.window makeKeyAndVisible];
     
     return YES;
+}
+
+- (void)testLocalNotifications
+{
+    [[XCiteCacheManager sharedInstance] saveVisitedBeaconAtIndex:0];
+    [[XCiteCacheManager sharedInstance] saveVisitedBeaconAtIndex:0];
+    [[XCiteCacheManager sharedInstance] saveVisitedBeaconAtIndex:1];
+    [[XCiteCacheManager sharedInstance] saveVisitedBeaconAtIndex:1];
+    
+    BOOL isVisited = [[XCiteCacheManager sharedInstance] isBeaconAlreadyVisitedAtIndex:0];
+    NSLog(@"%d",isVisited);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -71,6 +80,7 @@
 {
     if ([[UIApplication sharedApplication] applicationState] != UIApplicationStateActive) {
         NSUInteger index = [notification.userInfo[@"index"] integerValue];
+        [[XCiteCacheManager sharedInstance] saveVisitedBeaconAtIndex:index];
         [self showHomeScreenAndPushVideoPlayerWithIndex:index];
     }
 }
@@ -97,6 +107,11 @@
 
 - (void)showLocalNotificationsForIndex:(NSUInteger)index
 {
+    BOOL alreadyVisited = [[XCiteCacheManager sharedInstance] isBeaconAlreadyVisitedAtIndex:index];
+    if (alreadyVisited) {
+        return;
+    }
+    
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
     UILocalNotification *notification = [[UILocalNotification alloc] init];
     notification.alertBody = [NSString stringWithFormat:@"%ld",index];
