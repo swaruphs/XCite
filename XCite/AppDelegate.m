@@ -8,8 +8,12 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "XCiteVideoPlayerViewController.h"
+#import "XCitePDFViewController.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<ESTBeaconManagerDelegate>
+
+@property (strong, nonatomic) ESTBeaconManager *beaconManager;
 
 @end
 
@@ -20,9 +24,19 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+   
+    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){
+        [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
+    }
+    
+    self.beaconManager = [[ESTBeaconManager alloc] init];
+    self.beaconManager.delegate = self;
+    
     ViewController *rootController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:rootController];
+    UINavigationController *navController = [[UINavigationController alloc]
+                                             initWithRootViewController:rootController];
     self.window.rootViewController = navController;
+
     
     [self.window makeKeyAndVisible];
     
@@ -49,6 +63,62 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - UILocalNotifications
+
+-(void) application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    if ([[UIApplication sharedApplication] applicationState] != UIApplicationStateActive) {
+        NSUInteger index = [notification.userInfo[@"index"] integerValue];
+        [self showHomeScreenAndPushVideoPlayerWithIndex:index];
+    }
+}
+
+#pragma mark Beacon Manager Delegate
+
+- (void)beaconManager:(ESTBeaconManager *)manager didEnterRegion:(ESTBeaconRegion *)region
+{
+    NSLog(@"beacon entered the region");
+    NSArray *allBeacons = [[BeaconManager sharedInstance] getBeacons];
+    BeaconModel *beaconModel =  [allBeacons firstObjectWithValue:region.identifier forKeyPath:@"name"];
+    NSUInteger objIndex = [allBeacons indexOfObject:beaconModel];
+    if (objIndex != NSNotFound) {
+        [self showLocalNotificationsForIndex:objIndex];
+    }
+}
+
+- (void)beaconManager:(ESTBeaconManager *)manager didExitRegion:(ESTBeaconRegion *)region
+{
+    NSLog(@"Beacon exited the region");
+}
+
+#pragma mark Private APIs
+
+- (void)showLocalNotificationsForIndex:(NSUInteger)index
+{
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    notification.alertBody = [NSString stringWithFormat:@"%ld",index];
+    notification.soundName = @"Default";
+    notification.userInfo = @{@"index":@(index)};
+    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+}
+
+- (void)showHomeScreenAndPushVideoPlayerWithIndex:(NSUInteger)index
+{
+    ViewController *rootController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    rootController.selectedIndex = index;
+    UINavigationController *navController = [[UINavigationController alloc]
+                                             initWithRootViewController:rootController];
+    self.window.rootViewController        = navController;
+    
+    NSArray *allModels = [[DataManager sharedInstance] getAllModels];
+    XCiteModel *model  = allModels[index];
+    XCiteVideoPlayerViewController *controller = [[XCiteVideoPlayerViewController alloc] initWithNibName:@"XCiteVideoPlayerViewController" bundle:nil];
+    controller.model = model;
+    controller.moveToPDFOnCompletion = YES;
+    [navController pushViewController:controller animated:FALSE];
 }
 
 @end

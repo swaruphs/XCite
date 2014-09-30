@@ -7,6 +7,7 @@
 //
 
 #import "XCiteVideoPlayerViewController.h"
+#import "XCitePDFViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
 
 @interface XCiteVideoPlayerViewController ()
@@ -65,6 +66,10 @@
         
     }
     else if([reason intValue] == MPMovieFinishReasonPlaybackEnded) {
+        if (self.moveToPDFOnCompletion) {
+            [self showPDFViewer];
+            return;
+        }
         [self.navigationController popToRootViewControllerAnimated:true];
     }
     else if([reason intValue] == MPMovieFinishReasonUserExited) {
@@ -72,6 +77,13 @@
         // done button clicked!
         
     }
+}
+
+- (void)showPDFViewer
+{
+    XCitePDFViewController *controller = [[XCitePDFViewController alloc] initWithNibName:@"XCitePDFViewController" bundle:nil];
+    controller.model = self.model;
+    [self.navigationController pushViewController:controller animated:true];
 }
 
 - (void)dealloc

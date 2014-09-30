@@ -11,5 +11,6 @@
 @interface XCiteVideoPlayerViewController : UIViewController
 
 @property (strong, nonatomic) XCiteModel *model;
+@property (nonatomic) BOOL moveToPDFOnCompletion;
 
 @end

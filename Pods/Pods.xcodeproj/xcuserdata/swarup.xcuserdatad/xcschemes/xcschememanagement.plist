@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-XCite-EstimoteSDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-XCite.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6DD33329A3D84841AB2F149E</key>
+		<key>2CBF0C70D187432DB1D25C49</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DF220C80174C481181F548C4</key>
+		<key>CA56FCA7B93F42E5916B1836</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D92B659EEEB74A6697DE591B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

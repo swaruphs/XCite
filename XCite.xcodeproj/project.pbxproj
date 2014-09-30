@@ -44,6 +44,9 @@
 		0746A38019D5456E00835396 /* MTMatrixInterpolation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0746A37B19D5456E00835396 /* MTMatrixInterpolation.m */; };
 		0746A38119D5456E00835396 /* MTTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0746A37D19D5456E00835396 /* MTTimingFunctions.m */; };
 		0746A38219D5456E00835396 /* UIView+MTAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0746A37F19D5456E00835396 /* UIView+MTAnimation.m */; };
+		075BCD0519D8FEF3007260BB /* beacons.plist in Resources */ = {isa = PBXBuildFile; fileRef = 075BCD0419D8FEF3007260BB /* beacons.plist */; };
+		075BCD0819D8FEFA007260BB /* BeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BCD0719D8FEFA007260BB /* BeaconManager.m */; };
+		075BCD0B19D8FF00007260BB /* BeaconModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BCD0A19D8FF00007260BB /* BeaconModel.m */; };
 		0768235719D2ADB700BC0CCA /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768235619D2ADB700BC0CCA /* background.png */; };
 		0768235919D2ADC000BC0CCA /* BG-popup.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768235819D2ADC000BC0CCA /* BG-popup.png */; };
 		0768235C19D2ADC700BC0CCA /* bt_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 0768235A19D2ADC700BC0CCA /* bt_play.png */; };
@@ -145,6 +148,11 @@
 		0746A37D19D5456E00835396 /* MTTimingFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTimingFunctions.m; sourceTree = "<group>"; };
 		0746A37E19D5456E00835396 /* UIView+MTAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MTAnimation.h"; sourceTree = "<group>"; };
 		0746A37F19D5456E00835396 /* UIView+MTAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MTAnimation.m"; sourceTree = "<group>"; };
+		075BCD0419D8FEF3007260BB /* beacons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = beacons.plist; sourceTree = "<group>"; };
+		075BCD0619D8FEFA007260BB /* BeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconManager.h; sourceTree = "<group>"; };
+		075BCD0719D8FEFA007260BB /* BeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconManager.m; sourceTree = "<group>"; };
+		075BCD0919D8FF00007260BB /* BeaconModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconModel.h; sourceTree = "<group>"; };
+		075BCD0A19D8FF00007260BB /* BeaconModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconModel.m; sourceTree = "<group>"; };
 		0768235619D2ADB700BC0CCA /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		0768235819D2ADC000BC0CCA /* BG-popup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BG-popup.png"; sourceTree = "<group>"; };
 		0768235A19D2ADC700BC0CCA /* bt_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_play.png; sourceTree = "<group>"; };
@@ -231,6 +239,8 @@
 		073F859A19D3FCA800F0E939 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				075BCD0619D8FEFA007260BB /* BeaconManager.h */,
+				075BCD0719D8FEFA007260BB /* BeaconManager.m */,
 				073F859B19D3FCBA00F0E939 /* DataManager.h */,
 				073F859C19D3FCBA00F0E939 /* DataManager.m */,
 			);
@@ -240,6 +250,8 @@
 		073F859E19D3FD4800F0E939 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				075BCD0919D8FF00007260BB /* BeaconModel.h */,
+				075BCD0A19D8FF00007260BB /* BeaconModel.m */,
 				073F859F19D3FD5900F0E939 /* XCiteModel.h */,
 				073F85A019D3FD5900F0E939 /* XCiteModel.m */,
 			);
@@ -440,6 +452,7 @@
 				077818ED19D29DEA005D43A6 /* main.m */,
 				073F857319D3DF8D00F0E939 /* XCite.pch */,
 				073F858819D3EA2700F0E939 /* content.plist */,
+				075BCD0419D8FEF3007260BB /* beacons.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -592,6 +605,7 @@
 				073F858719D3E9EF00F0E939 /* Watson_Video_What Will You Do With Watson_.mp4 in Resources */,
 				0768237119D2ADD100BC0CCA /* ic_Analytics_off.png in Resources */,
 				0768237419D2ADD100BC0CCA /* ic_Cloud-off.png in Resources */,
+				075BCD0519D8FEF3007260BB /* beacons.plist in Resources */,
 				0768237019D2ADD100BC0CCA /* ic_Analytics.png in Resources */,
 				077818F919D29DEA005D43A6 /* Images.xcassets in Resources */,
 				073F858119D3E9EF00F0E939 /* Analytics_Video_IBM Introduces Powerful Analytics for Everyone.mp4 in Resources */,
@@ -650,6 +664,7 @@
 				0746A38219D5456E00835396 /* UIView+MTAnimation.m in Sources */,
 				0746A36C19D5167F00835396 /* XCiteSharePopup.m in Sources */,
 				073F857219D3DF3500F0E939 /* UIView+Additions.m in Sources */,
+				075BCD0819D8FEFA007260BB /* BeaconManager.m in Sources */,
 				073F857619D3E01700F0E939 /* NSArray+Additions.m in Sources */,
 				073F85B219D41DF100F0E939 /* XCiteVideoPlayerViewController.m in Sources */,
 				0768238719D2B3BD00BC0CCA /* XCiteSideBarCell.m in Sources */,
@@ -665,6 +680,7 @@
 				077818EE19D29DEA005D43A6 /* main.m in Sources */,
 				073F85A119D3FD5900F0E939 /* XCiteModel.m in Sources */,
 				0746A38019D5456E00835396 /* MTMatrixInterpolation.m in Sources */,
+				075BCD0B19D8FF00007260BB /* BeaconModel.m in Sources */,
 				073F859D19D3FCBA00F0E939 /* DataManager.m in Sources */,
 				0768239219D2BD4D00BC0CCA /* XCiteSideBarCollectionViewLayout.m in Sources */,
 			);

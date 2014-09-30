@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6DD33329A3D84841AB2F149E"
+               BlueprintIdentifier = "2CBF0C70D187432DB1D25C49"
                BuildableName = "libPods-XCite.a"
                BlueprintName = "Pods-XCite"
                ReferencedContainer = "container:Pods.xcodeproj">

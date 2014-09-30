@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>com.2359media.tournaments</string>
+		<key>uuid</key>
+		<string>B9407F30-F5F8-466E-AFF9-25556B57FE6D</string>
+		<key>major</key>
+		<integer>16844</integer>
+		<key>minor</key>
+		<integer>2096</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>com.2359media.welcome</string>
+		<key>uuid</key>
+		<string>B9407F30-F5F8-466E-AFF9-25556B57FE6D</string>
+		<key>major</key>
+		<integer>31177</integer>
+		<key>minor</key>
+		<integer>28324</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>com.2359media.security</string>
+		<key>uuid</key>
+		<string>B9407F30-F5F8-466E-AFF9-25556B57FE6D</string>
+		<key>major</key>
+		<integer>37134</integer>
+		<key>minor</key>
+		<integer>35178</integer>
+	</dict>
+</array>
+</plist>

@@ -12,6 +12,8 @@
 #import "XCiteSideBarCollectionViewLayout.h"
 #import "XCiteVideoPlayerViewController.h"
 #import "XCitePDFViewController.h"
+#import "BeaconManager.h"
+#import "BeaconModel.h"
 
 
 #define CELL_WIDTH 200
@@ -21,12 +23,14 @@
 <UICollectionViewDataSource,
 UICollectionViewDelegate,
 UIScrollViewDelegate,
-XCitePlayerViewDelegate>
+XCitePlayerViewDelegate,
+ESTBeaconManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView * sideBarCollectionView;
 @property (weak, nonatomic) IBOutlet UIScrollView *playerScrollView;
-@property (nonatomic) NSInteger selectedIndex;
+@property (strong, nonatomic) ESTBeaconManager *beaconManager;
 @property (strong, nonatomic) NSArray *dataArray;
+@property (strong, nonatomic) NSArray *allBeacons;
 
 @end
 
@@ -35,6 +39,7 @@ XCitePlayerViewDelegate>
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self _init];
+    [self setUpBeacons];
     [self setUpPlayerScrollView];
     self.navigationController.navigationBarHidden = YES;
     // Do any additional setup after loading the view, typically from a nib.
@@ -69,9 +74,38 @@ XCitePlayerViewDelegate>
         tag++;
     }
     self.playerScrollView.contentSize = CGSizeMake(self.playerScrollView.width, self.playerScrollView.height * self.dataArray.count);
+    if ((int)self.selectedIndex >= 0) {
+        [self sideBarDidTapAtIndex:self.selectedIndex];
+    }
 }
 
-#pragma UIcollectionView 
+- (void)setUpBeacons
+{
+    self.beaconManager = [[ESTBeaconManager alloc] init];
+    self.beaconManager.delegate = self;
+    [self.beaconManager requestAlwaysAuthorization];
+    self.allBeacons = [[BeaconManager sharedInstance] getBeacons];
+    for (BeaconModel *model in self.allBeacons) {
+        [self startMonitoringItem:model];
+    }
+}
+
+
+- (ESTBeaconRegion *)beaconRegionWithItem:(BeaconModel *)item {
+    ESTBeaconRegion *beaconRegion = [[ESTBeaconRegion alloc] initWithProximityUUID:item.uuid
+                                                                           major:item.majorVersion
+                                                                           minor:item.minorVersion
+                                                                      identifier:item.name];
+    return beaconRegion;
+}
+
+- (void)startMonitoringItem:(BeaconModel *)item {
+    ESTBeaconRegion *beaconRegion = [self beaconRegionWithItem:item];
+    [self.beaconManager startMonitoringForRegion:beaconRegion];
+    [self.beaconManager startRangingBeaconsInRegion:beaconRegion];
+}
+
+#pragma UICollectionView Delegate
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
@@ -97,10 +131,11 @@ XCitePlayerViewDelegate>
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     if (collectionView == self.sideBarCollectionView) {
-        [self sideBarDidTapAtIndex:indexPath];
+        [self sideBarDidTapAtIndex:indexPath.row];
     }
 }
 
+#pragma mark - UIScrollView Delegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
@@ -143,10 +178,10 @@ XCitePlayerViewDelegate>
 
 #pragma mark - Sidebar
 
-- (void)sideBarDidTapAtIndex: (NSIndexPath *)indexPath
+- (void)sideBarDidTapAtIndex: (NSUInteger)index
 {
-    self.selectedIndex = [indexPath row];
-    [self.sideBarCollectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredVertically animated:YES];
+    self.selectedIndex = index;
+    [self.sideBarCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:index inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredVertically animated:YES];
     [self syncScrollViews:self.sideBarCollectionView];
 }
 
@@ -181,4 +216,54 @@ XCitePlayerViewDelegate>
     }
 }
 
+#pragma mark - Beacon Helper Methods
+
+-(void)checkForBeaconPermission
+{
+    if ([ESTBeaconManager authorizationStatus] == kCLAuthorizationStatusNotDetermined)
+    {
+        [self.beaconManager requestAlwaysAuthorization];
+    }
+    else if([ESTBeaconManager authorizationStatus] == kCLAuthorizationStatusAuthorizedAlways)
+    {
+        [self startRangingAllBeacons];
+    }
+    else if([ESTBeaconManager authorizationStatus] == kCLAuthorizationStatusDenied)
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Location Access Denied"
+                                                        message:@"You have denied access to location services. Change this in app settings."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles: nil];
+        
+        [alert show];
+    }
+    else if([ESTBeaconManager authorizationStatus] == kCLAuthorizationStatusRestricted)
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Location Not Available"
+                                                        message:@"You have no access to location services."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles: nil];
+        
+        [alert show];
+    }
+}
+
+- (void)startRangingAllBeacons
+{
+    
+}
+
+#pragma mark - ESTBeaconManagerDelegate methods
+
+- (void)beaconManager:(ESTBeaconManager *)manager didDiscoverBeacons:(NSArray *)beacons inRegion:(ESTBeaconRegion *)region
+{
+    
+}
+
+- (void)beaconManager:(ESTBeaconManager *)manager didStartMonitoringForRegion:(ESTBeaconRegion *)region
+{
+    
+}
 @end
