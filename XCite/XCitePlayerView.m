@@ -66,6 +66,13 @@
     UIFont *titleFont  = [UIFont fontWithName:@"RockwellStd" size:33];
     self.lblbVideoTitle.font = titleFont;
     self.pdfTitle.font = titleFont;
+    
+    self.lblbVideoTitle.text = model.videoTitle;
+    self.lblVideoSubTitle.text =  model.videoSubTitle;
+    self.pdfTitle.text = model.pdfTitle;
+    self.pdfSubTitle.text =  model.pdfSubTitle;
+    
+    
     [self setUpWebView:model.pdfURL];
 }
 
@@ -84,7 +91,6 @@
 {
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:urlString]]];
 }
-
 
 #pragma mark - Actions
 

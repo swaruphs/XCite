@@ -6,17 +6,18 @@
 		<key>videoURL</key>
 		<string>Watson_Video_What Will You Do With Watson_</string>
 		<key>videoTitle</key>
-		<string>IBM Introduces Powerful Analytics for Everyone</string>
+		<string>Leap Forward with IBM</string>
 		<key>videoSubTitle</key>
-		<string></string>
+		<string>Leaders drive Enterprise Innovations by integrating disconnected innovations and building</string>
 		<key>videoTile</key>
 		<string>watson</string>
 		<key>pdfURL</key>
 		<string>Welcome_Doc_2013_ibm_strategy(2)</string>
 		<key>pdfTitle</key>
-		<string></string>
+		<string>The IBM Strategy – What we see shifting
+</string>
 		<key>pdfSubTitle</key>
-		<string></string>
+		<string>IBM is making a new future for our clients, our industry and our company</string>
 		<key>img_off</key>
 		<string>ic_Watson-off</string>
 		<key>img_on</key>
@@ -33,9 +34,9 @@
 		<key>videoURL</key>
 		<string>Watson_Video_What Will You Do With Watson_</string>
 		<key>videoTitle</key>
-		<string>IBM Introduces Powerful Analytics for Everyone</string>
+		<string>IBM C-Suite Executive Exchange</string>
 		<key>videoSubTitle</key>
-		<string></string>
+		<string>A hub for though leadership resources, networking &amp; enabled business transformation</string>
 		<key>videoTile</key>
 		<string>watson</string>
 		<key>pdfURL</key>
@@ -59,17 +60,17 @@
 		<key>videoURL</key>
 		<string>Watson_Video_What Will You Do With Watson_</string>
 		<key>videoTitle</key>
-		<string>IBM Introduces Powerful Analytics for Everyone</string>
+		<string>IBM Watson - A new era of cognitive technology</string>
 		<key>videoSubTitle</key>
-		<string></string>
+		<string>This generation of problem solvers is going to learn much faster with IBM Watson.</string>
 		<key>videoTile</key>
 		<string>watson</string>
 		<key>pdfURL</key>
 		<string>Watson_Doc_An_Inside_Look_at_IBM_Watson_and_How_it_Works</string>
 		<key>pdfTitle</key>
-		<string></string>
+		<string>An Inside Look at IBM Watson and How it Works</string>
 		<key>pdfSubTitle</key>
-		<string></string>
+		<string>IBM Watson can transform how organizations think, act, and operate</string>
 		<key>img_off</key>
 		<string>ic_Watson-off</string>
 		<key>img_on</key>
@@ -85,17 +86,17 @@
 		<key>videoURL</key>
 		<string>Cloud_Video_Why deploy private cloud in the hybrid cloud era</string>
 		<key>videoTitle</key>
-		<string>IBM Introduces Powerful Analytics for Everyone</string>
+		<string>Future of cloud computing lies in the hybrid space</string>
 		<key>videoSubTitle</key>
-		<string></string>
+		<string>Deploy quickly. Manage easily. Innovate extensively.</string>
 		<key>videoTile</key>
 		<string>cloud</string>
 		<key>pdfURL</key>
 		<string>Cloud_Doc_Private Cloud in the Hybrid Cloud Era</string>
 		<key>pdfTitle</key>
-		<string></string>
+		<string>Private cloud in the hybrid cloud era</string>
 		<key>pdfSubTitle</key>
-		<string></string>
+		<string>The critical choices driving business value and agility</string>
 		<key>img_off</key>
 		<string>ic_Cloud-off</string>
 		<key>img_on</key>
@@ -111,17 +112,17 @@
 		<key>videoURL</key>
 		<string>Analytics_Video_IBM Introduces Powerful Analytics for Everyone</string>
 		<key>videoTitle</key>
-		<string>IBM Introduces Powerful Analytics for Everyone</string>
+		<string>IBM® Watson™ Analytics</string>
 		<key>videoSubTitle</key>
-		<string></string>
+		<string>Puts predictive business analytics in the palm of your hand</string>
 		<key>videoTile</key>
 		<string>analytics</string>
 		<key>pdfURL</key>
 		<string>Analytics_Doc_WatsonAnalyticsSalesDeck_16092014</string>
 		<key>pdfTitle</key>
-		<string></string>
+		<string>What is IBM® Watson™ Analytics?</string>
 		<key>pdfSubTitle</key>
-		<string></string>
+		<string>Self-service analytics for business users and experts alike</string>
 		<key>img_off</key>
 		<string>ic_Analytics_off</string>
 		<key>img_on</key>
@@ -137,17 +138,17 @@
 		<key>videoURL</key>
 		<string>Mobile_Video_IBM MobileFirst Intro Video</string>
 		<key>videoTitle</key>
-		<string>IBM Introduces Powerful Analytics for Everyone</string>
+		<string>IBM MobileFirst Enables Enterprise Mobility</string>
 		<key>videoSubTitle</key>
-		<string></string>
+		<string>The industry&apos;s most complete mobile solution portfolio</string>
 		<key>videoTile</key>
 		<string>mobile</string>
 		<key>pdfURL</key>
 		<string>Mobile_Doc_The Individual Enterprise - How mobility redefines business [GBE03614USEN]</string>
 		<key>pdfTitle</key>
-		<string></string>
+		<string>IBM IBV Study - The Individual Enterprise</string>
 		<key>pdfSubTitle</key>
-		<string></string>
+		<string>How mobility redefines business</string>
 		<key>img_off</key>
 		<string>ic_Mobile-off</string>
 		<key>img_on</key>
@@ -163,17 +164,17 @@
 		<key>videoURL</key>
 		<string>Social_Video_IBM Connections Mobile_ the power of your business in the palm of your hand</string>
 		<key>videoTitle</key>
-		<string>IBM Introduces Powerful Analytics for Everyone</string>
+		<string>IBM Connections Mobile</string>
 		<key>videoSubTitle</key>
-		<string></string>
+		<string>The power of your business in the palm of your hand</string>
 		<key>videoTile</key>
 		<string>social</string>
 		<key>pdfURL</key>
 		<string>Social_Doc_Applying Social Business-Repeatable Patterns provide return (2014-Jan)</string>
 		<key>pdfTitle</key>
-		<string></string>
+		<string>Applying social business</string>
 		<key>pdfSubTitle</key>
-		<string></string>
+		<string>The repeatable patterns that improve business processes and provide return</string>
 		<key>img_off</key>
 		<string>ic_Social-off</string>
 		<key>img_on</key>
@@ -189,17 +190,17 @@
 		<key>videoURL</key>
 		<string>Security_Video_IBM Security. Intelligence. Integration. Expertise.</string>
 		<key>videoTitle</key>
-		<string>IBM Introduces Powerful Analytics for Everyone</string>
+		<string>IBM Security. Intelligence. Integration. Expertise.</string>
 		<key>videoSubTitle</key>
-		<string></string>
+		<string>Detect, predict and remediate breaches that point products might miss</string>
 		<key>videoTile</key>
 		<string>security</string>
 		<key>pdfURL</key>
 		<string>Security_Doc_WGL03057USEN</string>
 		<key>pdfTitle</key>
-		<string></string>
+		<string>IBM X-Force Threat Intelligence Quarterly, 3Q 2014</string>
 		<key>pdfSubTitle</key>
-		<string></string>
+		<string>Mitigation strategies against vulnerability such as Heartbleed</string>
 		<key>img_off</key>
 		<string>ic_security-off</string>
 		<key>img_on</key>
@@ -215,17 +216,17 @@
 		<key>videoURL</key>
 		<string>Infra_Video_IBM - IT infrastructure choices matter because business outcomes matter</string>
 		<key>videoTitle</key>
-		<string>IBM Introduces Powerful Analytics for Everyone</string>
+		<string>IT infrastructure choices matter</string>
 		<key>videoSubTitle</key>
-		<string></string>
+		<string>Deliver services more rapidly and efficiently, despite shrinking budgets.</string>
 		<key>videoTile</key>
 		<string>infra</string>
 		<key>pdfURL</key>
 		<string>Infra_Doc_The IT Infrastructure Conversation - Exec Summary</string>
 		<key>pdfTitle</key>
-		<string></string>
+		<string>IBM IBV Study - The IT infrastructure conversation</string>
 		<key>pdfSubTitle</key>
-		<string></string>
+		<string>New content, new participants, new tone</string>
 		<key>img_off</key>
 		<string>ic_Infrastructure-off</string>
 		<key>img_on</key>

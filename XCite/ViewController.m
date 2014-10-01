@@ -180,9 +180,14 @@ ESTBeaconManagerDelegate>
 
 - (void)sideBarDidTapAtIndex: (NSUInteger)index
 {
+    self.sideBarCollectionView.userInteractionEnabled = NO;
     self.selectedIndex = index;
     [self.sideBarCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:index inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredVertically animated:YES];
     [self syncScrollViews:self.sideBarCollectionView];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.sideBarCollectionView.userInteractionEnabled  = YES;
+    });
 }
 
 #pragma mark - XCitePlayerView Delegate
