@@ -12,11 +12,11 @@
 
 - (instancetype)initWithDictionary:(NSDictionary *)inputDic
 {
-    self = [super init];
+    self                      = [super init];
     if (self) {
         [self updateWithDictionary:inputDic];
     }
-    
+
     return self;
 }
 
@@ -27,6 +27,8 @@
     self.videoTitle           = [inputDic stringForKey:@"videoTitle"];
     self.videoSubTitle        = [inputDic stringForKey:@"videoSubTitle"];
     self.videoTile            = [inputDic stringForKey:@"videoTile"];
+
+    self.titleColor           = [inputDic stringForKey:@"titleColor"];
 
     NSString *pdfPath         = [inputDic stringForKey:@"pdfURL"];
     self.pdfURL               = [[NSBundle mainBundle] pathForResource:pdfPath ofType:@"pdf"];

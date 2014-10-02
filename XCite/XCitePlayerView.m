@@ -71,6 +71,9 @@
     self.lblVideoSubTitle.text =  model.videoSubTitle;
     self.pdfTitle.text = model.pdfTitle;
     self.pdfSubTitle.text =  model.pdfSubTitle;
+
+    self.lblbVideoTitle.textColor = [UIColor colorWithHexString:model.titleColor];
+    self.pdfTitle.textColor = [UIColor colorWithHexString:model.titleColor];
     
     
     [self setUpWebView:model.pdfURL];

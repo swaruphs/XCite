@@ -24,12 +24,17 @@
 #import "NSArray+Additions.h"
 #import "UIView+Additions.h"
 #import "UIView+MTAnimation.h"
+#import "UIColor+Additions.h"
+#import <AFNetworking/AFNetworking.h>
 #import "DataManager.h"
 #import "BeaconManager.h"
 #import "XCiteCacheManager.h"
 #import "BeaconModel.h"
 #import "XCiteModel.h"
 
+
+#define API_SERVER_HOST @" http://ibmexcite.azurewebsites.net"
+#define API_EMAIL API_SERVER_HOST @"/api/email"
 
 
 //------------------------------------------------------------------------------------------------------

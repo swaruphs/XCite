@@ -15,6 +15,7 @@
 @property (strong, nonatomic) NSString * videoSubTitle;
 @property (strong, nonatomic) NSString * videoURL;
 @property (strong, nonatomic) NSString * videoTile;
+@property (strong, nonatomic) NSString * titleColor;
 @property (strong, nonatomic) NSString * pdfTitle;
 @property (strong, nonatomic) NSString * pdfSubTitle;
 @property (strong, nonatomic) NSString * pdfURL;

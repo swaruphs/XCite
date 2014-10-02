@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -10,70 +10,22 @@
             <rect key="frame" x="0.0" y="0.0" width="825" height="673"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mxr-t0-JSl">
-                    <rect key="frame" x="30" y="305" width="470" height="79"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <string key="text">IBM Security. Intelligence.
-Integration. Expertise. skdhfoshdf</string>
-                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                    <color key="textColor" red="0.12549019607843137" green="0.74509803921568629" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In a changing world with escalating security needs, IBM has the expertise to secure a winn." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0UY-Zp-NDn">
-                    <rect key="frame" x="30" y="397" width="470" height="60"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
-                    <color key="textColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <webView contentMode="scaleToFill" id="HdS-ML-RBi">
-                    <rect key="frame" x="535" y="91" width="290" height="376"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                </webView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="19x-dr-pX5">
-                    <rect key="frame" x="311" y="482" width="484" height="79"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <string key="text">IBM X-Force Threat 
-Intellegence Quaterly, 3Q 2014</string>
-                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
-                    <color key="textColor" red="0.12549019607843137" green="0.74509803921568629" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IqB-lw-7ok">
-                    <rect key="frame" x="311" y="574" width="484" height="59"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <string key="text">Get a closer look at Heartbleed - from the 
-latest attack activity to migitation stratagies.</string>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
-                    <color key="textColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dA4-EX-Np1">
-                    <rect key="frame" x="630" y="233" width="100" height="100"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" image="bt_search.png">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="onBtnOpenPDF:" destination="iN0-l3-epB" eventType="touchUpInside" id="Vzg-IP-Pe9"/>
-                    </connections>
-                </button>
-                <view contentMode="scaleToFill" id="URH-1x-7Pg">
-                    <rect key="frame" x="0.0" y="0.0" width="500" height="295"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="URH-1x-7Pg">
+                    <rect key="frame" x="0.0" y="0.0" width="500" height="281"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="jZy-Rz-KPR">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jZy-Rz-KPR">
                             <rect key="frame" x="0.0" y="0.0" width="500" height="281"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="281" id="HA0-lP-ZvG"/>
+                                <constraint firstAttribute="width" constant="500" id="gCC-JZ-LcU"/>
+                            </constraints>
                         </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="u22-sa-9Dy">
-                            <rect key="frame" x="200" y="98" width="100" height="100"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u22-sa-9Dy">
+                            <rect key="frame" x="200" y="91" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="GjF-te-NiR"/>
+                                <constraint firstAttribute="width" constant="100" id="e4I-Jf-bQW"/>
+                            </constraints>
                             <state key="normal" image="bt_play.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -83,9 +35,104 @@ latest attack activity to migitation stratagies.</string>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="u22-sa-9Dy" secondAttribute="centerY" id="2wy-AQ-XGD"/>
+                        <constraint firstAttribute="height" constant="281" id="5ZI-0k-Slc"/>
+                        <constraint firstAttribute="width" constant="500" id="EC1-eh-PeQ"/>
+                        <constraint firstItem="jZy-Rz-KPR" firstAttribute="top" secondItem="URH-1x-7Pg" secondAttribute="top" id="HaN-bb-5B2"/>
+                        <constraint firstAttribute="centerX" secondItem="u22-sa-9Dy" secondAttribute="centerX" id="QGF-s6-geL"/>
+                        <constraint firstItem="jZy-Rz-KPR" firstAttribute="leading" secondItem="URH-1x-7Pg" secondAttribute="leading" id="QTz-Vb-IwD"/>
+                    </constraints>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.90000000000000002" preferredMaxLayoutWidth="470" translatesAutoresizingMaskIntoConstraints="NO" id="Mxr-t0-JSl">
+                    <rect key="frame" x="30" y="309" width="470" height="79"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="f71-kM-fs8"/>
+                    </constraints>
+                    <string key="text">IBM Security. Intelligence.
+Integration. Expertise. skdhfoshdf</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                    <color key="textColor" red="0.12549019607843137" green="0.74509803921568629" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In a changing world with escalating security needs, IBM has the expertise to secure a winn." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="470" translatesAutoresizingMaskIntoConstraints="NO" id="0UY-Zp-NDn">
+                    <rect key="frame" x="30" y="408" width="470" height="57"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="Ra0-Vb-o1z"/>
+                        <constraint firstAttribute="width" constant="470" id="lJ9-E9-pBZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                    <color key="textColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HdS-ML-RBi">
+                    <rect key="frame" x="535" y="91" width="290" height="376"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="290" id="NzW-yZ-xgv"/>
+                        <constraint firstAttribute="height" constant="376" id="bNh-7N-sdI"/>
+                    </constraints>
+                </webView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="484" translatesAutoresizingMaskIntoConstraints="NO" id="19x-dr-pX5">
+                    <rect key="frame" x="311" y="495" width="484" height="77"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="484" id="OBe-A2-BW3"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="z0u-69-rNH"/>
+                    </constraints>
+                    <string key="text">IBM X-Force Threat 
+Intellegence Quaterly, 3Q 2014</string>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
+                    <color key="textColor" red="0.12549019607843137" green="0.74509803921568629" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="484" translatesAutoresizingMaskIntoConstraints="NO" id="IqB-lw-7ok">
+                    <rect key="frame" x="311" y="592" width="484" height="57"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="484" id="Xpc-DS-002"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="cz9-J8-wZU"/>
+                    </constraints>
+                    <string key="text">Get a closer look at Heartbleed - from the 
+latest attack activity to migitation stratagies.</string>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                    <color key="textColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dA4-EX-Np1">
+                    <rect key="frame" x="630" y="233" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="5a7-8Q-tLU"/>
+                    </constraints>
+                    <state key="normal" image="bt_search.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onBtnOpenPDF:" destination="iN0-l3-epB" eventType="touchUpInside" id="Vzg-IP-Pe9"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Mxr-t0-JSl" firstAttribute="trailing" secondItem="0UY-Zp-NDn" secondAttribute="trailing" id="0Qq-md-vJN"/>
+                <constraint firstAttribute="trailing" secondItem="IqB-lw-7ok" secondAttribute="trailing" constant="30" id="10M-EP-5US"/>
+                <constraint firstItem="0UY-Zp-NDn" firstAttribute="top" secondItem="Mxr-t0-JSl" secondAttribute="bottom" constant="20" id="8K5-41-qgK"/>
+                <constraint firstItem="URH-1x-7Pg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GOJ-K4-4Fq"/>
+                <constraint firstItem="19x-dr-pX5" firstAttribute="top" secondItem="HdS-ML-RBi" secondAttribute="bottom" constant="28" id="Qia-uw-9OP"/>
+                <constraint firstAttribute="trailing" secondItem="HdS-ML-RBi" secondAttribute="trailing" id="SDT-ZU-yVd"/>
+                <constraint firstAttribute="trailing" secondItem="dA4-EX-Np1" secondAttribute="trailing" constant="95" id="Yzg-53-d30"/>
+                <constraint firstItem="dA4-EX-Np1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="233" id="ZBH-cn-ro9"/>
+                <constraint firstItem="HdS-ML-RBi" firstAttribute="centerX" secondItem="dA4-EX-Np1" secondAttribute="centerX" id="eIN-Q7-7mp"/>
+                <constraint firstItem="HdS-ML-RBi" firstAttribute="leading" secondItem="URH-1x-7Pg" secondAttribute="trailing" constant="35" id="fNZ-6g-fDX"/>
+                <constraint firstItem="Mxr-t0-JSl" firstAttribute="leading" secondItem="0UY-Zp-NDn" secondAttribute="leading" id="gvX-ZZ-lL7"/>
+                <constraint firstAttribute="trailing" secondItem="19x-dr-pX5" secondAttribute="trailing" constant="30" id="hvw-uY-bgQ"/>
+                <constraint firstItem="0UY-Zp-NDn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="nIk-hy-Ktc"/>
+                <constraint firstItem="IqB-lw-7ok" firstAttribute="top" secondItem="19x-dr-pX5" secondAttribute="bottom" constant="20" id="v8C-Jh-uiE"/>
+                <constraint firstItem="Mxr-t0-JSl" firstAttribute="top" secondItem="URH-1x-7Pg" secondAttribute="bottom" constant="28" id="vQh-iF-Kqq"/>
+                <constraint firstItem="HdS-ML-RBi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="91" id="zcQ-VG-XGk"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="imgVideoTile" destination="jZy-Rz-KPR" id="x5V-y7-VID"/>

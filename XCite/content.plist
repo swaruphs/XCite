@@ -4,24 +4,25 @@
 <array>
 	<dict>
 		<key>videoURL</key>
-		<string>Watson_Video_What Will You Do With Watson_</string>
+		<string>Welcome_Video_IBM-LOGO_720</string>
 		<key>videoTitle</key>
 		<string>Leap Forward with IBM</string>
 		<key>videoSubTitle</key>
 		<string>Leaders drive Enterprise Innovations by integrating disconnected innovations and building</string>
 		<key>videoTile</key>
-		<string>watson</string>
+		<string>welcome</string>
+		<key>titleColor</key>
+		<string>#91268f</string>
 		<key>pdfURL</key>
 		<string>Welcome_Doc_2013_ibm_strategy(2)</string>
 		<key>pdfTitle</key>
-		<string>The IBM Strategy – What we see shifting
-</string>
+		<string>The IBM Strategy – What we see shifting</string>
 		<key>pdfSubTitle</key>
 		<string>IBM is making a new future for our clients, our industry and our company</string>
 		<key>img_off</key>
-		<string>ic_Watson-off</string>
+		<string>ic_Welcome-off</string>
 		<key>img_on</key>
-		<string>ic_Watson</string>
+		<string>ic_Welcome</string>
 		<key>identifier</key>
 		<string>com.2359media.welcome</string>
 		<key>notificationTitle</key>
@@ -32,19 +33,21 @@
 	</dict>
 	<dict>
 		<key>videoURL</key>
-		<string>Watson_Video_What Will You Do With Watson_</string>
+		<string>C-Suite_Video_Welcome to The Customer Activated Enterprise</string>
 		<key>videoTitle</key>
 		<string>IBM C-Suite Executive Exchange</string>
 		<key>videoSubTitle</key>
 		<string>A hub for though leadership resources, networking &amp; enabled business transformation</string>
 		<key>videoTile</key>
-		<string>watson</string>
+		<string>csuite</string>
+		<key>titleColor</key>
+		<string>#00af7b</string>
 		<key>pdfURL</key>
-		<string></string>
+		<string>C-Suite_Doc_GBE03572USEN</string>
 		<key>pdfTitle</key>
-		<string>Watson_Doc_An_Inside_Look_at_IBM_Watson_and_How_it_Works</string>
+		<string>The Customer-activated Enterprise</string>
 		<key>pdfSubTitle</key>
-		<string></string>
+		<string>Insights from the Global C-suite Study</string>
 		<key>img_off</key>
 		<string>ic_C-suite-off</string>
 		<key>img_on</key>
@@ -65,6 +68,8 @@
 		<string>This generation of problem solvers is going to learn much faster with IBM Watson.</string>
 		<key>videoTile</key>
 		<string>watson</string>
+		<key>titleColor</key>
+		<string>#8cc63e</string>
 		<key>pdfURL</key>
 		<string>Watson_Doc_An_Inside_Look_at_IBM_Watson_and_How_it_Works</string>
 		<key>pdfTitle</key>
@@ -91,6 +96,8 @@
 		<string>Deploy quickly. Manage easily. Innovate extensively.</string>
 		<key>videoTile</key>
 		<string>cloud</string>
+		<key>titleColor</key>
+		<string>#0089cf</string>
 		<key>pdfURL</key>
 		<string>Cloud_Doc_Private Cloud in the Hybrid Cloud Era</string>
 		<key>pdfTitle</key>
@@ -117,6 +124,8 @@
 		<string>Puts predictive business analytics in the palm of your hand</string>
 		<key>videoTile</key>
 		<string>analytics</string>
+		<key>titleColor</key>
+		<string>#f7931d</string>
 		<key>pdfURL</key>
 		<string>Analytics_Doc_WatsonAnalyticsSalesDeck_16092014</string>
 		<key>pdfTitle</key>
@@ -143,6 +152,8 @@
 		<string>The industry&apos;s most complete mobile solution portfolio</string>
 		<key>videoTile</key>
 		<string>mobile</string>
+		<key>titleColor</key>
+		<string>#fec10d</string>
 		<key>pdfURL</key>
 		<string>Mobile_Doc_The Individual Enterprise - How mobility redefines business [GBE03614USEN]</string>
 		<key>pdfTitle</key>
@@ -169,6 +180,8 @@
 		<string>The power of your business in the palm of your hand</string>
 		<key>videoTile</key>
 		<string>social</string>
+		<key>titleColor</key>
+		<string>#ec008b</string>
 		<key>pdfURL</key>
 		<string>Social_Doc_Applying Social Business-Repeatable Patterns provide return (2014-Jan)</string>
 		<key>pdfTitle</key>
@@ -195,6 +208,8 @@
 		<string>Detect, predict and remediate breaches that point products might miss</string>
 		<key>videoTile</key>
 		<string>security</string>
+		<key>titleColor</key>
+		<string>#1fbdc6</string>
 		<key>pdfURL</key>
 		<string>Security_Doc_WGL03057USEN</string>
 		<key>pdfTitle</key>
@@ -221,6 +236,8 @@
 		<string>Deliver services more rapidly and efficiently, despite shrinking budgets.</string>
 		<key>videoTile</key>
 		<string>infra</string>
+		<key>titleColor</key>
+		<string>#005aaa</string>
 		<key>pdfURL</key>
 		<string>Infra_Doc_The IT Infrastructure Conversation - Exec Summary</string>
 		<key>pdfTitle</key>
