@@ -113,12 +113,54 @@ latest attack activity to migitation stratagies.</string>
                         <action selector="onBtnOpenPDF:" destination="iN0-l3-epB" eventType="touchUpInside" id="Vzg-IP-Pe9"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AfP-1Q-6tg">
+                    <rect key="frame" x="0.0" y="573" width="200" height="100"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bt_join-us.png" translatesAutoresizingMaskIntoConstraints="NO" id="E6T-Y4-d26">
+                            <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="65" id="aZN-tX-9Xj"/>
+                                <constraint firstAttribute="height" constant="65" id="tCV-MQ-Oe4"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Join Us !" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfj-Vg-UaK">
+                            <rect key="frame" x="77" y="0.0" width="123" height="23"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="10" id="JB0-j3-Ypf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="for a MobileFirst Deepdive Workshop" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toJ-em-367">
+                            <rect key="frame" x="77" y="33.5" width="123" height="31.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="toJ-em-367" firstAttribute="top" secondItem="tfj-Vg-UaK" secondAttribute="bottom" constant="10" id="9yd-AI-0pF"/>
+                        <constraint firstItem="toJ-em-367" firstAttribute="bottom" secondItem="E6T-Y4-d26" secondAttribute="bottom" id="Cq9-6X-gVs"/>
+                        <constraint firstItem="E6T-Y4-d26" firstAttribute="leading" secondItem="AfP-1Q-6tg" secondAttribute="leading" id="HjL-2n-2Vk"/>
+                        <constraint firstAttribute="trailing" secondItem="toJ-em-367" secondAttribute="trailing" id="MFZ-hy-IPR"/>
+                        <constraint firstItem="toJ-em-367" firstAttribute="trailing" secondItem="tfj-Vg-UaK" secondAttribute="trailing" id="PVb-Hm-JiC"/>
+                        <constraint firstAttribute="width" constant="200" id="QCs-q3-Ws7"/>
+                        <constraint firstItem="E6T-Y4-d26" firstAttribute="top" secondItem="AfP-1Q-6tg" secondAttribute="top" id="QH7-I0-A9z"/>
+                        <constraint firstItem="tfj-Vg-UaK" firstAttribute="top" secondItem="AfP-1Q-6tg" secondAttribute="top" id="ZAt-lt-B0Q"/>
+                        <constraint firstItem="tfj-Vg-UaK" firstAttribute="leading" secondItem="E6T-Y4-d26" secondAttribute="trailing" constant="12" id="aXF-Tf-aBA"/>
+                        <constraint firstItem="toJ-em-367" firstAttribute="leading" secondItem="E6T-Y4-d26" secondAttribute="trailing" constant="12" id="eZ1-Av-8SB"/>
+                        <constraint firstAttribute="height" constant="100" id="rqr-z5-AQJ"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Mxr-t0-JSl" firstAttribute="trailing" secondItem="0UY-Zp-NDn" secondAttribute="trailing" id="0Qq-md-vJN"/>
                 <constraint firstAttribute="trailing" secondItem="IqB-lw-7ok" secondAttribute="trailing" constant="30" id="10M-EP-5US"/>
                 <constraint firstItem="0UY-Zp-NDn" firstAttribute="top" secondItem="Mxr-t0-JSl" secondAttribute="bottom" constant="20" id="8K5-41-qgK"/>
+                <constraint firstAttribute="bottom" secondItem="AfP-1Q-6tg" secondAttribute="bottom" id="CEg-Sp-wXN"/>
                 <constraint firstItem="URH-1x-7Pg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GOJ-K4-4Fq"/>
                 <constraint firstItem="19x-dr-pX5" firstAttribute="top" secondItem="HdS-ML-RBi" secondAttribute="bottom" constant="28" id="Qia-uw-9OP"/>
                 <constraint firstAttribute="trailing" secondItem="HdS-ML-RBi" secondAttribute="trailing" id="SDT-ZU-yVd"/>
@@ -129,6 +171,7 @@ latest attack activity to migitation stratagies.</string>
                 <constraint firstItem="Mxr-t0-JSl" firstAttribute="leading" secondItem="0UY-Zp-NDn" secondAttribute="leading" id="gvX-ZZ-lL7"/>
                 <constraint firstAttribute="trailing" secondItem="19x-dr-pX5" secondAttribute="trailing" constant="30" id="hvw-uY-bgQ"/>
                 <constraint firstItem="0UY-Zp-NDn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="nIk-hy-Ktc"/>
+                <constraint firstItem="AfP-1Q-6tg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sgf-Go-4n5"/>
                 <constraint firstItem="IqB-lw-7ok" firstAttribute="top" secondItem="19x-dr-pX5" secondAttribute="bottom" constant="20" id="v8C-Jh-uiE"/>
                 <constraint firstItem="Mxr-t0-JSl" firstAttribute="top" secondItem="URH-1x-7Pg" secondAttribute="bottom" constant="28" id="vQh-iF-Kqq"/>
                 <constraint firstItem="HdS-ML-RBi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="91" id="zcQ-VG-XGk"/>
@@ -136,6 +179,7 @@ latest attack activity to migitation stratagies.</string>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="imgVideoTile" destination="jZy-Rz-KPR" id="x5V-y7-VID"/>
+                <outlet property="lblJoinUs" destination="tfj-Vg-UaK" id="hSq-bo-S8j"/>
                 <outlet property="lblVideoSubTitle" destination="0UY-Zp-NDn" id="sZ7-7g-IBe"/>
                 <outlet property="lblbVideoTitle" destination="Mxr-t0-JSl" id="uMm-nh-zUd"/>
                 <outlet property="pdfSubTitle" destination="IqB-lw-7ok" id="Hd6-wq-kFc"/>
@@ -143,10 +187,11 @@ latest attack activity to migitation stratagies.</string>
                 <outlet property="videoHolderView" destination="URH-1x-7Pg" id="4Cz-Nw-Xt3"/>
                 <outlet property="webView" destination="HdS-ML-RBi" id="Qyl-MK-4IT"/>
             </connections>
-            <point key="canvasLocation" x="138.5" y="153.5"/>
+            <point key="canvasLocation" x="138.5" y="381.5"/>
         </view>
     </objects>
     <resources>
+        <image name="bt_join-us.png" width="122" height="126"/>
         <image name="bt_play.png" width="200" height="200"/>
         <image name="bt_search.png" width="200" height="200"/>
     </resources>

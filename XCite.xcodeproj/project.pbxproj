@@ -32,6 +32,8 @@
 		0717F75A19DD5850002DFAA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0717F75919DD5850002DFAA5 /* Foundation.framework */; };
 		0717F75C19DD5857002DFAA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0717F75B19DD5857002DFAA5 /* UIKit.framework */; };
 		0717F75E19DD6D6C002DFAA5 /* libWorklightStaticLibProjectNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0717F75D19DD6D6C002DFAA5 /* libWorklightStaticLibProjectNative.a */; };
+		071D460419DE93FE0029FF93 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 071D460319DE93FE0029FF93 /* splash.png */; };
+		071D460619DE97D30029FF93 /* 2359logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 071D460519DE97D30029FF93 /* 2359logo.png */; };
 		0736FB3619DE4B78003E2401 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0736FB3519DE4B78003E2401 /* MobileCoreServices.framework */; };
 		073F856419D3D28200F0E939 /* XCitePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 073F856319D3D28200F0E939 /* XCitePlayerView.m */; };
 		073F856819D3D8F000F0E939 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073F856719D3D8F000F0E939 /* AVFoundation.framework */; };
@@ -116,6 +118,7 @@
 		077818FC19D29DEA005D43A6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 077818FA19D29DEA005D43A6 /* LaunchScreen.xib */; };
 		0778190819D29DEA005D43A6 /* XCiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0778190719D29DEA005D43A6 /* XCiteTests.m */; };
 		07DD5DA319DA5689002F2E41 /* XCiteCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DD5DA219DA5689002F2E41 /* XCiteCacheManager.m */; };
+		07F069C819DEABED0091838B /* bt_join-us.png in Resources */ = {isa = PBXBuildFile; fileRef = 07F069C719DEABED0091838B /* bt_join-us.png */; };
 		C31B4E5D155D48AA8DC732F0 /* libPods-XCite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2CCCC279DE41298CDD8A83 /* libPods-XCite.a */; };
 /* End PBXBuildFile section */
 
@@ -238,6 +241,8 @@
 		0717F75919DD5850002DFAA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0717F75B19DD5857002DFAA5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0717F75D19DD6D6C002DFAA5 /* libWorklightStaticLibProjectNative.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWorklightStaticLibProjectNative.a; sourceTree = "<group>"; };
+		071D460319DE93FE0029FF93 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		071D460519DE97D30029FF93 /* 2359logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2359logo.png; sourceTree = "<group>"; };
 		0736FB3519DE4B78003E2401 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		073F856219D3D28200F0E939 /* XCitePlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCitePlayerView.h; sourceTree = "<group>"; };
 		073F856319D3D28200F0E939 /* XCitePlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCitePlayerView.m; sourceTree = "<group>"; };
@@ -351,6 +356,7 @@
 		0778190719D29DEA005D43A6 /* XCiteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCiteTests.m; sourceTree = "<group>"; };
 		07DD5DA119DA5689002F2E41 /* XCiteCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCiteCacheManager.h; sourceTree = "<group>"; };
 		07DD5DA219DA5689002F2E41 /* XCiteCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCiteCacheManager.m; sourceTree = "<group>"; };
+		07F069C719DEABED0091838B /* bt_join-us.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_join-us.png"; sourceTree = "<group>"; };
 		8D2CCCC279DE41298CDD8A83 /* libPods-XCite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XCite.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F092551011C24B1FAC2B6686 /* Pods-XCite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XCite.xcconfig"; path = "Pods/Pods-XCite.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -633,11 +639,14 @@
 		0768234B19D2A91600BC0CCA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				071D460519DE97D30029FF93 /* 2359logo.png */,
+				071D460319DE93FE0029FF93 /* splash.png */,
 				074169C119DA887D00A1A8EF /* bt_close.png */,
 				0768235619D2ADB700BC0CCA /* background.png */,
 				0768235819D2ADC000BC0CCA /* BG-popup.png */,
 				0768235A19D2ADC700BC0CCA /* bt_play.png */,
 				0768235B19D2ADC700BC0CCA /* bt_search.png */,
+				07F069C719DEABED0091838B /* bt_join-us.png */,
 				0768238E19D2BA2000BC0CCA /* logo.png */,
 				074169C319DA996600A1A8EF /* Video Tiles */,
 				0768235E19D2ADD100BC0CCA /* Icons */,
@@ -925,6 +934,7 @@
 				074169CF19DA998200A1A8EF /* security.png in Resources */,
 				0746A36E19D5169000835396 /* XCiteSharePopup.xib in Resources */,
 				0717F74919DD57CB002DFAA5 /* Localizations.bundle in Resources */,
+				071D460619DE97D30029FF93 /* 2359logo.png in Resources */,
 				0768237A19D2ADD100BC0CCA /* ic_security-off.png in Resources */,
 				0717F6E119DD212E002DFAA5 /* ic_Welcome.png in Resources */,
 				073F859619D3F8D700F0E939 /* Security_Doc_WGL03057USEN.pdf in Resources */,
@@ -956,12 +966,14 @@
 				073F859219D3F8D700F0E939 /* Analytics_Doc_WatsonAnalyticsSalesDeck_16092014.pdf in Resources */,
 				073F859819D3F8D700F0E939 /* Watson_Doc_An_Inside_Look_at_IBM_Watson_and_How_it_Works.pdf in Resources */,
 				073F858719D3E9EF00F0E939 /* Watson_Video_What Will You Do With Watson_.mp4 in Resources */,
+				07F069C819DEABED0091838B /* bt_join-us.png in Resources */,
 				0768237119D2ADD100BC0CCA /* ic_Analytics_off.png in Resources */,
 				0768237419D2ADD100BC0CCA /* ic_Cloud-off.png in Resources */,
 				075BCD0519D8FEF3007260BB /* beacons.plist in Resources */,
 				074169CD19DA998200A1A8EF /* infra.png in Resources */,
 				074169C219DA887D00A1A8EF /* bt_close.png in Resources */,
 				0768237019D2ADD100BC0CCA /* ic_Analytics.png in Resources */,
+				071D460419DE93FE0029FF93 /* splash.png in Resources */,
 				077818F919D29DEA005D43A6 /* Images.xcassets in Resources */,
 				073F858119D3E9EF00F0E939 /* Analytics_Video_IBM Introduces Powerful Analytics for Everyone.mp4 in Resources */,
 				0768238219D2B22900BC0CCA /* ViewController.xib in Resources */,

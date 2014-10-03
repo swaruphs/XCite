@@ -11,6 +11,7 @@
 @interface XCitePlayerView()
 
 @property (weak, nonatomic) IBOutlet UIView *videoHolderView;
+@property (weak, nonatomic) IBOutlet UILabel *lblJoinUs;
 
 @end
 
@@ -74,6 +75,8 @@
 
     self.lblbVideoTitle.textColor = [UIColor colorWithHexString:model.titleColor];
     self.pdfTitle.textColor = [UIColor colorWithHexString:model.titleColor];
+    
+    self.lblJoinUs.font = [UIFont fontWithName:@"RockwellStd" size:22];
     
     NSString *pdfURL = [[NSBundle mainBundle] pathForResource:model.pdfURL ofType:@"pdf"];
     [self setUpWebView:pdfURL];
