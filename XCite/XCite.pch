@@ -16,24 +16,29 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-#import "ESTBeacon.h"
-#import "ESTBeaconManager.h"
-#import "ESTBeacon.h"
+
+// categories
+
 #import "NSObject+Additions.h"
 #import "NSDictionary+Additions.h"
 #import "NSArray+Additions.h"
 #import "UIView+Additions.h"
 #import "UIView+MTAnimation.h"
 #import "UIColor+Additions.h"
-#import <AFNetworking/AFNetworking.h>
+#import "NSString+Additions.h"
+
+#import "ESTBeacon.h"
+#import "ESTBeaconManager.h"
+#import "ESTBeacon.h"
 #import "DataManager.h"
 #import "BeaconManager.h"
 #import "XCiteCacheManager.h"
+#import "XCiteNetworkManager.h"
 #import "BeaconModel.h"
 #import "XCiteModel.h"
 
 
-#define API_SERVER_HOST @" http://ibmexcite.azurewebsites.net"
+#define API_SERVER_HOST @"http://ibmexcite.azurewebsites.net"
 #define API_EMAIL API_SERVER_HOST @"/api/email"
 
 

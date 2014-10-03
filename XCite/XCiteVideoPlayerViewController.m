@@ -32,7 +32,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 
-    NSURL *videoURL        = [NSURL fileURLWithPath:self.model.videoURL];
+    
+    NSString *videoURLPath = [[NSBundle mainBundle] pathForResource:self.model.videoURL ofType:@"mp4"];
+    NSURL *videoURL        = [NSURL fileURLWithPath:videoURLPath];
     self.player            = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
     self.player.view.frame = self.videoHolderView.bounds;
     [self.videoHolderView addSubview:self.player.view];

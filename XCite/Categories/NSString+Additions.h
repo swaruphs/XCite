@@ -10,9 +10,7 @@
 
 @interface NSString (Additions)
 
-- (NSString*)URLEncodedString;
-- (NSString*)URLEncodeEverything;
-
 - (NSString *)sha1;
 - (NSString *)md5;
+- (BOOL)isEmail;
 @end

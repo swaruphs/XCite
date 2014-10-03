@@ -10,4 +10,8 @@
 
 @interface XCiteNetworkManager : NSObject
 
++(instancetype)sharedInstance;
+
+- (void)sendEmailTo:(NSString *)email withPDF:(NSString *)pdfFile;
+
 @end

@@ -10,28 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XCite/XCitePDFViewController.m"
-            timestampString = "433759012.907684"
+            timestampString = "433928577.018286"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "-_init"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "XCite/XCitePDFViewController.m"
-            timestampString = "433759012.907684"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "-showPopup"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -86,16 +70,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "XCite/XCitePDFViewController.m"
-            timestampString = "433759012.907684"
+            filePath = "Pods/AFNetworking/AFNetworking/AFHTTPRequestOperationManager.m"
+            timestampString = "433932765.920505"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
-            landmarkName = "-showToolbar"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "-HTTPRequestOperationWithRequest:success:failure:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -105,13 +89,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "XCite/Manager/XCiteCacheManager.m"
-            timestampString = "433746515.10848"
+            filePath = "XCite/Manager/XCiteNetworkManager.m"
+            timestampString = "434015377.577938"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "-isBeaconVisited:"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "-sendEmailTo:withPDF:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -121,13 +105,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "XCite/AppDelegate.m"
-            timestampString = "433754499.348786"
+            filePath = "XCite/Manager/XCiteNetworkManager.m"
+            timestampString = "434015401.986859"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "-beaconManager:didExitRegion:"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "-sendEmailTo:withPDF:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -137,14 +121,44 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "XCite/AppDelegate.m"
-            timestampString = "433754500.549861"
+            filePath = "XCite/Manager/XCiteNetworkManager.m"
+            timestampString = "434015607.390514"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
-            landmarkName = "-beaconManager:didEnterRegion:"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "-sendEmailTo:withPDF:"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[XCiteNetworkManager sendEmailTo:withPDF:]"
+                  moduleName = "XCite"
+                  urlString = "file:///Users/swarup/Documents/Personal/Projects/XCite/XCite/Manager/XCiteNetworkManager.m"
+                  timestampString = "434015607.393573"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "625">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__43-[XCiteNetworkManager sendEmailTo:withPDF:]_block_invoke"
+                  moduleName = "XCite"
+                  urlString = "file:///Users/swarup/Documents/Personal/Projects/XCite/XCite/Manager/XCiteNetworkManager.m"
+                  timestampString = "434015607.393764"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

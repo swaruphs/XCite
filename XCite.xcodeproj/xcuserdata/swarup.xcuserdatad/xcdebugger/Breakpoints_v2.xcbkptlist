@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XCite/XCiteVideoPlayerViewController.m"
-            timestampString = "433755562.592667"
+            timestampString = "433928577.018286"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "-videoPlayBackStateChanged:"
             landmarkType = "5">
          </BreakpointContent>
@@ -36,11 +36,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XCite/XCiteVideoPlayerViewController.m"
-            timestampString = "433755562.592667"
+            timestampString = "433928577.018286"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "-videoPlayBackStateChanged:"
             landmarkType = "5">
          </BreakpointContent>

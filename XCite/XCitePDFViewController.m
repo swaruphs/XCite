@@ -48,7 +48,8 @@ UIScrollViewDelegate>
 
 - (void)_init
 {
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:self.model.pdfURL]]];
+    NSString *pdfPath = [[NSBundle mainBundle] pathForResource:self.model.pdfURL ofType:@"pdf"];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:pdfPath]]];
     self.toolbarView.hidden  = YES;
     _toolbarShown = NO;
     
@@ -75,12 +76,33 @@ UIScrollViewDelegate>
     [self showPopup];
 }
 
+#pragma mark - Private methods
+
 - (void)showPopup
 {
-    [XCiteSharePopup initPopupWithEmail:@"soemthing@gmail.com" completionBlock:^(NSInteger index, XCiteSharePopup *popupView) {
-        [popupView dismiss];
-        NSLog(@"clicked button index %ld",index);
+    NSString *savedEmail = [[XCiteCacheManager sharedInstance] savedEmail];
+    [XCiteSharePopup initPopupWithEmail:savedEmail completionBlock:^(NSInteger index, XCiteSharePopup *popupView) {
+        
+        if (index == 0) {
+            [popupView dismiss];
+        }
+        else  {
+            NSString *emailText = popupView.txtField.text;
+            if([emailText isEmail]) {
+                [popupView dismiss];
+                [self sendEmailTo:emailText];
+                [[XCiteCacheManager sharedInstance] saveEmail:emailText];
+            }
+            else {
+                [popupView.txtField  shakeAnimation];
+            }
+        }
     }];
+}
+
+- (void)sendEmailTo:(NSString *)email
+{
+    [[XCiteNetworkManager sharedInstance] sendEmailTo:email withPDF:self.model.pdfURL];
 }
 
 - (void)showToolbar

@@ -7,12 +7,15 @@
 //
 
 #import "XCiteCacheManager.h"
+#import "JSONStore.h"
 
-#define USER_DEFAULTS  @"XCiteUserDefaults"
+#define LAST_SYNC_TIME  @"XCiteLastSyncTime"
+#define USER_COLLECTION @"XCiteUserCollection"
+#define EMAIL_COLLECTION @"XciteEmailCollection"
 
 @implementation XCiteCacheManager
 
-+(instancetype)sharedInstance
++ (instancetype)sharedInstance
 {
     static dispatch_once_t pred;
     static id __singleton = nil;
@@ -23,22 +26,23 @@
     return __singleton;
 }
 
--(BOOL)isBeaconVisited:(NSString *)identifier
+- (BOOL)isBeaconVisited:(NSString *)identifier
 {
+    JSONStoreCollection *beaconColleciton = [self openBeaconCollection];
+    if (![beaconColleciton isValidObject]) {
+        [self setUpJSONStore];
+        return NO;
+    }
+    
     BOOL isValid = [self checkForValidity];
-    if (isValid) {
+    if (!isValid) {
         return NO;
     }
     
-    NSUserDefaults *userDafaults = [NSUserDefaults standardUserDefaults];
-    NSDictionary * userDic = [userDafaults objectForKey:USER_DEFAULTS];
-    NSMutableArray *beaconArray = [userDic objectForKey:@"visitedBeacons"];
-    if (![beaconArray isValidObject] || [beaconArray count] == 0) {
-        return NO;
-    }
+    NSArray *visitedBeacons = [beaconColleciton findAllWithOptions:nil error:nil];
+    NSDictionary *beaconDic = [visitedBeacons firstObjectWithValue:identifier forKeyPath:@"json.identifier"];
     
-    NSSet *beaconSet = [NSMutableSet setWithArray:beaconArray];
-    return [beaconSet containsObject:identifier];
+    return [beaconDic isValidObject];
 }
 
 - (void)saveVisitedBeacon:(NSString *)identifier
@@ -46,53 +50,90 @@
     if(![identifier isValidObject]) {
         return;
     }
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    NSMutableDictionary *userDic = [[userDefaults objectForKey:USER_DEFAULTS] mutableCopy];
-    if (![userDic isValidObject]) {
-        userDic = [NSMutableDictionary dictionary];
-    }
-
-    NSMutableArray *beaconArray  = [[userDic objectForKey:@"visitedBeacons"] mutableCopy];
-    if (![beaconArray isValidObject]) {
-        beaconArray = [NSMutableArray array];
-        
-    }
-    NSMutableSet *beaconSet  = [NSMutableSet setWithArray:beaconArray];
-    [beaconSet addObject:identifier];
-    [userDic setObject:[NSDate date] forKey:@"syncDate"];
-    [userDic setObject:[beaconSet allObjects] forKey:@"visitedBeacons"];
-    [userDefaults setObject:userDic forKey:USER_DEFAULTS];
-    [userDefaults synchronize];
     
-    NSLog(@"user defaults %@",[[NSUserDefaults standardUserDefaults] objectForKey:USER_DEFAULTS]);
+    JSONStoreCollection *beaconCollection = [[JSONStoreCollection alloc] initWithName:USER_COLLECTION];
+    [beaconCollection setSearchField:@"identifier" withType:JSONStore_String];
+    [[JSONStore sharedInstance] openCollections:@[beaconCollection] withOptions:nil error:nil];
+    
+    NSDictionary *data = @{@"identifier":identifier};
+    [beaconCollection addData:@[data] andMarkDirty:NO withOptions:nil error:nil];
+    
+    NSArray *savedArray = [beaconCollection findAllWithOptions:nil error:nil];
+    NSLog(@" saved array %@",savedArray);
+    
 }
 
 - (NSString *)savedEmail
 {
+    JSONStoreCollection *emailCollection = [self openEmailCollection];
+
     BOOL isValid = [self checkForValidity];
-    if (isValid) {
+    if (!isValid) {
         return nil;
     }
     
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    NSDictionary * userDic = [userDefaults objectForKey:USER_DEFAULTS];
-    return [userDic stringForKey:@"email"];
+    NSArray *emailArray = [emailCollection findAllWithOptions:nil error:nil];
+    NSDictionary *emailDic = [emailArray firstObjectOrNil];
+    return [emailDic valueForKeyPath:@"json.email"];
+    
 }
 
 - (void)saveEmail:(NSString *)email
 {
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    NSMutableDictionary *userDic = [[userDefaults objectForKey:USER_DEFAULTS] mutableCopy];
-    if (![userDic isValidObject]) {
-        userDic = [NSMutableDictionary dictionary];
-    }
-    [userDic setValidObject:email forKey:@"email"];
-    [userDic setObject:[NSDate date] forKey:@"syncDate"];
-    [userDefaults setObject:userDic forKey:USER_DEFAULTS];
-    [userDefaults synchronize];
+    JSONStoreCollection *emailCollection = [[JSONStoreCollection alloc] initWithName:EMAIL_COLLECTION];
+    
+    [emailCollection setSearchField:@"email" withType:JSONStore_String];
+    
+    [[JSONStore sharedInstance] openCollections:@[emailCollection] withOptions:nil error:nil];
+    
+    NSDictionary *dataDic =  @{@"email":email};
+    [emailCollection addData:@[dataDic] andMarkDirty:NO withOptions:nil error:nil];
+    [[JSONStore sharedInstance] closeAllCollectionsAndReturnError:nil];
+    
+    [self saveCurrentSyncTime];
 }
 
 #pragma mark - Private Methods
+
+- (void)saveCurrentSyncTime
+{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:[NSDate date] forKey:LAST_SYNC_TIME];
+}
+
+- (void)setUpJSONStore
+{
+    //clear all the saved data, if any.
+    [[JSONStore sharedInstance] destroyDataAndReturnError:nil];
+    
+}
+
+- (JSONStoreCollection *)openBeaconCollection
+{
+    JSONStoreCollection *beaconCollection  = [[JSONStoreCollection alloc] initWithName:USER_COLLECTION];
+    [beaconCollection setSearchField:@"identifier" withType:JSONStore_String];
+    [[JSONStore sharedInstance] openCollections:@[beaconCollection] withOptions:nil error:nil];
+    
+    return beaconCollection;
+}
+
+- (JSONStoreCollection *)openEmailCollection
+{
+    JSONStoreCollection *emailCollection  = [[JSONStoreCollection alloc] initWithName:EMAIL_COLLECTION];
+    [emailCollection setSearchField:@"email" withType:JSONStore_String];
+    [[JSONStore sharedInstance] openCollections:@[emailCollection] withOptions:nil error:nil];
+    
+    return emailCollection;
+    
+}
+
+
+- (JSONStoreCollection *)getEmailCollection
+{
+    JSONStoreCollection *emailCollection = [[JSONStore sharedInstance] getCollectionWithName:EMAIL_COLLECTION];
+    
+    return emailCollection;
+}
 
 /**
  *  Check if the user defaults value is valid. Values are considered invalid if the sync time is of the previous day.
@@ -103,28 +144,30 @@
 - (BOOL)checkForValidity
 {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    NSMutableDictionary *userDic = [userDefaults objectForKey:USER_DEFAULTS];
-    if (![userDic isValidObject] || ![userDic objectForKey:@"syncDate"]) {
+    NSDate *date = [userDefaults objectForKey:LAST_SYNC_TIME];
+
+    if (![date isValidObject]) {
         return YES;
     }
     
-    NSDate *date  = [userDic objectForKey:@"syncDate"];
     NSDate *clockZeroDate = [self dateForPastDays:0 fromDate:[NSDate date]];
     if ([date compare:clockZeroDate] == NSOrderedAscending) {
-        [self resetUserDefaults];
-        return YES;
+        NSLog(@"old cache. deleting old values");
+        [self resetCache];
+        return NO;
     }
     
-    return NO;
+    return YES;
 }
 
 /**
  *  Reset the userDefaults.
  */
-- (void)resetUserDefaults
+- (void)resetCache
 {
-    DLog(@"Reset user defaults");
     [NSUserDefaults resetStandardUserDefaults];
+    [[JSONStore sharedInstance] closeAllCollectionsAndReturnError:nil];
+    [[JSONStore sharedInstance] destroyDataAndReturnError:nil];
 }
 
 /**

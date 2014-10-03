@@ -14,7 +14,24 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright (c) 2013-2014 AFNetworking (http://afnetworking.com/)
+			<string>Copyright 2014 Estimote, Inc. All rights reserved.
+</string>
+			<key>Title</key>
+			<string>EstimoteSDK</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>See README.markdown for full license text.</string>
+			<key>Title</key>
+			<string>OMGHTTPURLRQ</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2014 Max Howell &lt;mxcl@me.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -35,16 +52,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 </string>
 			<key>Title</key>
-			<string>AFNetworking</string>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-		</dict>
-		<dict>
-			<key>FooterText</key>
-			<string>Copyright 2014 Estimote, Inc. All rights reserved.
-</string>
-			<key>Title</key>
-			<string>EstimoteSDK</string>
+			<string>PromiseKit</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

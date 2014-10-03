@@ -22,16 +22,14 @@
 
 - (void)updateWithDictionary:(NSDictionary *)inputDic
 {
-    NSString *videoPath       = [inputDic stringForKey:@"videoURL"];
-    self.videoURL             = [[NSBundle mainBundle] pathForResource:videoPath ofType:@"mp4"];
+    self.videoURL             = [inputDic stringForKey:@"videoURL"];
     self.videoTitle           = [inputDic stringForKey:@"videoTitle"];
     self.videoSubTitle        = [inputDic stringForKey:@"videoSubTitle"];
     self.videoTile            = [inputDic stringForKey:@"videoTile"];
 
     self.titleColor           = [inputDic stringForKey:@"titleColor"];
 
-    NSString *pdfPath         = [inputDic stringForKey:@"pdfURL"];
-    self.pdfURL               = [[NSBundle mainBundle] pathForResource:pdfPath ofType:@"pdf"];
+    self.pdfURL               = [inputDic stringForKey:@"pdfURL"];
     self.pdfTitle             = [inputDic stringForKey:@"pdfTitle"];
     self.pdfSubTitle          = [inputDic stringForKey:@"pdfSubTitle"];
 

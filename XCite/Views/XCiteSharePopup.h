@@ -10,6 +10,8 @@
 
 @interface XCiteSharePopup : UIView
 
+@property (nonatomic, weak) IBOutlet UITextField *txtField;
+
 - (void)show;
 - (void)dismiss;
 - (void)showOnCompletion:(void(^)(void))completionBlock;

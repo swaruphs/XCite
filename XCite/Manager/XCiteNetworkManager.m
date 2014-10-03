@@ -7,8 +7,9 @@
 //
 
 #import "XCiteNetworkManager.h"
-#import "BaseNetworkManager.h"
 #import "NSString+Additions.h"
+#import <PromiseKit/Promise.h>
+#import "NSURLConnection+PromiseKit.h"
 
 @implementation XCiteNetworkManager
 
@@ -25,26 +26,51 @@
 
 - (void)sendEmailTo:(NSString *)email withPDF:(NSString *)pdfFile
 {
-    
-    NSString *md5PDF = [pdfFile md5];
-    NSString *url = [NSString stringWithFormat:@"%@/%@",API_EMAIL,md5PDF];
-    
+    NSString *md5PDF = [[NSString stringWithFormat:@"%@.pdf",pdfFile] md5];
+    NSString *urlString = [NSString stringWithFormat:@"%@/%@",API_EMAIL,md5PDF];
     NSDate *dateNow = [NSDate date];
-    NSNumber *timeStamp = [NSNumber numberWithDouble:[dateNow timeIntervalSince1970]];
-    
-    
+    NSNumber *timeStamp = [NSNumber numberWithLong:[dateNow timeIntervalSince1970]];
     NSString *stringToHash = [NSString stringWithFormat:@"%@%@%@",email,@"secret",timeStamp];
     NSString *hash = [stringToHash sha1];
-    NSDictionary *params = @{@"email":md5PDF,
+    
+    NSDictionary *params = @{@"email":email,
                              @"timestamp":timeStamp,
                              @"hash":hash};
     
-    [[BaseNetworkManager sharedInstance] POST:url parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [NSURLConnection POST:urlString formURLEncodedParameters:params].then(^(id response){
         
-        NSLog(@"response object %@",responseObject);
-        
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"erroor %@",error);
-    }];
+    }).catch(^ (NSError *error){
+        NSLog(@"got error while sending email - %@",error);
+    });
+    
+    
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        
+//        
+//        NSHTTPURLResponse *response  =  nil;
+//        NSError *error =  nil;
+//        
+//      
+//        
+//        NSURL *url  = [NSURL URLWithString:urlString];
+//        NSMutableURLRequest *urlRequest = [[NSMutableURLRequest alloc] initWithURL:url];
+//        urlRequest.HTTPMethod =  @"POST";
+//        
+//        
+//        [urlRequest addValue:email forHTTPHeaderField:@"email"];
+//        [urlRequest addValue:[timeStamp stringValue] forHTTPHeaderField:@"timestamp"];
+//        [urlRequest addValue:hash forHTTPHeaderField:@"hash"];
+//        
+//        NSData *data = [NSURLConnection sendSynchronousRequest:urlRequest returningResponse:&response error:&error];
+//        NSString *output = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+//        if(!error) {
+//            NSLog(@"email sent - %@",output);
+//        }
+//        else {
+//            NSLog(@"Got error %@",error);
+//        }
+//        
+//        
+//    });
 }
 @end

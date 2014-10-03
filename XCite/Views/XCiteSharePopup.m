@@ -12,7 +12,7 @@
 
 @interface XCiteSharePopup()
 
-@property (nonatomic, weak) IBOutlet UITextField *txtField;
+
 @property (nonatomic, weak) IBOutlet UIButton *btnSend;
 @property (nonatomic, weak) IBOutlet UIButton *btnCancel;
 @property (nonatomic, strong) AGWindowView * agWindowView;
@@ -234,7 +234,7 @@
     //get back the block object attribute we set earlier
     void (^block)(NSInteger index, XCiteSharePopup * popupView) = objc_getAssociatedObject(self, "completionBlockCallback");
     if (block)
-        block(sender.tag, self);
+        block(sender.tag - 100, self);
 }
 
 @end

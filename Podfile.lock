@@ -1,33 +1,25 @@
 PODS:
-  - AFNetworking (2.4.1):
-    - AFNetworking/NSURLConnection
-    - AFNetworking/NSURLSession
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-    - AFNetworking/UIKit
-  - AFNetworking/NSURLConnection (2.4.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.4.1):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.4.1)
-  - AFNetworking/Security (2.4.1)
-  - AFNetworking/Serialization (2.4.1)
-  - AFNetworking/UIKit (2.4.1):
-    - AFNetworking/NSURLConnection
-    - AFNetworking/NSURLSession
   - EstimoteSDK (2.1.4)
+  - OMGHTTPURLRQ (2.0.1):
+    - OMGHTTPURLRQ/RQ
+    - OMGHTTPURLRQ/UserAgent
+    - OMGHTTPURLRQ/UserAgent
+  - OMGHTTPURLRQ/RQ (2.0.1):
+    - OMGHTTPURLRQ/UserAgent
+  - OMGHTTPURLRQ/UserAgent (2.0.1):
+    - OMGHTTPURLRQ/UserAgent
+  - PromiseKit/NSURLConnection (0.9.18):
+    - OMGHTTPURLRQ
+    - PromiseKit/Promise
+  - PromiseKit/Promise (0.9.18)
 
 DEPENDENCIES:
-  - AFNetworking
   - EstimoteSDK
+  - PromiseKit/NSURLConnection
 
 SPEC CHECKSUMS:
-  AFNetworking: 0aabc6fae66d6e5d039eeb21c315843c7aae51ab
   EstimoteSDK: 737d80035603a15728b92b193223f1e967102b4e
+  OMGHTTPURLRQ: 4297af2a7f7ca7adb3f8331203001e0fd2dae16f
+  PromiseKit: 6d82595668e5a8bfdf5d1015abe246d9d44ae82e
 
 COCOAPODS: 0.33.1

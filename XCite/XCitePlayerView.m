@@ -75,8 +75,8 @@
     self.lblbVideoTitle.textColor = [UIColor colorWithHexString:model.titleColor];
     self.pdfTitle.textColor = [UIColor colorWithHexString:model.titleColor];
     
-    
-    [self setUpWebView:model.pdfURL];
+    NSString *pdfURL = [[NSBundle mainBundle] pathForResource:model.pdfURL ofType:@"pdf"];
+    [self setUpWebView:pdfURL];
 }
 
 - (void)setUpVideoPlayerWithURL:(NSString *)fileURL
@@ -92,6 +92,7 @@
 
 - (void)setUpWebView:(NSString *)urlString
 {
+    
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:urlString]]];
 }
 

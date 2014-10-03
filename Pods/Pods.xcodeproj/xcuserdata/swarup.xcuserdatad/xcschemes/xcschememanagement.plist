@@ -4,12 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-XCite-AFNetworking.xcscheme</key>
+		<key>Pods-XCite-EstimoteSDK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-XCite-EstimoteSDK.xcscheme</key>
+		<key>Pods-XCite-OMGHTTPURLRQ.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-XCite-PromiseKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2CBF0C70D187432DB1D25C49</key>
+		<key>78390B865F7C40CE8D818EEB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CA56FCA7B93F42E5916B1836</key>
+		<key>79543AB1CB914D4695C381B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D92B659EEEB74A6697DE591B</key>
+		<key>BF946804D9BB41B9A71DC06D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DBE5801E92AD49BD826FED58</key>
 		<dict>
 			<key>primary</key>
 			<true/>

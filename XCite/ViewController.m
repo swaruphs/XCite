@@ -57,7 +57,7 @@ ESTBeaconManagerDelegate>
     [self.sideBarCollectionView setCollectionViewLayout:[[XCiteSideBarCollectionViewLayout alloc] init]];
     self.sideBarCollectionView.decelerationRate = UIScrollViewDecelerationRateFast;
     self.dataArray = [[DataManager sharedInstance] getAllModels];
-    
+    self.sideBarCollectionView.exclusiveTouch = TRUE;
 }
 
 - (void)setUpPlayerScrollView
