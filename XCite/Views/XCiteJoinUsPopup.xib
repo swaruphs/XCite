@@ -50,7 +50,7 @@
                     <rect key="frame" x="40" y="250" width="185" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Q5C-kw-bJ3">
+                        <button opaque="NO" alpha="0.29999999999999999" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Q5C-kw-bJ3">
                             <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
@@ -62,7 +62,7 @@
                                 <action selector="onBtnTitle:" destination="iN0-l3-epB" eventType="touchUpInside" id="oAf-Hj-BmD"/>
                             </connections>
                         </button>
-                        <button opaque="NO" tag="202" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BfI-q1-Elu">
+                        <button opaque="NO" alpha="0.29999999999999999" tag="202" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BfI-q1-Elu">
                             <rect key="frame" x="123" y="0.0" width="60" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
@@ -89,7 +89,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.0" green="0.6470588235294118" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
                         </view>
-                        <button opaque="NO" tag="201" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="La4-4B-mLK">
+                        <button opaque="NO" alpha="0.29999999999999999" tag="201" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="La4-4B-mLK">
                             <rect key="frame" x="62" y="0.0" width="60" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
@@ -139,6 +139,7 @@
             <connections>
                 <outlet property="btnCancel" destination="Ooc-aC-sHv" id="Pw7-JN-jg9"/>
                 <outlet property="btnSend" destination="a56-0J-zjV" id="657-xh-isO"/>
+                <outlet property="titleViewHolder" destination="SRr-9z-CWX" id="5CA-Ks-pKY"/>
                 <outlet property="txtEmail" destination="1iq-zZ-Jen" id="3DE-cM-RRg"/>
                 <outlet property="txtFirstName" destination="WYH-Rh-E5X" id="JCR-aw-h2a"/>
                 <outlet property="txtLastName" destination="U3N-LT-Zb9" id="eRl-s4-dVQ"/>

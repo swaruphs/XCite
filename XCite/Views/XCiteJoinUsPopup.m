@@ -22,7 +22,15 @@
 {
     XCiteJoinUsPopup *popUp = [[XCiteJoinUsPopup alloc] initWithNib];
     [popUp setUpWithCompletionBlock:completionBlock];
+    if ([email isEmail]) {
+        popUp.txtEmail.text = email;
+    }
     [popUp show];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [popUp.txtEmail becomeFirstResponder];
+    });
+    
     return popUp;
     
 }

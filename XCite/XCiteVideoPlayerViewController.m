@@ -36,8 +36,8 @@
     NSString *videoURLPath = [[NSBundle mainBundle] pathForResource:self.model.videoURL ofType:@"mp4"];
     NSURL *videoURL        = [NSURL fileURLWithPath:videoURLPath];
     self.player            = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
-    self.player.controlStyle = MPMovieControlStyleNone;
     self.player.view.frame = self.videoHolderView.bounds;
+    self.player.movieSourceType = MPMovieSourceTypeFile;
     [self.videoHolderView addSubview:self.player.view];
     [self.videoHolderView bringSubviewToFront:self.btnClose];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoPlayBackStateChanged:) name:MPMoviePlayerPlaybackDidFinishNotification object:self.player];
@@ -59,7 +59,12 @@
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     [self.player stop];
-    [self.navigationController popToRootViewControllerAnimated:TRUE];
+    if (self.moveToPDFOnCompletion) {
+        [self showPDFViewer];
+    }
+    else {
+      [self.navigationController popToRootViewControllerAnimated:TRUE];
+    }
 }
 
 - (void)videoPlayBackStateChanged:(NSNotification *)notification

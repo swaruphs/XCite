@@ -55,10 +55,10 @@
                              @"name":name
                              };
     
-    [NSURLConnection GET:API_SUBSCRIBE query:params].then(^(id response){
+    [NSURLConnection POST:API_SUBSCRIBE formURLEncodedParameters:params].then(^(id response){
         NSLog(@"user subscribed successfully ! %@",response);
     }).catch(^ (NSError *error){
         NSLog(@"got error while sending email - %@",error);
-    });
+    });    
 }
 @end

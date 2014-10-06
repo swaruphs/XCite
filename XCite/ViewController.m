@@ -239,9 +239,10 @@ ESTBeaconManagerDelegate>
             BOOL isValid = [self validateJoinUsPopUp:popupView];
             if (isValid) {
                 [self constructAndSendJoinUsRequest:popupView];
+                [[XCiteCacheManager sharedInstance] saveEmail:popupView.txtEmail.text];
+                [popupView dismiss];
             }
         }
-        
     }];
 }
 
@@ -330,5 +331,12 @@ ESTBeaconManagerDelegate>
 - (void)beaconManager:(ESTBeaconManager *)manager didStartMonitoringForRegion:(ESTBeaconRegion *)region
 {
     
+}
+
+#pragma mark - Status Bar
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 @end
