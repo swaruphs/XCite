@@ -14,6 +14,7 @@
 
 - (void)XCitePlayerView:(XCitePlayerView *)playerView playVideoAtIndex:(NSUInteger)index;
 - (void)XCitePlayerView:(XCitePlayerView *)playerView openPDFAtIndex:(NSUInteger)index;
+- (void)XCitePlayerViewDidTapOnJoinUs:(XCitePlayerView *)playerView;
 
 @end
 

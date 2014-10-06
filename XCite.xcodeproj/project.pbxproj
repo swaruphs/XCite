@@ -81,6 +81,9 @@
 		0746A38019D5456E00835396 /* MTMatrixInterpolation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0746A37B19D5456E00835396 /* MTMatrixInterpolation.m */; };
 		0746A38119D5456E00835396 /* MTTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0746A37D19D5456E00835396 /* MTTimingFunctions.m */; };
 		0746A38219D5456E00835396 /* UIView+MTAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0746A37F19D5456E00835396 /* UIView+MTAnimation.m */; };
+		074B963619DEB32D006E2E10 /* XCiteJoinUsPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 074B963519DEB32D006E2E10 /* XCiteJoinUsPopup.m */; };
+		074B963819DEB34B006E2E10 /* XCiteJoinUsPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 074B963719DEB34B006E2E10 /* XCiteJoinUsPopup.xib */; };
+		075173D519DF3D82007CF3AA /* XCitePopupBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 075173D419DF3D82007CF3AA /* XCitePopupBaseView.m */; };
 		075BCD0519D8FEF3007260BB /* beacons.plist in Resources */ = {isa = PBXBuildFile; fileRef = 075BCD0419D8FEF3007260BB /* beacons.plist */; };
 		075BCD0819D8FEFA007260BB /* BeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BCD0719D8FEFA007260BB /* BeaconManager.m */; };
 		075BCD0B19D8FF00007260BB /* BeaconModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 075BCD0A19D8FF00007260BB /* BeaconModel.m */; };
@@ -307,6 +310,11 @@
 		0746A37D19D5456E00835396 /* MTTimingFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTTimingFunctions.m; sourceTree = "<group>"; };
 		0746A37E19D5456E00835396 /* UIView+MTAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MTAnimation.h"; sourceTree = "<group>"; };
 		0746A37F19D5456E00835396 /* UIView+MTAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MTAnimation.m"; sourceTree = "<group>"; };
+		074B963419DEB32D006E2E10 /* XCiteJoinUsPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCiteJoinUsPopup.h; sourceTree = "<group>"; };
+		074B963519DEB32D006E2E10 /* XCiteJoinUsPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCiteJoinUsPopup.m; sourceTree = "<group>"; };
+		074B963719DEB34B006E2E10 /* XCiteJoinUsPopup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XCiteJoinUsPopup.xib; sourceTree = "<group>"; };
+		075173D319DF3D82007CF3AA /* XCitePopupBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCitePopupBaseView.h; sourceTree = "<group>"; };
+		075173D419DF3D82007CF3AA /* XCitePopupBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCitePopupBaseView.m; sourceTree = "<group>"; };
 		075BCD0419D8FEF3007260BB /* beacons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = beacons.plist; sourceTree = "<group>"; };
 		075BCD0619D8FEFA007260BB /* BeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconManager.h; sourceTree = "<group>"; };
 		075BCD0719D8FEFA007260BB /* BeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconManager.m; sourceTree = "<group>"; };
@@ -584,9 +592,14 @@
 		0746A36919D5166300835396 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				075173D319DF3D82007CF3AA /* XCitePopupBaseView.h */,
+				075173D419DF3D82007CF3AA /* XCitePopupBaseView.m */,
 				0746A36A19D5167F00835396 /* XCiteSharePopup.h */,
 				0746A36B19D5167F00835396 /* XCiteSharePopup.m */,
 				0746A36D19D5169000835396 /* XCiteSharePopup.xib */,
+				074B963419DEB32D006E2E10 /* XCiteJoinUsPopup.h */,
+				074B963519DEB32D006E2E10 /* XCiteJoinUsPopup.m */,
+				074B963719DEB34B006E2E10 /* XCiteJoinUsPopup.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -916,6 +929,7 @@
 				0717F6DD19DD20A6002DFAA5 /* welcome.png in Resources */,
 				073F859919D3F8D700F0E939 /* Welcome_Doc_2013_ibm_strategy(2).pdf in Resources */,
 				073F859719D3F8D700F0E939 /* Social_Doc_Applying Social Business-Repeatable Patterns provide return (2014-Jan).pdf in Resources */,
+				074B963819DEB34B006E2E10 /* XCiteJoinUsPopup.xib in Resources */,
 				073F859319D3F8D700F0E939 /* Cloud_Doc_Private Cloud in the Hybrid Cloud Era.pdf in Resources */,
 				0768237B19D2ADD100BC0CCA /* ic_security.png in Resources */,
 				0768235D19D2ADC700BC0CCA /* bt_search.png in Resources */,
@@ -1045,6 +1059,7 @@
 				073F856419D3D28200F0E939 /* XCitePlayerView.m in Sources */,
 				073F85A419D3FF9500F0E939 /* NSDictionary+Additions.m in Sources */,
 				0746A38119D5456E00835396 /* MTTimingFunctions.m in Sources */,
+				074B963619DEB32D006E2E10 /* XCiteJoinUsPopup.m in Sources */,
 				077818F119D29DEA005D43A6 /* AppDelegate.m in Sources */,
 				0746A37419D521E100835396 /* AGWindowView.m in Sources */,
 				077818EE19D29DEA005D43A6 /* main.m in Sources */,
@@ -1054,6 +1069,7 @@
 				0746A38019D5456E00835396 /* MTMatrixInterpolation.m in Sources */,
 				075BCD0B19D8FF00007260BB /* BeaconModel.m in Sources */,
 				073F859D19D3FCBA00F0E939 /* DataManager.m in Sources */,
+				075173D519DF3D82007CF3AA /* XCitePopupBaseView.m in Sources */,
 				0768239219D2BD4D00BC0CCA /* XCiteSideBarCollectionViewLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

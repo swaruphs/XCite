@@ -13,5 +13,6 @@
 +(instancetype)sharedInstance;
 
 - (void)sendEmailTo:(NSString *)email withPDF:(NSString *)pdfFile;
+- (void)subscribeUserWithEmail:(NSString *)email name:(NSString *)name;
 
 @end

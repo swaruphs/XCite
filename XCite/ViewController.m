@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "XCiteSideBarCell.h"
 #import "XCitePlayerView.h"
+#import "XCiteJoinUsPopup.h"
 #import "XCiteSideBarCollectionViewLayout.h"
 #import "XCiteVideoPlayerViewController.h"
 #import "XCitePDFViewController.h"
@@ -207,6 +208,11 @@ ESTBeaconManagerDelegate>
     [self.navigationController pushViewController:controller animated:YES];
 }
 
+- (void)XCitePlayerViewDidTapOnJoinUs:(XCitePlayerView *)playerView
+{
+    [self showJoinUsPopup];
+}
+
 #pragma mark - Private APIs
 
 - (void)syncScrollViews:(UIScrollView *)scrollView
@@ -221,6 +227,60 @@ ESTBeaconManagerDelegate>
     }
 }
 
+- (void)showJoinUsPopup
+{
+    NSString *email = [[XCiteCacheManager sharedInstance] savedEmail];
+    [XCiteJoinUsPopup showPopupWithEmail:email completionBlock:^(NSInteger index, XCiteJoinUsPopup *popupView) {
+        
+        if (index == 0) {
+            [popupView dismiss];
+        }
+        else {
+            BOOL isValid = [self validateJoinUsPopUp:popupView];
+            if (isValid) {
+                [self constructAndSendJoinUsRequest:popupView];
+            }
+        }
+        
+    }];
+}
+
+- (BOOL)validateJoinUsPopUp:(XCiteJoinUsPopup *)popUp
+{
+    if ([popUp.txtEmail.text isEmail] == NO) {
+        [popUp.txtEmail shakeAnimation];
+        return NO;
+    }
+    
+    if (popUp.txtFirstName.text.length <= 0) {
+        [popUp.txtFirstName shakeAnimation];
+        return NO;
+    }
+    
+    if (popUp.txtLastName.text.length <= 0) {
+        [popUp.txtLastName shakeAnimation];
+        return NO;
+    }
+    
+    if (![popUp.selectedBtn isValidObject]) {
+        [popUp.titleViewHolder shakeAnimation];
+        return NO;
+    }
+    return YES;
+}
+
+- (void)constructAndSendJoinUsRequest:(XCiteJoinUsPopup *)popup
+{
+    NSString * firstName = popup.txtFirstName.text;
+    NSString * lastName = popup.txtLastName.text;
+    NSString * title = popup.selectedBtn.titleLabel.text;
+    
+    NSString *fullName = [NSString stringWithFormat:@"%@.%@ %@",title, lastName, firstName];
+    NSString * email = popup.txtEmail.text;
+    
+    [[XCiteNetworkManager sharedInstance] subscribeUserWithEmail:email name:fullName];
+    
+}
 #pragma mark - Beacon Helper Methods
 
 -(void)checkForBeaconPermission

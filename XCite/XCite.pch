@@ -40,6 +40,7 @@
 
 #define API_SERVER_HOST @"http://ibmexcite.azurewebsites.net"
 #define API_EMAIL API_SERVER_HOST @"/api/email"
+#define API_SUBSCRIBE API_SERVER_HOST @"/api/subscribe"
 
 
 //------------------------------------------------------------------------------------------------------

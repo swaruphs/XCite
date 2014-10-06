@@ -111,4 +111,9 @@
     [self.delegate XCitePlayerView:self openPDFAtIndex:self.tag];
 }
 
+- (IBAction)onBtnJoinUs:(id)sender
+{
+    [self.delegate XCitePlayerViewDidTapOnJoinUs:self];
+}
+
 @end

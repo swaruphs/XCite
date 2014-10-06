@@ -42,35 +42,23 @@
     }).catch(^ (NSError *error){
         NSLog(@"got error while sending email - %@",error);
     });
+}
+
+- (void)subscribeUserWithEmail:(NSString *)email name:(NSString *)name
+{
+    if (!name || !email) {
+        return;
+    }
     
+    NSDictionary *params = @{
+                             @"email":email,
+                             @"name":name
+                             };
     
-//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-//        
-//        
-//        NSHTTPURLResponse *response  =  nil;
-//        NSError *error =  nil;
-//        
-//      
-//        
-//        NSURL *url  = [NSURL URLWithString:urlString];
-//        NSMutableURLRequest *urlRequest = [[NSMutableURLRequest alloc] initWithURL:url];
-//        urlRequest.HTTPMethod =  @"POST";
-//        
-//        
-//        [urlRequest addValue:email forHTTPHeaderField:@"email"];
-//        [urlRequest addValue:[timeStamp stringValue] forHTTPHeaderField:@"timestamp"];
-//        [urlRequest addValue:hash forHTTPHeaderField:@"hash"];
-//        
-//        NSData *data = [NSURLConnection sendSynchronousRequest:urlRequest returningResponse:&response error:&error];
-//        NSString *output = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-//        if(!error) {
-//            NSLog(@"email sent - %@",output);
-//        }
-//        else {
-//            NSLog(@"Got error %@",error);
-//        }
-//        
-//        
-//    });
+    [NSURLConnection GET:API_SUBSCRIBE query:params].then(^(id response){
+        NSLog(@"user subscribed successfully ! %@",response);
+    }).catch(^ (NSError *error){
+        NSLog(@"got error while sending email - %@",error);
+    });
 }
 @end

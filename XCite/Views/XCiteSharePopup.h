@@ -7,15 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XCitePopupBaseView.h"
 
-@interface XCiteSharePopup : UIView
+@interface XCiteSharePopup : XCitePopupBaseView
 
 @property (nonatomic, weak) IBOutlet UITextField *txtField;
-
-- (void)show;
-- (void)dismiss;
-- (void)showOnCompletion:(void(^)(void))completionBlock;
-- (void)dismissOnCompletion:(void(^)(void))completionBlock;
 
 + (id)initPopupWithEmail:(NSString *)email
          completionBlock:(void (^)(NSInteger index, XCiteSharePopup * popupView))completionBlock;
