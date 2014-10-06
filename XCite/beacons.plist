@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>name</key>
-		<string>com.2359media.infra</string>
+		<string>com.2359media.welcome</string>
 		<key>uuid</key>
 		<string>B9407F30-F5F8-466E-AFF9-25556B57FE6D</string>
 		<key>major</key>
@@ -14,7 +14,7 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>com.2359media.welcome</string>
+		<string>com.2359media.csuite</string>
 		<key>uuid</key>
 		<string>B9407F30-F5F8-466E-AFF9-25556B57FE6D</string>
 		<key>major</key>
@@ -24,13 +24,73 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>com.2359media.security</string>
+		<string>com.2359media.watson</string>
 		<key>uuid</key>
 		<string>B9407F30-F5F8-466E-AFF9-25556B57FE6D</string>
 		<key>major</key>
 		<integer>37134</integer>
 		<key>minor</key>
 		<integer>35178</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>com.2359media.cloud</string>
+		<key>uuid</key>
+		<string>B9407F30-F5F8-466E-AFF9-25556B57FE6D</string>
+		<key>major</key>
+		<integer>4624</integer>
+		<key>minor</key>
+		<integer>23073</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>com.2359media.analytics</string>
+		<key>uuid</key>
+		<string>B9407F30-F5F8-466E-AFF9-25556B57FE6D</string>
+		<key>major</key>
+		<integer>27360</integer>
+		<key>minor</key>
+		<integer>2854</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>com.2359media.mobile</string>
+		<key>uuid</key>
+		<string>B9407F30-F5F8-466E-AFF9-25556B57FE6D</string>
+		<key>major</key>
+		<integer>43353</integer>
+		<key>minor</key>
+		<integer>3133</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>com.2359media.social</string>
+		<key>uuid</key>
+		<string>B9407F30-F5F8-466E-AFF9-25556B57FE6D</string>
+		<key>major</key>
+		<integer>44433</integer>
+		<key>minor</key>
+		<integer>61875</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>com.2359media.security</string>
+		<key>uuid</key>
+		<string>B9407F30-F5F8-466E-AFF9-25556B57FE6D</string>
+		<key>major</key>
+		<integer>30802</integer>
+		<key>minor</key>
+		<integer>14812</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>com.2359media.infra</string>
+		<key>uuid</key>
+		<string>B9407F30-F5F8-466E-AFF9-25556B57FE6D</string>
+		<key>major</key>
+		<integer>50892</integer>
+		<key>minor</key>
+		<integer>23229</integer>
 	</dict>
 </array>
 </plist>
