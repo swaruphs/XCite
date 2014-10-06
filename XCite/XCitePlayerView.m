@@ -77,6 +77,7 @@
     self.pdfTitle.textColor = [UIColor colorWithHexString:model.titleColor];
     
     self.lblJoinUs.font = [UIFont fontWithName:@"RockwellStd" size:22];
+    self.exclusiveTouch = YES;
     
     NSString *pdfURL = [[NSBundle mainBundle] pathForResource:model.pdfURL ofType:@"pdf"];
     [self setUpWebView:pdfURL];

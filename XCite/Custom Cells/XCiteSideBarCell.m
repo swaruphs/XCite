@@ -12,6 +12,7 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    self.exclusiveTouch = YES;
 }
 
 @end

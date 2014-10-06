@@ -59,6 +59,7 @@ ESTBeaconManagerDelegate>
     self.sideBarCollectionView.decelerationRate = UIScrollViewDecelerationRateFast;
     self.dataArray = [[DataManager sharedInstance] getAllModels];
     self.sideBarCollectionView.exclusiveTouch = TRUE;
+    self.playerScrollView.exclusiveTouch = TRUE;
 }
 
 - (void)setUpPlayerScrollView
@@ -125,7 +126,7 @@ ESTBeaconManagerDelegate>
     else {
         cell.imgView.image = [UIImage imageNamed:model.offImage];
     }
-
+    
     return cell;
 }
 
