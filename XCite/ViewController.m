@@ -177,6 +177,14 @@ ESTBeaconManagerDelegate>
     }
 }
 
+#pragma mark - Actions
+
+-(IBAction)onBtnClear:(id)sender
+{
+    if (DEBUG) {
+        [self clearCacheData];
+    }
+}
 
 #pragma mark - Sidebar
 
@@ -283,6 +291,15 @@ ESTBeaconManagerDelegate>
     [[XCiteNetworkManager sharedInstance] subscribeUserWithEmail:email name:fullName];
     
 }
+
+- (void)clearCacheData
+{
+    if (DEBUG) {
+        [[XCiteCacheManager sharedInstance] resetCache];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Cleared cached data" message:nil delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+}
 #pragma mark - Beacon Helper Methods
 
 -(void)checkForBeaconPermission
@@ -340,4 +357,5 @@ ESTBeaconManagerDelegate>
 {
     return UIStatusBarStyleLightContent;
 }
+
 @end

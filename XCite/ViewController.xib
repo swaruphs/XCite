@@ -35,9 +35,13 @@
                         <outlet property="delegate" destination="-1" id="cHE-PJ-dsT"/>
                     </connections>
                 </collectionView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" id="tfC-qP-xIA">
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" id="tfC-qP-xIA">
                     <rect key="frame" x="29" y="30" width="140" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="4EK-Gs-kOX" appends="YES" id="DFQ-mj-XVh"/>
+                    </connections>
                 </imageView>
                 <scrollView clipsSubviews="YES" contentMode="scaleToFill" pagingEnabled="YES" id="ZuN-YO-uWQ">
                     <rect key="frame" x="199" y="95" width="825" height="673"/>
@@ -75,6 +79,11 @@ built by 2359 Media</string>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
             <point key="canvasLocation" x="142" y="147"/>
         </view>
+        <tapGestureRecognizer numberOfTapsRequired="2" id="4EK-Gs-kOX">
+            <connections>
+                <action selector="onBtnClear:" destination="-1" id="a77-Xz-83z"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="2359logo.png" width="140" height="79"/>

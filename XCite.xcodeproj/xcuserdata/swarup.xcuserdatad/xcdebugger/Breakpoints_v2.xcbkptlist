@@ -25,7 +25,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "66"
             endingLineNumber = "66"
-            landmarkName = "-videoPlayBackStateChanged:"
+            landmarkName = "-dismissVideoPlayer:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -34,6 +34,7 @@
 		0717F75E19DD6D6C002DFAA5 /* libWorklightStaticLibProjectNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0717F75D19DD6D6C002DFAA5 /* libWorklightStaticLibProjectNative.a */; };
 		071D460419DE93FE0029FF93 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 071D460319DE93FE0029FF93 /* splash.png */; };
 		071D460619DE97D30029FF93 /* 2359logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 071D460519DE97D30029FF93 /* 2359logo.png */; };
+		0728CBE519E34A4900A73DFF /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 0728CBE419E34A4900A73DFF /* iTunesArtwork.png */; };
 		0736FB3619DE4B78003E2401 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0736FB3519DE4B78003E2401 /* MobileCoreServices.framework */; };
 		073F856419D3D28200F0E939 /* XCitePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 073F856319D3D28200F0E939 /* XCitePlayerView.m */; };
 		073F856819D3D8F000F0E939 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073F856719D3D8F000F0E939 /* AVFoundation.framework */; };
@@ -246,6 +247,7 @@
 		0717F75D19DD6D6C002DFAA5 /* libWorklightStaticLibProjectNative.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWorklightStaticLibProjectNative.a; sourceTree = "<group>"; };
 		071D460319DE93FE0029FF93 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		071D460519DE97D30029FF93 /* 2359logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2359logo.png; sourceTree = "<group>"; };
+		0728CBE419E34A4900A73DFF /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		0736FB3519DE4B78003E2401 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		073F856219D3D28200F0E939 /* XCitePlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCitePlayerView.h; sourceTree = "<group>"; };
 		073F856319D3D28200F0E939 /* XCitePlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCitePlayerView.m; sourceTree = "<group>"; };
@@ -740,6 +742,7 @@
 		077818DF19D29DEA005D43A6 = {
 			isa = PBXGroup;
 			children = (
+				0728CBE419E34A4900A73DFF /* iTunesArtwork.png */,
 				077818EA19D29DEA005D43A6 /* XCite */,
 				0778190419D29DEA005D43A6 /* XCiteTests */,
 				077818E919D29DEA005D43A6 /* Products */,
@@ -942,6 +945,7 @@
 				073F858919D3EA2700F0E939 /* content.plist in Resources */,
 				074169CE19DA998200A1A8EF /* mobile.png in Resources */,
 				0768238D19D2B9B100BC0CCA /* XCiteMainCell.xib in Resources */,
+				0728CBE519E34A4900A73DFF /* iTunesArtwork.png in Resources */,
 				074169CB19DA998200A1A8EF /* analytics.png in Resources */,
 				0717F6DC19DD20A6002DFAA5 /* csuite.png in Resources */,
 				0717F6D219DCFD41002DFAA5 /* C-Suite_Doc_GBE03572USEN.pdf in Resources */,
@@ -1202,7 +1206,7 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "211d4324-f67e-4918-a4b3-29a19c31c36b";
+				PROVISIONING_PROFILE = "a21fd538-eb64-4591-ae06-b3a71be05ab2";
 				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
@@ -1226,7 +1230,7 @@
 					"$(PROJECT_DIR)/XCite/Vendor/WorklightAPI",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "211d4324-f67e-4918-a4b3-29a19c31c36b";
+				PROVISIONING_PROFILE = "a21fd538-eb64-4591-ae06-b3a71be05ab2";
 				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;

@@ -15,5 +15,6 @@
 - (void)saveVisitedBeacon:(NSString *)identifier;
 - (NSString *)savedEmail;
 - (void)saveEmail:(NSString *)email;
+- (void)resetCache;
 
 @end
