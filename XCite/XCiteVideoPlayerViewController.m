@@ -33,14 +33,21 @@
     // Do any additional setup after loading the view from its nib.
 
     
-    NSString *videoURLPath = [[NSBundle mainBundle] pathForResource:self.model.videoURL ofType:@"mp4"];
-    NSURL *videoURL        = [NSURL fileURLWithPath:videoURLPath];
-    self.player            = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
-    self.player.view.frame = self.videoHolderView.bounds;
+    // setting up the video player.    
+    NSString *videoURLPath      = [[NSBundle mainBundle]
+                                   pathForResource:self.model.videoURL ofType:@"mp4"];
+    NSURL *videoURL             = [NSURL fileURLWithPath:videoURLPath];
+    self.player                 = [[MPMoviePlayerController alloc]
+                                   initWithContentURL:videoURL];
+    self.player.view.frame      = self.videoHolderView.bounds;
     self.player.movieSourceType = MPMovieSourceTypeFile;
+    
     [self.videoHolderView addSubview:self.player.view];
     [self.videoHolderView bringSubviewToFront:self.btnClose];
+    
+    // register for notifications.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(videoPlayBackStateChanged:) name:MPMoviePlayerPlaybackDidFinishNotification object:self.player];
+    
     self.navigationController.navigationBarHidden = YES;
     
 }
@@ -55,6 +62,11 @@
     return UIStatusBarStyleLightContent;
 }
 
+/**
+ *  Dismiss the video player. Action for close button
+ *
+ *  @param sender Close button
+ */
 - (IBAction)dismissVideoPlayer:(id)sender
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
@@ -67,6 +79,11 @@
     }
 }
 
+/**
+ *  Video player Notification method.
+ *
+ *  @param notification notification object passed
+ */
 - (void)videoPlayBackStateChanged:(NSNotification *)notification
 {
     NSDictionary *userInfo = [notification userInfo];
@@ -88,6 +105,9 @@
     }
 }
 
+/**
+ *  Navigate to the pdf viewer. Method called if the video is played from a local notification.
+ */
 - (void)showPDFViewer
 {
     XCitePDFViewController *controller = [[XCitePDFViewController alloc] initWithNibName:@"XCitePDFViewController" bundle:nil];

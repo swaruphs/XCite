@@ -11,6 +11,12 @@
 @interface BeaconManager : NSObject
 
 +(instancetype)sharedInstance;
+
+/**
+ *  get all beacons from the plist
+ *
+ *  @return BeaconModel array.
+ */
 - (NSMutableArray *)getBeacons;
 
 @end

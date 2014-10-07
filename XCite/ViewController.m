@@ -50,7 +50,9 @@ ESTBeaconManagerDelegate>
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+/**
+ *  Private init method to initialize the views and models.
+ */
 - (void)_init
 {
     UINib *cellNib = [UINib nibWithNibName:@"XCiteSideBarCell" bundle:nil];
@@ -61,7 +63,9 @@ ESTBeaconManagerDelegate>
     self.sideBarCollectionView.exclusiveTouch = TRUE;
     self.playerScrollView.exclusiveTouch = TRUE;
 }
-
+/**
+ *  set up the right pane scroll view. Add the pdf and video for each item found in contents.plist.
+ */
 - (void)setUpPlayerScrollView
 {
     CGFloat yOffset = 0.0f;
@@ -81,6 +85,9 @@ ESTBeaconManagerDelegate>
     }
 }
 
+/**
+ *  Set up the beacons with each beacon found in beacons.plist.
+ */
 - (void)setUpBeacons
 {
     self.beaconManager = [[ESTBeaconManager alloc] init];
@@ -92,7 +99,13 @@ ESTBeaconManagerDelegate>
     }
 }
 
-
+/**
+ *  Return beacon region for corresponding UUID, major and minor values.
+ *
+ *  @param item beacon model
+ *
+ *  @return beacon region to monitor and range.
+ */
 - (ESTBeaconRegion *)beaconRegionWithItem:(BeaconModel *)item {
     ESTBeaconRegion *beaconRegion = [[ESTBeaconRegion alloc] initWithProximityUUID:item.uuid
                                                                            major:item.majorVersion
@@ -101,13 +114,18 @@ ESTBeaconManagerDelegate>
     return beaconRegion;
 }
 
+/**
+ *  Start monitoring the region. Gets the region from the model passed as input.
+ *
+ *  @param item Model to monitor.
+ */
 - (void)startMonitoringItem:(BeaconModel *)item {
     ESTBeaconRegion *beaconRegion = [self beaconRegionWithItem:item];
     [self.beaconManager startMonitoringForRegion:beaconRegion];
     [self.beaconManager startRangingBeaconsInRegion:beaconRegion];
 }
 
-#pragma UICollectionView Delegate
+#pragma mark - UICollectionView Delegate
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
@@ -279,6 +297,11 @@ ESTBeaconManagerDelegate>
     return YES;
 }
 
+/**
+ *  Construt and send JSON Request for subscribing user.
+ *
+ *  @param popup  - Pop up object to read the inputs.
+ */
 - (void)constructAndSendJoinUsRequest:(XCiteJoinUsPopup *)popup
 {
     NSString * firstName = popup.txtFirstName.text;
@@ -310,7 +333,7 @@ ESTBeaconManagerDelegate>
     }
     else if([ESTBeaconManager authorizationStatus] == kCLAuthorizationStatusAuthorizedAlways)
     {
-        [self startRangingAllBeacons];
+        // do nothing
     }
     else if([ESTBeaconManager authorizationStatus] == kCLAuthorizationStatusDenied)
     {
@@ -343,16 +366,21 @@ ESTBeaconManagerDelegate>
 
 - (void)beaconManager:(ESTBeaconManager *)manager didDiscoverBeacons:(NSArray *)beacons inRegion:(ESTBeaconRegion *)region
 {
-    
+    // do nothing for now.
 }
 
 - (void)beaconManager:(ESTBeaconManager *)manager didStartMonitoringForRegion:(ESTBeaconRegion *)region
 {
-    
+    // do nothing for now.
 }
 
 #pragma mark - Status Bar
 
+/**
+ *  Set the status bar style to light color.
+ *
+ *
+ */
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     return UIStatusBarStyleLightContent;

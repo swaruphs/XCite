@@ -25,13 +25,16 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
    
+    // ios 8 registering local notifications.
     if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){
         [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
     }
     
+    // initializing the beacon manager
     self.beaconManager = [[ESTBeaconManager alloc] init];
     self.beaconManager.delegate = self;
     
+    // Root view controller. Not using Storyboards.
     ViewController *rootController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     UINavigationController *navController = [[UINavigationController alloc]
                                              initWithRootViewController:rootController];
@@ -101,12 +104,15 @@
 
 - (void)showLocalNotificationsForIndex:(XCiteModel *)model
 {
+    // check if the beacon is already visited.
     BOOL alreadyVisited = [[XCiteCacheManager sharedInstance] isBeaconVisited:model.identifier];
     if (alreadyVisited) {
+        // dont show the local notification, if already visited.
         NSLog(@"beacon already visited");
         return;
     }
     
+    // cancel all already existing notifications. Display only the one at any point of time.
     [[UIApplication sharedApplication] cancelAllLocalNotifications];
     UILocalNotification *notification = [[UILocalNotification alloc] init];
     notification.alertBody            = [NSString stringWithFormat:@"%@\n%@",model.notificationTitle,model.notificationSubTitle];
@@ -115,6 +121,11 @@
     [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
 }
 
+/**
+ *  Show the home screen and navigate to the video player. Called when user takes action on local notification.
+ *
+ *  @param identifier identifier of the local notification.
+ */
 - (void)showHomeScreenAndPushVideoPlayerWithIdentifier:(NSString *)identifier
 {
     ViewController *rootController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];

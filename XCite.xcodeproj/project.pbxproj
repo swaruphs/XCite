@@ -1206,7 +1206,7 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a21fd538-eb64-4591-ae06-b3a71be05ab2";
+				PROVISIONING_PROFILE = "208a2cb6-8d4a-43af-8c3c-3c4367c9e71e";
 				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
@@ -1230,7 +1230,7 @@
 					"$(PROJECT_DIR)/XCite/Vendor/WorklightAPI",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a21fd538-eb64-4591-ae06-b3a71be05ab2";
+				PROVISIONING_PROFILE = "208a2cb6-8d4a-43af-8c3c-3c4367c9e71e";
 				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;

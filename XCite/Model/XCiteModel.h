@@ -11,19 +11,19 @@
 @interface XCiteModel : NSObject
 
 
-@property (strong, nonatomic) NSString * videoTitle;
-@property (strong, nonatomic) NSString * videoSubTitle;
-@property (strong, nonatomic) NSString * videoURL;
-@property (strong, nonatomic) NSString * videoTile;
-@property (strong, nonatomic) NSString * titleColor;
-@property (strong, nonatomic) NSString * pdfTitle;
-@property (strong, nonatomic) NSString * pdfSubTitle;
-@property (strong, nonatomic) NSString * pdfURL;
-@property (strong, nonatomic) NSString * onImage;
-@property (strong, nonatomic) NSString * offImage;
-@property (strong, nonatomic) NSString * identifier;
-@property (strong, nonatomic) NSString * notificationTitle;
-@property (strong, nonatomic) NSString * notificationSubTitle;
+@property (strong, nonatomic) NSString * videoTitle; // video title
+@property (strong, nonatomic) NSString * videoSubTitle; // video subtitle
+@property (strong, nonatomic) NSString * videoURL; // video file url
+@property (strong, nonatomic) NSString * videoTile; // video tile image
+@property (strong, nonatomic) NSString * titleColor; // text color
+@property (strong, nonatomic) NSString * pdfTitle; // pdf title
+@property (strong, nonatomic) NSString * pdfSubTitle; // pdf subtitle
+@property (strong, nonatomic) NSString * pdfURL; // file url for pdf
+@property (strong, nonatomic) NSString * onImage; // side bar on image for category
+@property (strong, nonatomic) NSString * offImage; // side bar off image for category
+@property (strong, nonatomic) NSString * identifier; // identifier of the category
+@property (strong, nonatomic) NSString * notificationTitle; // notification title
+@property (strong, nonatomic) NSString * notificationSubTitle; // notification subtitle.
 
 - (id)initWithDictionary:(NSDictionary *)inputDic;
 

@@ -12,7 +12,20 @@
 
 +(instancetype)sharedInstance;
 
+/**
+ *  Send email to the email address. Uses MD5 and Sha1 for encryption.
+ *
+ *  @param email   email
+ *  @param pdfFile pdf file to attach
+ */
 - (void)sendEmailTo:(NSString *)email withPDF:(NSString *)pdfFile;
+
+/**
+ *  Subscribe the user for DeepDive event
+ *
+ *  @param email email
+ *  @param name  name
+ */
 - (void)subscribeUserWithEmail:(NSString *)email name:(NSString *)name;
 
 @end

@@ -10,7 +10,18 @@
 
 @interface DataManager : NSObject
 
+/**
+ *  Singleton access of the class
+ *
+ *  @return singleton object
+ */
 + (id)sharedInstance;
+
+/**
+ *  get all the models from plist
+ *
+ *  @return NSArray of XCite models.
+ */
 - (NSArray *)getAllModels;
 
 @end

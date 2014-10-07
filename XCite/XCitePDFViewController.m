@@ -48,18 +48,20 @@ UIScrollViewDelegate>
 
 - (void)_init
 {
-    NSString *pdfPath = [[NSBundle mainBundle] pathForResource:self.model.pdfURL ofType:@"pdf"];
+    NSString *pdfPath = [[NSBundle mainBundle]
+                         pathForResource:self.model.pdfURL ofType:@"pdf"];
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:pdfPath]]];
-    self.toolbarView.hidden  = YES;
-    _toolbarShown = NO;
-    
-    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showToolbar)];
-    tapGesture.numberOfTapsRequired = 1.0f;
+    self.toolbarView.hidden            = YES;
+    _toolbarShown                      = NO;
+
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]
+                                          initWithTarget:self action:@selector(showToolbar)];
+    tapGesture.numberOfTapsRequired    = 1.0f;
     [self.webView addGestureRecognizer:tapGesture];
-    self.webView.scrollView.delegate = self;
+    self.webView.scrollView.delegate   = self;
     
-    UIFont *btnFont  = [UIFont fontWithName:@"RockwellStd" size:24];
-    self.btnClose.titleLabel.font = btnFont;
+    UIFont *btnFont                     = [UIFont fontWithName:@"RockwellStd" size:24];
+    self.btnClose.titleLabel.font       = btnFont;
     self.btnSendMeACopy.titleLabel.font = btnFont;
     
 }

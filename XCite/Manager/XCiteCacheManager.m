@@ -15,6 +15,11 @@
 
 @implementation XCiteCacheManager
 
+/**
+ *  Singleton class object
+ *
+ *  @return sharedInstance object.
+ */
 + (instancetype)sharedInstance
 {
     static dispatch_once_t pred;
@@ -95,12 +100,18 @@
 
 #pragma mark - Private Methods
 
+/**
+ *  Markt the current sync time. Saves it in user defaults.
+ */
 - (void)saveCurrentSyncTime
 {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setObject:[NSDate date] forKey:LAST_SYNC_TIME];
 }
 
+/**
+ *  Clear JSON store with already existing values.
+ */
 - (void)setUpJSONStore
 {
     //clear all the saved data, if any.
@@ -108,6 +119,11 @@
     
 }
 
+/**
+ *  Return the beacon collection
+ *
+ *  @return JSONStoreCollection
+ */
 - (JSONStoreCollection *)openBeaconCollection
 {
     JSONStoreCollection *beaconCollection  = [[JSONStoreCollection alloc] initWithName:USER_COLLECTION];
@@ -117,6 +133,11 @@
     return beaconCollection;
 }
 
+/**
+ *  returns the email collection
+ *
+ *  @return JSONStoreCollection
+ */
 - (JSONStoreCollection *)openEmailCollection
 {
     JSONStoreCollection *emailCollection  = [[JSONStoreCollection alloc] initWithName:EMAIL_COLLECTION];
@@ -125,14 +146,6 @@
     
     return emailCollection;
     
-}
-
-
-- (JSONStoreCollection *)getEmailCollection
-{
-    JSONStoreCollection *emailCollection = [[JSONStore sharedInstance] getCollectionWithName:EMAIL_COLLECTION];
-    
-    return emailCollection;
 }
 
 /**

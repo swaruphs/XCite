@@ -12,10 +12,10 @@
 @interface BeaconModel : NSObject
 
 
-@property (nonatomic, strong) NSUUID *uuid;
-@property (nonatomic) CLBeaconMajorValue majorVersion;
-@property (nonatomic) CLBeaconMinorValue minorVersion;
-@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSUUID *uuid; // uuid
+@property (nonatomic) CLBeaconMajorValue majorVersion; // major version
+@property (nonatomic) CLBeaconMinorValue minorVersion; // minor version
+@property (nonatomic, strong) NSString *name; // beacon identifier
 @property (nonatomic, strong) NSString *status;
 @property (nonatomic, strong) CLBeacon *lastSeenBeacon;
 @property (nonatomic, strong) CLBeaconRegion *beaconRegion;
