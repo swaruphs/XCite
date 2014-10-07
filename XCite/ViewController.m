@@ -199,9 +199,7 @@ ESTBeaconManagerDelegate>
 
 -(IBAction)onBtnClear:(id)sender
 {
-    if (DEBUG) {
-        [self clearCacheData];
-    }
+    // empty implementation.
 }
 
 #pragma mark - Sidebar

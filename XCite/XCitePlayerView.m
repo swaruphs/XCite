@@ -95,8 +95,7 @@
 }
 
 - (void)setUpWebView:(NSString *)urlString
-{
-    
+{    
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:urlString]]];
 }
 

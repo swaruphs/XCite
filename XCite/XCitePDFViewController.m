@@ -113,9 +113,9 @@ UIScrollViewDelegate>
         return;
     }
     self.toolbarView.hidden = NO;
-    self.toolbarView.top = self.view.height;
+    self.toolbarView.bottom = self.view.top;
     [UIView animateWithDuration:0.2 delay:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
-        self.toolbarView.top = self.view.height - 60;
+        self.toolbarView.top = 0.0f;
     } completion:^(BOOL finished) {
         _toolbarShown = YES;
     }];
@@ -124,7 +124,7 @@ UIScrollViewDelegate>
 - (void)hideToolbar
 {
     [UIView animateWithDuration:0.2 delay:0.0 options:UIViewAnimationOptionCurveLinear animations:^{
-        self.toolbarView.top = self.view.height;
+        self.toolbarView.bottom = self.view.top;
     } completion:^(BOOL finished) {
         self.toolbarView.hidden = YES;
         _toolbarShown = NO;

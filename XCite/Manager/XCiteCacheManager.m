@@ -9,8 +9,8 @@
 #import "XCiteCacheManager.h"
 #import "JSONStore.h"
 
-#define LAST_SYNC_TIME  @"XCiteLastSyncTime"
-#define USER_COLLECTION @"XCiteUserCollection"
+#define LAST_SYNC_TIME   @"XCiteLastSyncTime"
+#define USER_COLLECTION  @"XCiteUserCollection"
 #define EMAIL_COLLECTION @"XciteEmailCollection"
 
 @implementation XCiteCacheManager
@@ -106,7 +106,14 @@
 - (void)saveCurrentSyncTime
 {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    [userDefaults setObject:[NSDate date] forKey:LAST_SYNC_TIME];
+    
+    NSDate *currentDate  = [NSDate date];
+    NSDate *midNight = [self dateForPastDays:0 fromDate:currentDate];
+    NSDate *midDay = [NSDate dateWithTimeInterval:12.5*60*60 sinceDate:midNight];
+    
+    NSDate *dateToSave = [currentDate compare:midDay] == NSOrderedAscending ? midNight : midDay;
+    NSLog(@"synced up date %@",dateToSave);
+    [userDefaults setObject:dateToSave forKey:LAST_SYNC_TIME];
 }
 
 /**
@@ -160,12 +167,21 @@
     NSDate *date = [userDefaults objectForKey:LAST_SYNC_TIME];
 
     if (![date isValidObject]) {
+        NSLog(@"date is empty");
         return YES;
     }
     
-    NSDate *clockZeroDate = [self dateForPastDays:0 fromDate:[NSDate date]];
+    NSDate *currentDate = [NSDate date];
+    NSDate *clockZeroDate = [self dateForPastDays:0 fromDate:currentDate];
+    NSDate *midDay = [clockZeroDate dateByAddingTimeInterval:12.5*60*60];
+    
     if ([date compare:clockZeroDate] == NSOrderedAscending) {
         NSLog(@"old cache. deleting old values");
+        [self resetCache];
+        return NO;
+    }
+    else if([date compare:midDay] == NSOrderedDescending){
+        NSLog(@"its 12:30 p.m, clear the cache");
         [self resetCache];
         return NO;
     }
