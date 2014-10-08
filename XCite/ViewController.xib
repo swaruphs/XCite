@@ -39,9 +39,6 @@
                     <rect key="frame" x="29" y="30" width="140" height="40"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <gestureRecognizers/>
-                    <connections>
-                        <outletCollection property="gestureRecognizers" destination="4EK-Gs-kOX" appends="YES" id="DFQ-mj-XVh"/>
-                    </connections>
                 </imageView>
                 <scrollView clipsSubviews="YES" contentMode="scaleToFill" pagingEnabled="YES" id="ZuN-YO-uWQ">
                     <rect key="frame" x="199" y="95" width="825" height="673"/>
@@ -55,9 +52,12 @@
                     <rect key="frame" x="654" y="0.0" width="341" height="96"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2359logo.png" id="ezL-bP-34K">
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2359logo.png" id="ezL-bP-34K">
                             <rect key="frame" x="271" y="28" width="70" height="40"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="4EK-Gs-kOX" appends="YES" id="arU-FR-rz2"/>
+                            </connections>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RI5-LR-wPh">
                             <rect key="frame" x="0.0" y="0.0" width="255" height="96"/>
@@ -79,9 +79,9 @@ built by 2359 Media</string>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
             <point key="canvasLocation" x="142" y="147"/>
         </view>
-        <tapGestureRecognizer numberOfTapsRequired="2" id="4EK-Gs-kOX">
+        <tapGestureRecognizer id="4EK-Gs-kOX">
             <connections>
-                <action selector="onBtnClear:" destination="-1" id="a77-Xz-83z"/>
+                <action selector="onBtnOpenWebSite:" destination="-1" id="syA-lY-KIb"/>
             </connections>
         </tapGestureRecognizer>
     </objects>

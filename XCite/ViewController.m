@@ -197,9 +197,11 @@ ESTBeaconManagerDelegate>
 
 #pragma mark - Actions
 
--(IBAction)onBtnClear:(id)sender
+-(IBAction)onBtnOpenWebSite:(id)sender
 {
     // empty implementation.
+    NSURL *url = [NSURL URLWithString:@"http://2359media.com"];
+    [[UIApplication sharedApplication] openURL:url];
 }
 
 #pragma mark - Sidebar
@@ -313,14 +315,6 @@ ESTBeaconManagerDelegate>
     
 }
 
-- (void)clearCacheData
-{
-    if (DEBUG) {
-        [[XCiteCacheManager sharedInstance] resetCache];
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Cleared cached data" message:nil delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-        [alert show];
-    }
-}
 #pragma mark - Beacon Helper Methods
 
 -(void)checkForBeaconPermission
